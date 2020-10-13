@@ -21,31 +21,12 @@
             <input type="button" onclick="javascript: filter('魔幻')" value="魔幻"/>
             <input type="button" onclick="javascript: filter('紀錄')" value="紀錄"/>
             <input type="button" onclick="javascript: filter('警匪')" value="警匪"/>
-            <input type="button" onclick="javascript: filter('戰爭')" value="戰爭"/>
-            <input type="button" onclick="javascript: filter('愛情')" value="愛情"/>
-            <input type="button" onclick="javascript: filter('劇情')" value="劇情"/>
-            <input type="button" onclick="javascript: filter('傳記')" value="傳記"/>
-            <input type="button" onclick="javascript: filter('懸疑')" value="懸疑"/>
-            <input type="button" onclick="javascript: filter('災難')" value="災難"/>
-            <input type="button" onclick="javascript: filter('恐怖')" value="恐怖"/>
-            <input type="button" onclick="javascript: filter('情色')" value="情色"/>
-            <input type="button" onclick="javascript: filter('指南')" value="指南"/>
-            <input type="button" onclick="javascript: filter('電視')" value="電視"/>
+
           </th>
         </tr>
       </table>
     </div>
-    <table id="resultTable" border="1" width="100%">
-      <tr bgcolor="#D8D8D8">
-        <th><a href="javascript: resort('title');">Title</a><xsl:call-template name="hdr"><xsl:with-param name="header" select="'title'" /></xsl:call-template></th>
-        <th><a href="javascript: resort('year');">Year</a><xsl:call-template name="hdr"><xsl:with-param name="header" select="'year'" /></xsl:call-template></th>
-        <th><a href="javascript: resort('type');">Type</a><xsl:call-template name="hdr"><xsl:with-param name="header" select="'type'" /></xsl:call-template></th>
-        <th><a href="javascript: resort('hasBackup');">Has Backup?</a><xsl:call-template name="hdr"><xsl:with-param name="header" select="'hasBackup'" /></xsl:call-template></th>
-        <th><a href="javascript: resort('insertDTTM');">Insert Date/Time</a><xsl:call-template name="hdr"><xsl:with-param name="header" select="'insertDTTM'" /></xsl:call-template></th>
-        <th><a href="javascript: resort('cinemaDTTM');">Cinema Date/Time</a><xsl:call-template name="hdr"><xsl:with-param name="header" select="'cinemaDTTM'" /></xsl:call-template></th>
-      </tr>
 
-    </table>
   </xsl:template>
   <xsl:template name="hdr">
     <xsl:param name="header" />
