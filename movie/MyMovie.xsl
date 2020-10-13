@@ -44,33 +44,7 @@
         <th><a href="javascript: resort('insertDTTM');">Insert Date/Time</a><xsl:call-template name="hdr"><xsl:with-param name="header" select="'insertDTTM'" /></xsl:call-template></th>
         <th><a href="javascript: resort('cinemaDTTM');">Cinema Date/Time</a><xsl:call-template name="hdr"><xsl:with-param name="header" select="'cinemaDTTM'" /></xsl:call-template></th>
       </tr>
-      <xsl:for-each select="entries/entry">
-        <xsl:sort select="*[name(.)=$sortKey]|@*[name(.)=$sortKey]" order="{$sortOrder}" data-type="{$sortType}" />
-        <xsl:if test="$filterKey = '*' or type = $filterKey">
-          <tr>
-            <td><xsl:value-of select="title"/></td>
-            <td><xsl:value-of select="year"/></td>
-            <td><xsl:value-of select="type"/></td>
-            <td>
-              <xsl:if test="hasBackup = 0">
-                <xsl:text>No</xsl:text>
-              </xsl:if>
-              <xsl:if test="hasBackup = 1">
-                <xsl:text>Yes</xsl:text>
-              </xsl:if>
-            </td>
-            <td><xsl:value-of select="insertDTTM"/></td>
-            <td>
-              <xsl:if test="cinemaDTTM = ''">
-                <xsl:text>--</xsl:text>
-              </xsl:if>
-              <xsl:if test="cinemaDTTM != ''">
-                <xsl:value-of select="cinemaDTTM"/>
-              </xsl:if>
-            </td>
-          </tr>
-        </xsl:if>
-      </xsl:for-each>
+
     </table>
   </xsl:template>
   <xsl:template name="hdr">
