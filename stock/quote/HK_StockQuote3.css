@@ -1,0 +1,43 @@
+#stocklist {
+  font-size: 18px;
+}
+#chartlist {
+  font-size: 18px;
+}
+#rowcount {
+  font-size: 18px;
+}
+#stockquotewindow {
+  margin: 0;
+  padding: 0;
+}
+#controlpanel {
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFFFFF;
+  background-color: #777777;
+  line-height: 50px;
+  text-indent: 10px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 38px;
+  width: 100%;
+  order: 1;
+  z-index: 100;
+}
+#resultpanel {
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0000FF;
+  background-color: #FFFFFF;
+  position: relative;
+  top: 38px;
+  left: 0px;
+  margin: 10px;
+  order: 2;
+}
+#resultTable {
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,615 @@
+
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=UTF-8">
+<META HTTP-EQUIV="pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="copyright" CONTENT="ixabzi Studio, 15 NOV 2002">
+
+<TITLE>香港股市 - 成本計算機 (VER 3)</TITLE>
+</HEAD>
+
+<style type="text/css">
+<!--
+  .MATRIX_DATA      { font-size: 10px ; font-family: Arial, Helvetica, sans-serif ; color: #000000 }
+  .FORM_DATA_BLACK  { font-size: 10px ; font-family: Arial, Helvetica, sans-serif ; color: #000000 }
+  .FORM_DATA_WHITE  { font-size: 10px ; font-family: Arial, Helvetica, sans-serif ; color: #FFFFFF }
+-->
+</style>
+
+<SCRIPT LANGUAGE="JAVASCRIPT">
+<!--
+
+var ie4 = (document.all) ? true : false;
+var ns4 = (document.layers) ? true : false;
+var ns6 = (document.getElementById && !document.all) ? true : false;
+
+//**************************************************************
+function loadDefaultValue() {
+  document.aForm.reset();
+  document.aForm.min_commission.value = "100";
+  document.aForm.commission_rate.value = "0.25";
+  document.aForm.matrixFactor.value = "0.05";
+  document.aForm.matrixSize.value = "3";
+}
+
+//**************************************************************
+function hidelayer(lay) {
+  if (ie4) {document.all[lay].style.visibility = "hidden";}
+  if (ns4) {document.layers[lay].visibility = "hide";}
+  if (ns6) {document.getElementById([lay]).style.display = "none";}
+}
+
+//**************************************************************
+function showlayer(lay) {
+  if (ie4) {document.all[lay].style.visibility = "visible";}
+  if (ns4) {document.layers[lay].visibility = "show";}
+  if (ns6) {document.getElementById([lay]).style.display = "block";}
+}
+
+//**************************************************************
+function writetolayer(lay,txt) {
+  if (ie4) {
+    document.all[lay].innerHTML = txt;
+  }
+  if (ns4) {
+    document[lay].document.write(txt);
+    document[lay].document.close();
+  }
+  if (ns6) {
+    over = document.getElementById([lay]);
+    range = document.createRange();
+    range.setStartBefore(over);
+    domfrag = range.createContextualFragment(txt);
+    while (over.hasChildNodes()) {
+      over.removeChild(over.lastChild);
+    }
+    over.appendChild(domfrag);
+  }
+}
+
+//**************************************************************
+function generateMatrix() {
+  var txtMatrix = "";
+
+  factor = document.aForm.matrixFactor.value * 1;
+  size = document.aForm.matrixSize.value * 1;
+  price_buy = document.aForm.price_buy.value * 1;
+  price_sell = document.aForm.price_sell.value * 1;
+  quantity = document.aForm.quantity.value * 1;
+
+  txtMatrix = txtMatrix + "<FORM NAME=\"aMatrix\" ONSUBMIT=\"javascript: return false;\">";
+
+  txtMatrix = txtMatrix + "<TABLE WIDTH=\"500\" CELLPADDING=\"0\" CELLSPACING=\"1\" BORDER=\"0\" HEIGHT=\"160\">";
+
+  txtMatrix = txtMatrix + "  <TR BGCOLOR=\"#666666\">";
+  txtMatrix = txtMatrix + "    <TD COLSPAN=\"2\" HEIGHT=\"20\">";
+  txtMatrix = txtMatrix + "      <FONT CLASS=\"FORM_DATA_WHITE\">&nbsp; </FONT>";
+  txtMatrix = txtMatrix + "    </TD>";
+  txtMatrix = txtMatrix + "  </TR>";
+
+  txtMatrix = txtMatrix + "  <TR>";
+  txtMatrix = txtMatrix + "    <TD BGCOLOR=\"#B2B2B2\" HEIGHT=\"20\" WIDTH=\"123\"><FONT CLASS=\"FORM_DATA_BLACK\"> 市 場 </FONT></TD>";
+  txtMatrix = txtMatrix + "    <TD BGCOLOR=\"#F4F4F4\" HEIGHT=\"20\" WIDTH=\"377\"><FONT CLASS=\"FORM_DATA_BLACK\"> 香 港 </FONT></TD>";
+  txtMatrix = txtMatrix + "  </TR>";
+  txtMatrix = txtMatrix + "  <TR>";
+  txtMatrix = txtMatrix + "    <TD BGCOLOR=\"#B2B2B2\" HEIGHT=\"20\" WIDTH=\"123\"><FONT CLASS=\"FORM_DATA_BLACK\"> 購 買 數 量 </FONT></TD>";
+  txtMatrix = txtMatrix + "    <TD BGCOLOR=\"#F4F4F4\" HEIGHT=\"20\" WIDTH=\"377\"><FONT CLASS=\"FORM_DATA_BLACK\">" + quantity + "</FONT></TD>";
+  txtMatrix = txtMatrix + "  </TR>";
+
+  txtMatrix = txtMatrix + "  <TR BGCOLOR=\"#666666\">";
+  txtMatrix = txtMatrix + "    <TD COLSPAN=\"2\" HEIGHT=\"20\">";
+  txtMatrix = txtMatrix + "      <FONT CLASS=\"FORM_DATA_WHITE\">&nbsp; </FONT>";
+  txtMatrix = txtMatrix + "    </TD>";
+  txtMatrix = txtMatrix + "  </TR>";
+
+  txtMatrix = txtMatrix + "  <TR>";
+  txtMatrix = txtMatrix + "    <TD COLSPAN=\"2\" ALIGN=\"right\">";
+  txtMatrix = txtMatrix + "      <FONT CLASS=\"FORM_DATA_BLACK\">";
+  txtMatrix = txtMatrix + "        <INPUT TYPE=\"submit\" NAME=\"Matrix\" VALUE=\"返 回\" WIDTH=\"70\" STYLE=\"font-size:9;color:#3333DD;WIDTH:70\" ONCLICK=\"javascript: showMatrix(false);\">";
+  txtMatrix = txtMatrix + "      </FONT>";
+  txtMatrix = txtMatrix + "    </TD>";
+  txtMatrix = txtMatrix + "  </TR>";
+  txtMatrix = txtMatrix + "  <TR BGCOLOR=\"#666666\">";
+  txtMatrix = txtMatrix + "    <TD COLSPAN=\"2\" HEIGHT=\"20\">";
+  txtMatrix = txtMatrix + "      <FONT CLASS=\"FORM_DATA_WHITE\">&nbsp;估 計 所 需 款 項 及 買 入 賣 出 差 額 列 表 </FONT>";
+  txtMatrix = txtMatrix + "    </TD>";
+  txtMatrix = txtMatrix + "  </TR>";
+  txtMatrix = txtMatrix + "  <TR>";
+  txtMatrix = txtMatrix + "    <TD COLSPAN=\"2\">";
+  txtMatrix = txtMatrix + "      <TABLE BORDER=\"0\" CELLSPACING=\"1\" CELLPADDING==\"0\">";
+  txtMatrix = txtMatrix + "        <TR>";
+  txtMatrix = txtMatrix + "          <TD BGCOLOR=\"#FFFFFF\"><FONT CLASS=\"FORM_DATA_BLACK\">&nbsp;</FONT></TD>";
+  txtMatrix = txtMatrix + "          <TD BGCOLOR=\"#F4F4F4\" ALIGN=\"CENTER\"><FONT CLASS=\"FORM_DATA_BLACK\">[買 出]</FONT></TD>";
+  txtMatrix = txtMatrix + "          <TD BGCOLOR=\"#F4F4F4\"><FONT CLASS=\"FORM_DATA_BLACK\">每股作價</FONT></TD>";
+  for (i = 0-size; i <= size; i++) {
+    txtMatrix = txtMatrix + "          <TD BGCOLOR=\"#999999\" WIDTH=\"50\" NOWRAP><FONT CLASS=\"MATRIX_DATA\">" + Math.round((price_sell + i * factor)*1000)/1000 + "</FONT></TD>";
+  }
+  txtMatrix = txtMatrix + "        </TR>";
+  txtMatrix = txtMatrix + "        <TR>";
+  txtMatrix = txtMatrix + "          <TD BGCOLOR=\"#F4F4F4\" ALIGN=\"CENTER\"><FONT CLASS=\"FORM_DATA_BLACK\">[買 入]</FONT></TD>";
+  txtMatrix = txtMatrix + "          <TD BGCOLOR=\"#FFFFFF\"><FONT CLASS=\"FORM_DATA_BLACK\">&nbsp;</FONT></TD>";
+  txtMatrix = txtMatrix + "          <TD BGCOLOR=\"#F4F4F4\"><FONT CLASS=\"FORM_DATA_BLACK\">手續費</FONT></TD>";
+  for (i = 0-size; i <= size; i++) {
+    txtMatrix = txtMatrix + "          <TD BGCOLOR=\"#B2B2B2\" WIDTH=\"50\" NOWRAP><FONT CLASS=\"MATRIX_DATA\">" + calculateFee(price_sell + i * factor,quantity) + "</FONT></TD>";
+  }
+  txtMatrix = txtMatrix + "        </TR>";
+  txtMatrix = txtMatrix + "        <TR>";
+  txtMatrix = txtMatrix + "          <TD BGCOLOR=\"#F4F4F4\"><FONT CLASS=\"FORM_DATA_BLACK\">每股作價</FONT></TD>";
+  txtMatrix = txtMatrix + "          <TD BGCOLOR=\"#F4F4F4\"><FONT CLASS=\"FORM_DATA_BLACK\">手續費</FONT></TD>";
+  txtMatrix = txtMatrix + "          <TD BGCOLOR=\"#F4F4F4\"><FONT CLASS=\"FORM_DATA_BLACK\">總額</FONT></TD>";
+  for (i = 0-size; i <= size; i++) {
+    txtMatrix = txtMatrix + "          <TD BGCOLOR=\"#DDDDDD\" WIDTH=\"50\" NOWRAP><FONT CLASS=\"MATRIX_DATA\">" + calculateSellingCost(price_sell + i * factor,quantity) + "</FONT></TD>";
+  }
+  txtMatrix = txtMatrix + "        </TR>";
+
+  for (i = 0-size; i <= size; i++) {
+    txtMatrix = txtMatrix + "        <TR>";
+    txtMatrix = txtMatrix + "          <TD BGCOLOR=\"#999999\" WIDTH=\"50\" NOWRAP><FONT CLASS=\"MATRIX_DATA\">" + Math.round((price_buy + i * factor)*1000)/1000 + "</FONT></TD>";
+    txtMatrix = txtMatrix + "          <TD BGCOLOR=\"#B2B2B2\" WIDTH=\"50\" NOWRAP><FONT CLASS=\"MATRIX_DATA\">" + calculateFee(price_buy + i * factor,quantity) + "</FONT></TD>";
+    txtMatrix = txtMatrix + "          <TD BGCOLOR=\"#DDDDDD\" WIDTH=\"50\" NOWRAP><FONT CLASS=\"MATRIX_DATA\">" + calculateBuyingCost(price_buy + i * factor,quantity) + "</FONT></TD>";
+    for (j = 0-size; j <= size; j++) {
+      diff = Math.round((calculateSellingCost(price_sell + j * factor,quantity) - calculateBuyingCost(price_buy + i * factor,quantity)) *1000) /1000
+      if (diff > 0) {
+        txtMatrix = txtMatrix + "          <TD BGCOLOR=\"#BBFFBB\" NOWRAP><FONT CLASS=\"MATRIX_DATA\">" + diff + "</FONT></TD>";
+      } else if (diff < 0) {
+        txtMatrix = txtMatrix + "          <TD BGCOLOR=\"#FFBBBB\" NOWRAP><FONT CLASS=\"MATRIX_DATA\">" + diff + "</FONT></TD>";
+      } else {
+        txtMatrix = txtMatrix + "          <TD BGCOLOR=\"#F4F4F4\" NOWRAP><FONT CLASS=\"MATRIX_DATA\">" + diff + "</FONT></TD>";
+      }
+    }
+    txtMatrix = txtMatrix + "        </TR>";
+  }
+  txtMatrix = txtMatrix + "      </TABLE>";
+  txtMatrix = txtMatrix + "    </TD>";
+  txtMatrix = txtMatrix + "  </TR>";
+  txtMatrix = txtMatrix + "  <TR>";
+  txtMatrix = txtMatrix + "    <TD COLSPAN=\"2\">";
+  txtMatrix = txtMatrix + "      <DIV ALIGN=\"right\">";
+  txtMatrix = txtMatrix + "        <FONT CLASS=\"FORM_DATA_BLACK\">";
+  txtMatrix = txtMatrix + "          *參考資料只適用於限價盤";
+  txtMatrix = txtMatrix + "        </FONT>";
+  txtMatrix = txtMatrix + "      </DIV>";
+  txtMatrix = txtMatrix + "    </TD>";
+  txtMatrix = txtMatrix + "  </TR>";
+  txtMatrix = txtMatrix + "</TABLE>";
+  txtMatrix = txtMatrix + "</FORM>";
+  return txtMatrix;
+}
+
+//**************************************************************
+function calculateBuyingCost(price,quantity) {
+    var Gross = 0;
+    Gross = Math.round(price * quantity * 1000)/1000;
+    N = Math.round((Gross + calculateFee(price,quantity)) * 1000) / 1000;
+    return N;
+}
+
+//**************************************************************
+function calculateSellingCost(price,quantity) {
+    var Gross = 0;
+    Gross = Math.round(price * quantity * 1000)/1000;
+    N = Math.round((Gross - calculateFee(price,quantity)) * 1000) / 1000;
+    return N;
+}
+
+//**************************************************************
+function calculateFee(price,quantity) {
+
+    var CommRate = 0, MinComm = 0;
+    var Gross = 0, Commission = 0, Levy = 0, Stamp = 0, Trading = 0, CA = 0, N = 0;
+
+    CommRate = document.aForm.commission_rate.value;
+    MinComm = document.aForm.min_commission.value;
+
+    Gross = Math.round(price * quantity*1000)/1000;
+    Commission = Math.round((Gross * CommRate / 100)*1000) / 1000;
+    if (Commission < MinComm && Commission > 0) {
+       Commission = eval(MinComm);
+    }
+
+    Levy = Math.round(Gross * 0.00004 * 100) / 100;
+    Stamp = Math.round(Math.ceil(Gross * 0.001));
+    if (Stamp <= 2 && Stamp > 0) { Stamp = 2; }
+
+    Trading = Math.round(Gross * 0.00005 * 100) / 100;
+    CA = Math.round(Gross * 0.00002 * 100) / 100;
+
+    if (CA >= 100) {
+       CA = 100;
+    } else if (CA <= 2 && CA > 0) {
+       CA = 0;
+    }
+
+    return Math.round((Commission + Levy + Stamp + Trading + CA) * 100) / 100;
+}
+
+//**************************************************************
+function goSubmit() {
+  setBuyingCostDetails();
+  setSellingCostDetails();
+  document.aForm.net_amount_diff.value = Math.round((document.aForm.net_amount_sell.value - document.aForm.net_amount_buy.value) * 1000) / 1000;
+  document.aForm.quantity.focus();
+  return false;
+}
+
+//**************************************************************
+function showMatrix(flag) {
+  if (flag) {
+    hidelayer("DetailsLayer");
+    writetolayer("MatrixLayer",generateMatrix());
+    showlayer("MatrixLayer");
+  } else {
+    hidelayer("MatrixLayer");
+    showlayer("DetailsLayer");
+  }
+}
+
+//**************************************************************
+function setBuyingCostDetails() {
+
+    var CommRate = 0, MinComm = 0;
+    var Gross = 0, Commission = 0, Levy = 0, Stamp = 0, Trading = 0, CA = 0, N = 0;
+
+    CommRate = document.aForm.commission_rate.value;
+    MinComm = document.aForm.min_commission.value;
+
+    Gross = Math.round(document.aForm.price_buy.value * document.aForm.quantity.value*1000)/1000;
+    Commission = Math.round((Gross * CommRate / 100)*1000) / 1000;
+    if (Commission < MinComm && Commission > 0) {
+       Commission = eval(MinComm);
+    }
+
+    Levy = Math.round(Gross * 0.00004 * 100) / 100;
+    Stamp = Math.round(Math.ceil(Gross * 0.001));
+    if (Stamp <= 2 && Stamp > 0) { Stamp = 2; }
+
+    Trading = Math.round(Gross * 0.00005 * 100) / 100;
+    CA = Math.round(Gross * 0.00002 * 100) / 100;
+
+    if (CA >= 100) {
+       CA = 100;
+    } else if (CA <= 2 && CA > 0) {
+       CA = 0;
+    }
+
+    N = Math.round((Gross + Commission + Levy + Stamp + Trading + CA) * 1000) / 1000;
+
+    document.aForm.gross_amount_buy.value = Gross;
+    document.aForm.commission_amount_buy.value = Commission;
+    document.aForm.levy_buy.value = Levy;
+    document.aForm.stamp_duty_buy.value = Stamp;
+    document.aForm.Trading_fee_buy.value = Trading;
+    document.aForm.ccass_buy.value = CA;
+    document.aForm.net_amount_buy.value = N;
+}
+
+//**************************************************************
+function setSellingCostDetails() {
+
+    var CommRate = 0, MinComm = 0;
+    var Gross = 0, Commission = 0, Levy = 0, Stamp = 0, Trading = 0, CA = 0, N = 0;
+
+    CommRate = document.aForm.commission_rate.value;
+    MinComm = document.aForm.min_commission.value;
+
+    Gross = Math.round(document.aForm.price_sell.value * document.aForm.quantity.value*1000)/1000;
+    Commission = Math.round((Gross * CommRate / 100)*1000) / 1000;
+    if (Commission < MinComm && Commission > 0) {
+       Commission = eval(MinComm);
+    }
+
+    Levy = Math.round(Gross * 0.00004 * 100) / 100;
+    Stamp = Math.round(Math.ceil(Gross * 0.001));
+    if (Stamp <= 2 && Stamp > 0) { Stamp = 2; }
+
+    Trading = Math.round(Gross * 0.00005 * 100) / 100;
+    CA = Math.round(Gross * 0.00002 * 100) / 100;
+
+    if (CA >= 100) {
+       CA = 100;
+    } else if (CA <= 2 && CA > 0) {
+       CA = 2;
+    }
+
+    N = Math.round((Gross - Commission - Levy - Stamp - Trading - CA) * 100) / 100;
+
+    document.aForm.gross_amount_sell.value = Gross;
+    document.aForm.commission_amount_sell.value = Commission;
+    document.aForm.levy_sell.value = Levy;
+    document.aForm.stamp_duty_sell.value = Stamp;
+    document.aForm.Trading_fee_sell.value = Trading;
+    document.aForm.ccass_sell.value = CA;
+    document.aForm.net_amount_sell.value = N;
+}
+
+var MsgText = new Array();
+MsgText['ERR000001'] = "(ERR000001)";
+MsgText['ERR000002'] = "(ERR000002)";
+MsgText['ERR000003'] = "(ERR000003)";
+MsgText['ERR000004'] = "(ERR000004)";
+MsgText['ERR000005'] = "(ERR000005)";
+
+-->
+</SCRIPT>
+
+<BODY LEFTMARGIN="0" TOPMARGIN="0" MARGINWIDTH="0" MARGINHEIGHT="0" BGCOLOR="#FFFFFF" ONLOAD="javascript: loadDefaultValue();">
+<SPAN ID="MatrixLayer" style="position:absolute;"></SPAN>
+<SPAN ID="DetailsLayer" style="position:absolute;">
+<FORM NAME="aForm" ONSUBMIT="javascript: return goSubmit();">
+  <INPUT TYPE="hidden" NAME="matrixFactor" VALUE="">
+  <INPUT TYPE="hidden" NAME="matrixSize" VALUE="">
+  <TABLE WIDTH="500" CELLPADDING="0" CELLSPACING="1" BORDER="0" HEIGHT="42" BGCOLOR="#FFFFFF">
+    <TR BGCOLOR="#666666">
+      <TD HEIGHT="20" WIDTH="120">
+        <DIV ALIGN="center">
+          <FONT CLASS="FORM_DATA_WHITE"> 市 場 </FONT>
+        </DIV>
+      </TD>
+      <TD HEIGHT="20" WIDTH="130">
+        <DIV ALIGN="center">
+          <FONT CLASS="FORM_DATA_WHITE"> 購 買 數 量 </FONT>
+        </DIV>
+      </TD>
+      <TD HEIGHT="20" WIDTH="130">
+        <DIV ALIGN="center">
+          <FONT CLASS="FORM_DATA_WHITE"> 每 股 買 入 作 價 </FONT>
+        </DIV>
+      </TD>
+      <TD HEIGHT="20" WIDTH="130">
+        <DIV ALIGN="center">
+          <FONT CLASS="FORM_DATA_WHITE"> 每 股 賣 出 作 價 </FONT>
+        </DIV>
+      </TD>
+    </TR>
+    <TR BGCOLOR="#DDDDDD">
+      <TD WIDTH="120" HEIGHT="31">
+        <DIV ALIGN="center">
+          <FONT CLASS="FORM_DATA_BLACK">
+            <INPUT TYPE="radio" NAME="market" VALUE="hk" CHECKED> 香 港
+          </FONT>
+        </DIV>
+      </TD>
+      <TD WIDTH="120" HEIGHT="31">
+        <DIV ALIGN="center">
+          <FONT CLASS="FORM_DATA_BLACK">
+            <INPUT TYPE="text" NAME="quantity" SIZE="8" MAXLENGTH="6">
+          </FONT>
+        </DIV>
+      </TD>
+      <TD WIDTH="130" HEIGHT="31">
+        <DIV ALIGN="center">
+          <FONT CLASS="FORM_DATA_BLACK">
+            $<INPUT TYPE="text" NAME="price_buy" SIZE="9" MAXLENGTH="6">&nbsp;
+          </FONT>
+        </DIV>
+      </TD>
+      <TD WIDTH="130" HEIGHT="31">
+        <DIV ALIGN="center">
+          <FONT CLASS="FORM_DATA_BLACK">
+            $<INPUT TYPE="text" NAME="price_sell" SIZE="9" MAXLENGTH="6">&nbsp;
+          </FONT>
+        </DIV>
+      </TD>
+    </TR>
+    <TR BGCOLOR="#666666">
+      <TD WIDTH="120" HEIGHT="20">
+        <DIV ALIGN="center">
+          <FONT CLASS="FORM_DATA_WHITE"> 最 低 佣 金 </FONT>
+        </DIV>
+      </TD>
+      <TD WIDTH="120" HEIGHT="20">
+        <DIV ALIGN="center">
+          <FONT CLASS="FORM_DATA_WHITE"> 佣 金 利 率 </FONT>
+        </DIV>
+      </TD>
+      <TD COLSPAN="2" WIDTH="130" HEIGHT="20">
+        <DIV ALIGN="center">&nbsp;</DIV>
+      </TD>
+    </TR>
+    <TR BGCOLOR="#DDDDDD">
+      <TD WIDTH="120" HEIGHT="31">
+        <DIV ALIGN="center">
+          <FONT CLASS="FORM_DATA_BLACK">
+            $<INPUT TYPE="text" NAME="min_commission" size="8" MAXLENGTH="8">&nbsp;&nbsp;
+          </FONT>
+        </DIV>
+      </TD>
+      <TD WIDTH="120" HEIGHT="31">
+        <DIV ALIGN="center">
+          <FONT CLASS="FORM_DATA_BLACK">
+            &nbsp;&nbsp;<INPUT TYPE="text" NAME="commission_rate" size="8" MAXLENGTH="8">%
+          </FONT>
+        </DIV>
+      </TD>
+      <TD COLSPAN="2" HEIGHT="31">
+        <TABLE BORDER="0" ALIGN="RIGHT">
+          <TR>
+            <TD>
+              <FONT CLASS="FORM_DATA_BLACK">
+                <INPUT TYPE="submit" NAME="Calculate" VALUE="計 算" WIDTH="70" STYLE="font-size:9;color:#3333DD;WIDTH:70">
+              </FONT>
+            </TD>
+            <TD>
+              <FONT CLASS="FORM_DATA_BLACK">
+                <INPUT TYPE="button" NAME="Matrix" VALUE="列 表" WIDTH="70" STYLE="font-size:9;color:#3333DD;WIDTH:70" ONCLICK="javascript: showMatrix(true);">
+              </FONT>
+            </TD>
+            <TD>
+              <FONT CLASS="FORM_DATA_BLACK">
+                <INPUT TYPE="button" NAME="Reset" VALUE="重 設" WIDTH="70" STYLE="font-size:9;color:#3333DD;WIDTH:70" ONCLICK="javascript: loadDefaultValue();">
+              </FONT>
+            </TD>
+          </TR>
+        </TABLE>
+      </TD>
+    </TR>
+  </TABLE>
+  <TABLE WIDTH="500" CELLPADDING="0" CELLSPACING="1" BORDER="0" HEIGHT="160">
+    <TR BGCOLOR="#666666">
+      <TD COLSPAN="3" HEIGHT="20">
+        <FONT CLASS="FORM_DATA_WHITE">&nbsp;估 計 所 需 款 項 計 算 機 </FONT>
+      </TD>
+    </TR>
+    <TR>
+      <TD HEIGHT="26" BGCOLOR="#DDDDDD">
+        <FONT CLASS="FORM_DATA_BLACK">&nbsp;款 項 總 額</FONT>
+      </TD>
+      <TD WIDTH="130" HEIGHT="26" BGCOLOR="#DDDDDD">
+        <DIV ALIGN="center">
+          <FONT CLASS="FORM_DATA_BLACK">
+            &nbsp;$<INPUT NAME="gross_amount_buy" SIZE="9" MAXLENGTH="8">
+          </FONT>
+        </DIV>
+      </TD>
+      <TD WIDTH="130" HEIGHT="26" BGCOLOR="#DDDDDD">
+        <DIV ALIGN="center">
+          <FONT CLASS="FORM_DATA_BLACK">
+            &nbsp;$<INPUT NAME="gross_amount_sell" SIZE="9" MAXLENGTH="8">
+          </FONT>
+        </DIV>
+      </TD>
+    </TR>
+    <TR>
+      <TD HEIGHT="26" BGCOLOR="#DDDDDD">
+        <FONT CLASS="FORM_DATA_BLACK">&nbsp;佣 金</FONT>
+      </TD>
+      <TD WIDTH="130" HEIGHT="26" BGCOLOR="#DDDDDD">
+        <DIV ALIGN="center">
+          <FONT CLASS="FORM_DATA_BLACK">
+            &nbsp;$<INPUT NAME="commission_amount_buy" SIZE="9" MAXLENGTH="8">
+          </FONT>
+        </DIV>
+      </TD>
+      <TD WIDTH="130" HEIGHT="26" BGCOLOR="#DDDDDD">
+        <DIV ALIGN="center">
+          <FONT CLASS="FORM_DATA_BLACK">
+            &nbsp;$<INPUT NAME="commission_amount_sell" SIZE="9" MAXLENGTH="8">
+          </FONT>
+        </DIV>
+      </TD>    </TR>
+    <TR>
+      <TD HEIGHT="26" BGCOLOR="#DDDDDD">
+        <FONT CLASS="FORM_DATA_BLACK">&nbsp;交 易 徵 費</FONT>
+      </TD>
+      <TD WIDTH="130" HEIGHT="26" BGCOLOR="#DDDDDD">
+        <DIV ALIGN="center">
+          <FONT CLASS="FORM_DATA_BLACK">
+            &nbsp;$<INPUT NAME="levy_buy" SIZE="9" MAXLENGTH="8">
+          </FONT>
+        </DIV>
+      </TD>
+      <TD WIDTH="130" HEIGHT="26" BGCOLOR="#DDDDDD">
+        <DIV ALIGN="center">
+          <FONT CLASS="FORM_DATA_BLACK">
+            &nbsp;$<INPUT NAME="levy_sell" SIZE="9" MAXLENGTH="8">
+          </FONT>
+        </DIV>
+      </TD>
+    </TR>
+    <TR>
+      <TD HEIGHT="26" BGCOLOR="#DDDDDD">
+        <FONT CLASS="FORM_DATA_BLACK">&nbsp;印 花 稅 </FONT>
+      </TD>
+      <TD WIDTH="130" HEIGHT="26" BGCOLOR="#DDDDDD">
+        <DIV ALIGN="center">
+          <FONT CLASS="FORM_DATA_BLACK">
+            &nbsp;$<INPUT NAME="stamp_duty_buy" SIZE="9" MAXLENGTH="8">
+          </FONT>
+        </DIV>
+      </TD>
+      <TD WIDTH="130" HEIGHT="26" BGCOLOR="#DDDDDD">
+        <DIV ALIGN="center">
+          <FONT CLASS="FORM_DATA_BLACK">
+            &nbsp;$<INPUT NAME="stamp_duty_sell" SIZE="9" MAXLENGTH="8">
+          </FONT>
+        </DIV>
+      </TD>
+    </TR>
+    <TR>
+      <TD HEIGHT="26" BGCOLOR="#DDDDDD">
+        <FONT CLASS="FORM_DATA_BLACK">&nbsp;交 易 費 </FONT>
+      </TD>
+      <TD WIDTH="130" HEIGHT="26" BGCOLOR="#DDDDDD">
+        <DIV ALIGN="center">
+          <FONT CLASS="FORM_DATA_BLACK">
+            &nbsp;$<INPUT NAME="Trading_fee_buy" SIZE="9" MAXLENGTH="8">
+          </FONT>
+        </DIV>
+      </TD>
+      <TD WIDTH="130" HEIGHT="26" BGCOLOR="#DDDDDD">
+        <DIV ALIGN="center">
+          <FONT CLASS="FORM_DATA_BLACK">
+            &nbsp;$<INPUT NAME="Trading_fee_sell" SIZE="9" MAXLENGTH="8">
+          </FONT>
+        </DIV>
+      </TD>
+    </TR>
+    <TR>
+      <TD HEIGHT="26" BGCOLOR="#DDDDDD">
+        <FONT CLASS="FORM_DATA_BLACK">&nbsp;中央結算費</FONT>
+      </TD>
+      <TD WIDTH="130" HEIGHT="26" BGCOLOR="#DDDDDD">
+        <DIV ALIGN="center">
+          <FONT CLASS="FORM_DATA_BLACK">
+            &nbsp;$<INPUT NAME="ccass_buy" SIZE="9" MAXLENGTH="8">
+          </FONT>
+        </DIV>
+      </TD>
+      <TD WIDTH="130" HEIGHT="26" BGCOLOR="#DDDDDD">
+        <DIV ALIGN="center">
+          <FONT CLASS="FORM_DATA_BLACK">
+            &nbsp;$<INPUT NAME="ccass_sell" SIZE="9" MAXLENGTH="8">
+          </FONT>
+        </DIV>
+      </TD>
+    </TR>
+    <TR>
+      <TD WIDTH="260" HEIGHT="26" BGCOLOR="#666666">
+        <DIV ALIGN="right">
+          <FONT CLASS="FORM_DATA_WHITE">&nbsp;總額 *&nbsp;</FONT>
+        </DIV>
+      </TD>
+      <TD WIDTH="130" HEIGHT="26" BGCOLOR="#666666">
+        <DIV ALIGN="center">
+          <FONT CLASS="FORM_DATA_WHITE">
+            &nbsp;$<INPUT NAME="net_amount_buy" SIZE="9" MAXLENGTH="8">
+          </FONT>
+        </DIV>
+      </TD>
+      <TD WIDTH="130" HEIGHT="26" BGCOLOR="#666666">
+        <DIV ALIGN="center">
+          <FONT CLASS="FORM_DATA_WHITE">
+            &nbsp;$<INPUT NAME="net_amount_sell" SIZE="9" MAXLENGTH="8">
+          </FONT>
+        </DIV>
+      </TD>
+    </TR>
+    <TR>
+      <TD COLSPAN="2" HEIGHT="26" BGCOLOR="#000000">
+        <DIV ALIGN="right">
+          <FONT CLASS="FORM_DATA_WHITE">&nbsp;買入賣出差額 *&nbsp;</FONT>
+        </DIV>
+      </TD>
+      <TD WIDTH="130" HEIGHT="26" BGCOLOR="#000000">
+        <DIV ALIGN="center">
+          <FONT CLASS="FORM_DATA_WHITE">
+            &nbsp;$<INPUT NAME="net_amount_diff" SIZE="9" MAXLENGTH="8">
+          </FONT>
+        </DIV>
+      </TD>
+    </TR>
+    <TR>
+      <TD COLSPAN="3">
+        <DIV ALIGN="right">
+          <FONT CLASS="FORM_DATA_BLACK">
+            *參考資料只適用於限價盤
+          </FONT>
+        </DIV>
+      </TD>
+    </TR>
+  </TABLE>
+</FORM>
+</SPAN>
+
+</BODY>
+</HTML>

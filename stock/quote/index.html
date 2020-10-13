@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="pragma" content="no-cache">
+<title>Hong Kong Stock Quote (version 3)</title>
+<link rel="stylesheet" type="text/css" href="HK_StockQuote3.css">
+<script language="javascript" src="HK_StockQuote3_data.js"></script>
+<script language="javascript" src="HK_StockQuote3_function.js"></script>
+</head>
+<body id="stockquotewindow" onload="onLoaded()">
+<div id="controlpanel">
+  <form>
+    <select id="chartlist" name="chartlist" size="1" onchange="onChanged()">
+      <option value="-1" selected>．．．請 選 擇 查 詢 類 別．．．</option>
+    </select>
+    <select id="stocklist" name="stocklist" size="1" onchange="onChanged()" disabled>
+      <option value="-1" selected>．．．請 選 擇 股 票 組 合．．．</option>
+    </select>
+    <select id="rowcount" name="rowcount" size="1" onchange="onChanged()">
+      <option value="1">1 行</option>
+      <option value="2">2 行</option>
+      <option value="3">3 行</option>
+      <option value="4" selected>4 行</option>
+      <option value="5">5 行</option>
+    </select>
+  </form>
+</div>
+<div id="resultpanel"></div>
+</body>
+</html>
