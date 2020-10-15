@@ -15,6 +15,14 @@
 
 <entries>
   <entry>
+    <title>The Current War</title>
+    <year>2017</year>
+    <type>傳記</type>
+    <hasBackup>0</hasBackup>
+    <insertDTTM>2020-10-15 00:00</insertDTTM>
+    <cinemaDTTM>gimy</cinemaDTTM>
+  </entry>
+  <entry>
     <title>The Reader</title>
     <year>2008</year>
     <type>劇情</type>
@@ -169,7 +177,7 @@
   <entry>
     <title>Mary Magdalene</title>
     <year>2018</year>
-    <type>紀錄</type>
+    <type>傳記</type>
     <hasBackup>0</hasBackup>
     <insertDTTM>2020-07-26 00:00</insertDTTM>
     <cinemaDTTM>hmvod</cinemaDTTM>
@@ -2034,7 +2042,7 @@
   <entry>
     <title>Snowden</title>
     <year>2016</year>
-    <type>紀錄</type>
+    <type>傳記</type>
     <hasBackup>1</hasBackup>
     <insertDTTM>2017-04-08 00:00</insertDTTM>
     <cinemaDTTM></cinemaDTTM>
@@ -2090,7 +2098,7 @@
   <entry>
     <title>Sully</title>
     <year>2016</year>
-    <type>紀錄</type>
+    <type>傳記</type>
     <hasBackup>1</hasBackup>
     <insertDTTM>2017-04-08 00:00</insertDTTM>
     <cinemaDTTM></cinemaDTTM>
@@ -3642,7 +3650,7 @@
   <entry>
     <title>Noah</title>
     <year>2014</year>
-    <type>紀錄</type>
+    <type>傳記</type>
     <hasBackup>1</hasBackup>
     <insertDTTM>2014-09-09 20:00</insertDTTM>
     <cinemaDTTM></cinemaDTTM>
@@ -4098,7 +4106,7 @@
   <entry>
     <title>Captain Phillips</title>
     <year>2013</year>
-    <type>紀錄</type>
+    <type>傳記</type>
     <hasBackup>1</hasBackup>
     <insertDTTM>2014-02-25 00:00</insertDTTM>
     <cinemaDTTM></cinemaDTTM>
@@ -6274,7 +6282,7 @@
   <entry>
     <title>Anna and the King</title>
     <year>1999</year>
-    <type>紀錄</type>
+    <type>傳記</type>
     <hasBackup>0</hasBackup>
     <insertDTTM>2013-01-01 01:00</insertDTTM>
     <cinemaDTTM></cinemaDTTM>
@@ -6650,7 +6658,7 @@
   <entry>
     <title>127 Hours</title>
     <year>2010</year>
-    <type>紀錄</type>
+    <type>傳記</type>
     <hasBackup>1</hasBackup>
     <insertDTTM>2011-03-18 20:36</insertDTTM>
     <cinemaDTTM></cinemaDTTM>
