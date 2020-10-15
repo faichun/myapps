@@ -6,76 +6,138 @@
 <meta http-equiv="Expires" content="0" />
 <meta charset="UTF-8">
 <style>
-body { background-color: #ffffff; color:#000000; font-family:arial, verdana, sans-serif; font-size:14px; }
-a { color:#0000FF; font-weight:bold; text-decoration:none; }
-a:hover { text-decoration:underline; }
-p { color:#000000; margin:0; }
-h1 { font-size:18px; }
-pre { color:#000000; }
-th { padding:3px; background-color:#f0f0f0; text-align:left; border:1px solid black; border-collapse:collapse; }
-tr { background-color: #ffffff; }
-td { padding:3px; line-height:19px; border: 1px solid black; border-collapse: collapse; }
-table { border:1px solid black; border-collapse: collapse; background-color:#cccccc; margin:10px 0 10px 0; }
-#menu { display:block; position:fixed; top:0; left:0; margin-left: 8px; margin-right: 8px; background:#FFFFFF; width:100% }
-#resultTable { margin:100px 0 10px 0; }
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: arial, verdana, sans-serif;
+  font-size: 14px;
+}
+
+a {
+  color: #0000FF;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  color: #000000;
+  margin: 0;
+}
+
+h1 {
+  font-size: 18px;
+}
+
+pre {
+  color: #000000;
+}
+
+th {
+  padding: 3px;
+  background-color: #f0f0f0;
+  text-align: left;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+tr {
+  background-color: #ffffff;
+}
+
+td {
+  padding: 3px;
+  line-height: 19px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  background-color: #cccccc;
+  margin: 10px 0 10px 0;
+}
+
+#menu {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-left: 8px;
+  margin-right: 8px;
+  background: #FFFFFF;
+  width: 100%
+}
+
+#resultTable {
+  margin: 100px 0 10px 0;
+}
 </style>
 <script>
-var xmlDoc;
-var xslDoc;
-var sortKey = "insertDTTM";
-var sortType = "text";
-var sortOrder = "descending";
-var filterKey = "*";
+    var sortKey = "insertDTTM";
+    var sortType = "text";
+    var sortOrder = "descending";
+    var filterKey = "*";
 
-function loadXmlWithXsl(xmlPath, xslPath) {
-  var xmlhttp = new XMLHttpRequest();
-  var xslhttp = new XMLHttpRequest();
-  xmlhttp.onreadystatechange = function() {
-    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-      xmlDoc = xmlhttp.responseXML;
-      xslhttp.onreadystatechange = function() {
-        if (xslhttp.readyState == 4 && xslhttp.status == 200) {
-          xslDoc = xslhttp.responseXML;
-          doTranslation();
+    function loadXMLDoc(filename) {
+        if (window.ActiveXObject) {
+            xhttp = new ActiveXObject("Msxml2.XMLHTTP");
+        } else {
+            xhttp = new XMLHttpRequest();
         }
-      };
+        xhttp.open("GET", filename, false);
+        try {
+            xhttp.responseType = "msxml-document"
+        } catch (err) {
+        } // Helping IE11
+        xhttp.send("");
+        return xhttp.responseXML;
     }
-  };
-  xmlhttp.open("GET", xmlPath, true);
-  xmlhttp.send();
-  xslhttp.open("GET", xslPath, true);
-  xslhttp.send();
-}
 
-function doTranslation() {
-  var processor = new XSLTProcessor();
-  processor.importStylesheet(xslDoc);
-  processor.setParameter(null, "sortKey", sortKey);
-  processor.setParameter(null, "sortOrder", sortOrder);
-  processor.setParameter(null, "sortType", sortType);
-  processor.setParameter(null, "filterKey", filterKey);
-  var newDocument = processor.transformToDocument(xmlDoc);
-  document.getElementById("resultBody").innerHTML = new XMLSerializer().serializeToString(newDocument);
-}
+    function displayResult() {
+        var xmlDoc = loadXMLDoc("MyMovie.xml");
+        var xslDoc = loadXMLDoc("MyMovie.xsl");
+        if (window.ActiveXObject || xhttp.responseType == "msxml-document") {
+            // code for IE
+            ex = xmlDoc.transformNode(xslDoc);
+            document.getElementById("resultBody").innerHTML = ex;
+        } else if (document.implementation
+                && document.implementation.createDocument) {
+            // code for Chrome, Firefox, Opera, etc.
+            xsltProcessor = new XSLTProcessor();
+            xsltProcessor.importStylesheet(xslDoc);
+            xsltProcessor.setParameter(null, "sortKey", sortKey);
+            xsltProcessor.setParameter(null, "sortOrder", sortOrder);
+            xsltProcessor.setParameter(null, "sortType", sortType);
+            xsltProcessor.setParameter(null, "filterKey", filterKey);
+            resultDocument = xsltProcessor
+                    .transformToFragment(xmlDoc, document);
+            document.getElementById("resultBody").innerHTML = new XMLSerializer().serializeToString(resultDocument);
+        }
+    }
 
-function resort(which) {
-  if (sortKey == which) {
-    sortOrder = (sortOrder == "ascending") ? "descending" : "ascending";
-  } else {
-    sortKey = which;
-    sortOrder = "ascending";
-  }
-  sortType = (sortKey == "price" || sortKey == "year") ? "number" : "text";
-  doTranslation();
-}
+    function resort(which) {
+        if (sortKey == which) {
+            sortOrder = (sortOrder == "ascending") ? "descending" : "ascending";
+        } else {
+            sortKey = which;
+            sortOrder = "ascending";
+        }
+        sortType = (sortKey == "price" || sortKey == "year") ? "number" : "text";
+        displayResult();
+    }
 
-function filter(which) {
-  filterKey = which;
-  doTranslation();
-}
+    function filter(which) {
+        filterKey = which;
+        displayResult();
+    }
 </script>
 </head>
-<body onload="loadXmlWithXsl('MyMovie.xml', 'MyMovie.xsl')">
-  <div id="resultBody" />
+<body onload="displayResult()">
+  <div id="resultBody"></div>
 </body>
 </html>

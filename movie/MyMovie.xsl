@@ -7,7 +7,7 @@
 
   <xsl:template match="/">
     <div id="menu">
-      <h2>My Movie Collection</h2>
+      <h2>My Movie Collection (version 2)</h2>
       <table border="1">
         <tr bgcolor="#D8D8D8">
           <th>
