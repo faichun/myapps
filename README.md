@@ -2,11 +2,11 @@
 
 Applications are shared for personal use only.
 
-### Collection
+### Collection App
 
 - [Movie Collection](movie)
 
-### Stock
+### Stock App
 
 - [Buy/Sell Calculator](stock/calculator)
 - [Stock Price Quote](stock/quote)
