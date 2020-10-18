@@ -35,6 +35,9 @@
         </tr>
       </table>
     </div>
+    <br/>
+    <br/>
+    <br/>
     <div id="dataArea">
       <table id="resultTable" border="1" width="100%">
         <tr bgcolor="#D8D8D8">
