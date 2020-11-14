@@ -15,6 +15,22 @@
 
 <entries>
   <entry>
+    <title>Borat</title>
+    <year>2006</year>
+    <type>喜劇</type>
+    <hasBackup>0</hasBackup>
+    <insertDTTM>2020-11-13 00:00</insertDTTM>
+    <cinemaDTTM>gimy</cinemaDTTM>
+  </entry>
+  <entry>
+    <title>The Queen's Gambit</title>
+    <year>2020</year>
+    <type>電視</type>
+    <hasBackup>0</hasBackup>
+    <insertDTTM>2020-10-25 00:00</insertDTTM>
+    <cinemaDTTM>Netflix</cinemaDTTM>
+  </entry>
+  <entry>
     <title>Tehran</title>
     <year>2020</year>
     <type>電視</type>
