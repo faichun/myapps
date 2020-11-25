@@ -7,9 +7,9 @@
 
   <xsl:template match="/">
     <h1><b>My Movie Collection (version 2)</b></h1>
-    <div class="row" style="position: sticky;top: 0">
+    <div class="row">
       <div class="col-sm-12 border bg-light text-dark">
-        <table id="resultTable" class="table table-striped tableFixHead">
+        <table id="resultTable" class="table table-striped">
           <thead>
             <tr>
               <th colspan="6" bgcolor="#2A3B4C">
