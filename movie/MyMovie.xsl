@@ -6,9 +6,11 @@
   <xsl:param name="filterKey">*</xsl:param>
 
   <xsl:template match="/">
-    <h1><b>My Movie Collection (version 2)</b></h1>
+    <div class="jumbotron bg-primary text-light">
+      <h1><b>My Movie Collection (version 2)</b></h1>
+    </div>
     <div class="row">
-      <div class="col-sm-12 border bg-light text-dark">
+      <div class="col-sm-12 bg-light text-dark">
         <table id="resultTable" class="table table-striped">
           <thead>
             <tr>
