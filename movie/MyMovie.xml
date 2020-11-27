@@ -908,8 +908,8 @@
     <year>2019</year>
     <type>動畫</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2020-01-28 00:00</insertDTTM>
-    <cinemaDTTM>2019-11-23 12:50</cinemaDTTM>
+    <insertDTTM>2019-11-23 12:50</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Maleficent: Mistress of Evil</title>
@@ -988,8 +988,8 @@
     <year>2019</year>
     <type>動畫</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2019-08-11 23:00</insertDTTM>
-    <cinemaDTTM>2019-08-11 13:20</cinemaDTTM>
+    <insertDTTM>2019-08-11 13:20</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Aquaman</title>
@@ -1028,8 +1028,8 @@
     <year>2019</year>
     <type>動畫</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2019-05-01 16:00</insertDTTM>
-    <cinemaDTTM>2019-05-01 08:20</cinemaDTTM>
+    <insertDTTM>2019-05-01 08:20</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Cars 3</title>
@@ -1100,8 +1100,8 @@
     <year>2019</year>
     <type>動畫</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2019-04-26 01:00</insertDTTM>
-    <cinemaDTTM>2019-04-14 16:00</cinemaDTTM>
+    <insertDTTM>2019-04-14 16:00</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>The Silence</title>
@@ -1300,8 +1300,8 @@
     <year>2018</year>
     <type>動畫</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2018-12-24 00:00</insertDTTM>
-    <cinemaDTTM>2018-12-25 09:05</cinemaDTTM>
+    <insertDTTM>2018-12-25 09:05</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Wreck-It Ralph</title>
@@ -1388,8 +1388,8 @@
     <year>2017</year>
     <type>動畫</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2018-05-26 21:30</insertDTTM>
-    <cinemaDTTM>2017-01-19 09:30</cinemaDTTM>
+    <insertDTTM>2017-01-19 09:30</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>FullMetal Alchemist</title>
@@ -1605,7 +1605,7 @@
     <type>動畫</type>
     <hasBackup>0</hasBackup>
     <insertDTTM>2018-02-16 10:50</insertDTTM>
-    <cinemaDTTM>2018-02-16 10:50</cinemaDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Vi</title>
@@ -1820,8 +1820,8 @@
     <year>2017</year>
     <type>動畫</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2018-01-09 00:00</insertDTTM>
-    <cinemaDTTM>2018-01-01 08:45</cinemaDTTM>
+    <insertDTTM>2018-01-01 08:45</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>1922</title>
@@ -1858,7 +1858,7 @@
   <entry>
     <title>反黑</title>
     <year>2017</year>
-    <type>警匪</type>
+    <type>電視</type>
     <hasBackup>0</hasBackup>
     <insertDTTM>2017-10-06 00:00</insertDTTM>
     <cinemaDTTM>YouTube</cinemaDTTM>
@@ -2053,7 +2053,7 @@
     <type>動畫</type>
     <hasBackup>0</hasBackup>
     <insertDTTM>2017-06-17 13:25</insertDTTM>
-    <cinemaDTTM>2017-06-17 13:25</cinemaDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>合約男女</title>
@@ -2068,8 +2068,8 @@
     <year>2017</year>
     <type>動畫</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2017-04-08 00:00</insertDTTM>
-    <cinemaDTTM>2017-04-04 09:20</cinemaDTTM>
+    <insertDTTM>2017-04-04 09:20</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Allied</title>
@@ -2493,7 +2493,7 @@
     <type>警匪</type>
     <hasBackup>0</hasBackup>
     <insertDTTM>2016-07-12 22:20</insertDTTM>
-    <cinemaDTTM>2016-07-12 22:20</cinemaDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>The Secret Life Of Pets</title>
@@ -2501,7 +2501,7 @@
     <type>動畫</type>
     <hasBackup>0</hasBackup>
     <insertDTTM>2016-07-01 09:15</insertDTTM>
-    <cinemaDTTM>2016-07-01 09:15</cinemaDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Divergent Series : #3 Allegiant</title>
@@ -2676,8 +2676,8 @@
     <year>2016</year>
     <type>動畫</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2016-06-11 00:00</insertDTTM>
-    <cinemaDTTM>2016-06-09 09:00</cinemaDTTM>
+    <insertDTTM>2016-06-09 09:00</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Look Who's Back</title>
@@ -2797,7 +2797,7 @@
     <type>喜劇</type>
     <hasBackup>0</hasBackup>
     <insertDTTM>2016-01-09 21:00</insertDTTM>
-    <cinemaDTTM>2016-01-09 21:00</cinemaDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Four Christmases</title>
@@ -2805,7 +2805,7 @@
     <type>愛情</type>
     <hasBackup>0</hasBackup>
     <insertDTTM>2016-01-08 21:00</insertDTTM>
-    <cinemaDTTM>2016-01-08 21:00</cinemaDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>400 Days</title>
@@ -3020,40 +3020,40 @@
     <year>2015</year>
     <type>科幻</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2016-01-03 00:00</insertDTTM>
-    <cinemaDTTM>2015-12-19 19:30</cinemaDTTM>
+    <insertDTTM>2015-12-19 19:30</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Planes</title>
     <year>2013</year>
     <type>動畫</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2016-01-03 00:00</insertDTTM>
-    <cinemaDTTM>2016-01-03 21:30</cinemaDTTM>
+    <insertDTTM>2016-01-03 21:30</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Intern</title>
     <year>2015</year>
     <type>喜劇</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2015-10-02 01:00</insertDTTM>
-    <cinemaDTTM>2015-09-25 17:20</cinemaDTTM>
+    <insertDTTM>2015-09-25 17:20</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Tomorrowland</title>
     <year>2015</year>
     <type>科幻</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2015-09-20 00:00</insertDTTM>
-    <cinemaDTTM>2015-07-30 09:00</cinemaDTTM>
+    <insertDTTM>2015-07-30 09:00</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Inside Out</title>
     <year>2015</year>
     <type>動畫</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2015-09-20 00:00</insertDTTM>
-    <cinemaDTTM>2015-08-14 19:00</cinemaDTTM>
+    <insertDTTM>2015-08-14 19:00</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Everest</title>
@@ -3061,7 +3061,7 @@
     <type>紀錄</type>
     <hasBackup>0</hasBackup>
     <insertDTTM>2015-09-20 00:00</insertDTTM>
-    <cinemaDTTM>2015-09-13 22:00</cinemaDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Z for Zachariah</title>
@@ -3501,7 +3501,7 @@
     <type>喜劇</type>
     <hasBackup>1</hasBackup>
     <insertDTTM>2014-12-26 09:25</insertDTTM>
-    <cinemaDTTM>2014-12-26 09:25</cinemaDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Los cronocrímenes（Time Crimes）</title>
@@ -3605,7 +3605,7 @@
     <type>科幻</type>
     <hasBackup>0</hasBackup>
     <insertDTTM>2014-11-06 22:05</insertDTTM>
-    <cinemaDTTM>2014-11-06 22:05</cinemaDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Saints and Soldiers 3: The Void</title>
@@ -3772,8 +3772,8 @@
     <year>2013</year>
     <type>愛情</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2014-09-09 20:00</insertDTTM>
-    <cinemaDTTM>2014-09-09 14:00</cinemaDTTM>
+    <insertDTTM>2014-09-09 14:00</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>App</title>
@@ -3789,7 +3789,7 @@
     <type>動畫</type>
     <hasBackup>0</hasBackup>
     <insertDTTM>2014-07-22 09:30</insertDTTM>
-    <cinemaDTTM>2014-07-22 09:30</cinemaDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Alice in Wonderland</title>
@@ -3877,7 +3877,7 @@
     <type>動畫</type>
     <hasBackup>0</hasBackup>
     <insertDTTM>2014-06-28 09:10</insertDTTM>
-    <cinemaDTTM>2014-06-28 09:10</cinemaDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Winnie the Pooh</title>
@@ -3925,7 +3925,7 @@
     <type>魔幻</type>
     <hasBackup>0</hasBackup>
     <insertDTTM>2014-06-06 19:30</insertDTTM>
-    <cinemaDTTM>2014-06-06 19:30</cinemaDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>The Bible</title>
@@ -3997,7 +3997,7 @@
     <type>科幻</type>
     <hasBackup>0</hasBackup>
     <insertDTTM>2014-05-18 21:50</insertDTTM>
-    <cinemaDTTM>2014-05-18 21:50</cinemaDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>風立ちぬ（The Wind Rises）</title>
@@ -4173,7 +4173,7 @@
     <type>戰爭</type>
     <hasBackup>0</hasBackup>
     <insertDTTM>2014-03-05 17:15</insertDTTM>
-    <cinemaDTTM>2014-03-05 17:15</cinemaDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Star Trek (#11)</title>
@@ -4364,8 +4364,8 @@
     <year>2013</year>
     <type>動畫</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2014-01-03 00:00</insertDTTM>
-    <cinemaDTTM>2014-01-03 13:35</cinemaDTTM>
+    <insertDTTM>2014-01-03 13:35</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Toy Story 2</title>
@@ -5156,112 +5156,112 @@
     <year>2001</year>
     <type>喜劇</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2001-03-25 14:20</cinemaDTTM>
+    <insertDTTM>2001-03-25 14:20</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>미녀는 괴로워（醜女大翻身）</title>
     <year>2007</year>
     <type>喜劇</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2007-05-27 12:20</cinemaDTTM>
+    <insertDTTM>2007-05-27 12:20</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>趙氏孤兒</title>
     <year>2011</year>
     <type>戰爭</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2011-03-31 11:50</cinemaDTTM>
+    <insertDTTM>2011-03-31 11:50</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>瘋狂的石頭</title>
     <year>2006</year>
     <type>喜劇</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2006-08-18 19:55</cinemaDTTM>
+    <insertDTTM>2006-08-18 19:55</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>無間道III：終極無間</title>
     <year>2003</year>
     <type>警匪</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2003-12-21 12:30</cinemaDTTM>
+    <insertDTTM>2003-12-21 12:30</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>無間道</title>
     <year>2002</year>
     <type>警匪</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2002-12-14 12:10</cinemaDTTM>
+    <insertDTTM>2002-12-14 12:10</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>奪命金</title>
     <year>2011</year>
     <type>懸疑</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2011-10-15 22:00</cinemaDTTM>
+    <insertDTTM>2011-10-15 22:00</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>子ぎつねヘレン（Helen The Baby Fox）</title>
     <year>2006</year>
     <type>劇情</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2006-07-21 19:40</cinemaDTTM>
+    <insertDTTM>2006-07-21 19:40</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>中華英雄</title>
     <year>1999</year>
     <type>動作</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>1999-07-21 19:20</cinemaDTTM>
+    <insertDTTM>1999-07-21 19:20</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>伊莎貝拉（Isabella）</title>
     <year>2006</year>
     <type>愛情</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2006-04-23 19:55</cinemaDTTM>
+    <insertDTTM>2006-04-23 19:55</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>熊貓回家路</title>
     <year>2009</year>
     <type>愛情</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2009-05-23 10:00</cinemaDTTM>
+    <insertDTTM>2009-05-23 10:00</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>夏日的麼麼茶（Summer Holiday）</title>
     <year>2000</year>
     <type>愛情</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2000-08-18 21:45</cinemaDTTM>
+    <insertDTTM>2000-08-18 21:45</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>新宿事件</title>
     <year>2009</year>
     <type>警匪</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2009-04-04 09:00</cinemaDTTM>
+    <insertDTTM>2009-04-04 09:00</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>生日快樂</title>
     <year>2007</year>
     <type>愛情</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2007-01-27 20:00</cinemaDTTM>
+    <insertDTTM>2007-01-27 20:00</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>神奇俠侶</title>
@@ -5276,104 +5276,104 @@
     <year>2006</year>
     <type>災難</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2006-08-29 14:50</cinemaDTTM>
+    <insertDTTM>2006-08-29 14:50</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>拳神</title>
     <year>2001</year>
     <type>動作</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2001-12-08 17:45</cinemaDTTM>
+    <insertDTTM>2001-12-08 17:45</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>南京！南京！</title>
     <year>2009</year>
     <type>戰爭</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2009-05-16 19:15</cinemaDTTM>
+    <insertDTTM>2009-05-16 19:15</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>那些年, 我們一起追的女孩</title>
     <year>2011</year>
     <type>愛情</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2011-10-22 09:00</cinemaDTTM>
+    <insertDTTM>2011-10-22 09:00</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>墨攻</title>
     <year>2006</year>
     <type>戰爭</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2006-11-23 11:35</cinemaDTTM>
+    <insertDTTM>2006-11-23 11:35</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>盲導犬クイールの一生（Quill）</title>
     <year>2004</year>
     <type>愛情</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2004-08-07 20:00</cinemaDTTM>
+    <insertDTTM>2004-08-07 20:00</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>落葉歸根</title>
     <year>2007</year>
     <type>喜劇</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2007-01-26 19:50</cinemaDTTM>
+    <insertDTTM>2007-01-26 19:50</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>硫黄島からの手紙（Letters from Iwo Jima）</title>
     <year>2007</year>
     <type>戰爭</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2007-03-11 11:35</cinemaDTTM>
+    <insertDTTM>2007-03-11 11:35</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>花樣年華（In The Mood For Love）</title>
     <year>2000</year>
     <type>劇情</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2000-10-07 19:55</cinemaDTTM>
+    <insertDTTM>2000-10-07 19:55</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>黑社會2之以和為貴（Election 2）</title>
     <year>2006</year>
     <type>警匪</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2006-04-29 21:00</cinemaDTTM>
+    <insertDTTM>2006-04-29 21:00</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>黑社會（Election）</title>
     <year>2005</year>
     <type>警匪</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2005-10-22 16:00</cinemaDTTM>
+    <insertDTTM>2005-10-22 16:00</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>跟蹤</title>
     <year>2007</year>
     <type>警匪</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2007-06-23 10:30</cinemaDTTM>
+    <insertDTTM>2007-06-23 10:30</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>功夫</title>
     <year>2005</year>
     <type>動作</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2005-01-15 22:20</cinemaDTTM>
+    <insertDTTM>2005-01-15 22:20</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>毒戰</title>
@@ -5396,16 +5396,16 @@
     <year>2006</year>
     <type>喜劇</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2006-09-17 10:45</cinemaDTTM>
+    <insertDTTM>2006-09-17 10:45</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>大追捕</title>
     <year>2012</year>
     <type>警匪</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2012-04-05 11:35</cinemaDTTM>
+    <insertDTTM>2012-04-05 11:35</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>打擂台</title>
@@ -5420,96 +5420,96 @@
     <year>2009</year>
     <type>喜劇</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2009-02-27 19:55</cinemaDTTM>
+    <insertDTTM>2009-02-27 19:55</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Windtalkers</title>
     <year>2002</year>
     <type>戰爭</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2002-07-06 21:45</cinemaDTTM>
+    <insertDTTM>2002-07-06 21:45</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>What Lies Beneath</title>
     <year>2000</year>
     <type>懸疑</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2000-09-09 21:35</cinemaDTTM>
+    <insertDTTM>2000-09-09 21:35</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>What Happens in Vegas</title>
     <year>2008</year>
     <type>愛情</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2008-05-17 21:40</cinemaDTTM>
+    <insertDTTM>2008-05-17 21:40</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>War of the Worlds</title>
     <year>2005</year>
     <type>災難</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2005-07-15 21:40</cinemaDTTM>
+    <insertDTTM>2005-07-15 21:40</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>WALL．E</title>
     <year>2008</year>
     <type>動畫</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2008-08-16 09:55</cinemaDTTM>
+    <insertDTTM>2008-08-16 09:55</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Up</title>
     <year>2009</year>
     <type>動畫</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2009-08-08 09:30</cinemaDTTM>
+    <insertDTTM>2009-08-08 09:30</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Upside Down</title>
     <year>2012</year>
     <type>懸疑</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2012-10-05 21:55</cinemaDTTM>
+    <insertDTTM>2012-10-05 21:55</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>U-571</title>
     <year>2000</year>
     <type>戰爭</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2000-06-30 20:20</cinemaDTTM>
+    <insertDTTM>2000-06-30 20:20</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Troy</title>
     <year>2004</year>
     <type>戰爭</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2004-06-19 09:30</cinemaDTTM>
+    <insertDTTM>2004-06-19 09:30</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Traffic</title>
     <year>2001</year>
     <type>劇情</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2001-03-24 18:00</cinemaDTTM>
+    <insertDTTM>2001-03-24 18:00</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Toy Story 3</title>
     <year>2010</year>
     <type>動畫</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2010-08-14 12:30</cinemaDTTM>
+    <insertDTTM>2010-08-14 12:30</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Total Recall</title>
@@ -5524,40 +5524,40 @@
     <year>1997</year>
     <type>紀錄</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>1997-12-23 19:15</cinemaDTTM>
+    <insertDTTM>1997-12-23 19:15</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>The Time Machine</title>
     <year>2002</year>
     <type>科幻</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2002-04-01 19:50</cinemaDTTM>
+    <insertDTTM>2002-04-01 19:50</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>The Reaping</title>
     <year>2007</year>
     <type>災難</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2007-04-06 19:55</cinemaDTTM>
+    <insertDTTM>2007-04-06 19:55</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>The Rock</title>
     <year>1996</year>
     <type>動作</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>1996-08-25 17:00</cinemaDTTM>
+    <insertDTTM>1996-08-25 17:00</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>The Pursuit Of Happyness</title>
     <year>2007</year>
     <type>劇情</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2007-04-04 21:35</cinemaDTTM>
+    <insertDTTM>2007-04-04 21:35</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>The Purge</title>
@@ -5572,48 +5572,48 @@
     <year>1998</year>
     <type>動畫</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>1998-12-29 19:45</cinemaDTTM>
+    <insertDTTM>1998-12-29 19:45</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>The Passion of The Christ</title>
     <year>2004</year>
     <type>紀錄</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2004-04-10 19:30</cinemaDTTM>
+    <insertDTTM>2004-04-10 19:30</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>The Omen</title>
     <year>2006</year>
     <type>恐怖</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2006-06-06 20:15</cinemaDTTM>
+    <insertDTTM>2006-06-06 20:15</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>The Lord of The Ring</title>
     <year>2002</year>
     <type>魔幻</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2002-02-02 15:15</cinemaDTTM>
+    <insertDTTM>2002-02-02 15:15</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>The Invasion</title>
     <year>2007</year>
     <type>恐怖</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2007-08-25 18:05</cinemaDTTM>
+    <insertDTTM>2007-08-25 18:05</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>The Island</title>
     <year>2005</year>
     <type>懸疑</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2005-07-28 19:20</cinemaDTTM>
+    <insertDTTM>2005-07-28 19:20</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>MCU - The Incredible Hulk</title>
@@ -5628,8 +5628,8 @@
     <year>2010</year>
     <type>劇情</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2010-01-24 14:40</cinemaDTTM>
+    <insertDTTM>2010-01-24 14:40</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>The Hangover</title>
@@ -5644,40 +5644,40 @@
     <year>1997</year>
     <type>災難</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>1997-06-17 14:05</cinemaDTTM>
+    <insertDTTM>1997-06-17 14:05</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>The Counterfeiters</title>
     <year>2008</year>
     <type>劇情</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2008-06-08 16:35</cinemaDTTM>
+    <insertDTTM>2008-06-08 16:35</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>The Cell</title>
     <year>2000</year>
     <type>恐怖</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2000-10-28 18:10</cinemaDTTM>
+    <insertDTTM>2000-10-28 18:10</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>The Bug's Life</title>
     <year>1998</year>
     <type>動畫</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>1998-12-29 14:10</cinemaDTTM>
+    <insertDTTM>1998-12-29 14:10</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>The Bone Collector</title>
     <year>2000</year>
     <type>懸疑</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2000-01-07 14:10</cinemaDTTM>
+    <insertDTTM>2000-01-07 14:10</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>MCU - Avengers 1: The Avengers</title>
@@ -5692,104 +5692,104 @@
     <year>2003</year>
     <type>科幻</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2003-07-12 17:25</cinemaDTTM>
+    <insertDTTM>2003-07-12 17:25</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Ted</title>
     <year>2012</year>
     <type>喜劇</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2012-10-06 10:10</cinemaDTTM>
+    <insertDTTM>2012-10-06 10:10</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Superhero Movie</title>
     <year>2008</year>
     <type>喜劇</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2008-06-29 14:40</cinemaDTTM>
+    <insertDTTM>2008-06-29 14:40</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Superman Returns</title>
     <year>2006</year>
     <type>動作</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2006-07-18 21:45</cinemaDTTM>
+    <insertDTTM>2006-07-18 21:45</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Step Up 2: The Streets</title>
     <year>2008</year>
     <type>劇情</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2008-04-06 19:50</cinemaDTTM>
+    <insertDTTM>2008-04-06 19:50</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Star Wars 1: The Phantom Menace</title>
     <year>1999</year>
     <type>科幻</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>1999-07-01 12:00</cinemaDTTM>
+    <insertDTTM>1999-07-01 12:00</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Star Wars 2: Attack of the Clones</title>
     <year>2002</year>
     <type>科幻</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2002-05-17 21:55</cinemaDTTM>
+    <insertDTTM>2002-05-17 21:55</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Star Trek (#08) First Contact</title>
     <year>1997</year>
     <type>科幻</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>1997-02-14 21:45</cinemaDTTM>
+    <insertDTTM>1997-02-14 21:45</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Shrek 3</title>
     <year>2007</year>
     <type>動畫</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2007-06-30 11:15</cinemaDTTM>
+    <insertDTTM>2007-06-30 11:15</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Shrek Forever After</title>
     <year>2010</year>
     <type>動畫</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2010-07-01 09:40</cinemaDTTM>
+    <insertDTTM>2010-07-01 09:40</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Scary Movie 2</title>
     <year>2001</year>
     <type>恐怖</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2001-09-15 17:55</cinemaDTTM>
+    <insertDTTM>2001-09-15 17:55</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Seabiscuit</title>
     <year>2003</year>
     <type>劇情</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2003-10-26 15:40</cinemaDTTM>
+    <insertDTTM>2003-10-26 15:40</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Saving Private Ryan</title>
     <year>1998</year>
     <type>戰爭</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>1998-09-22 21:20</cinemaDTTM>
+    <insertDTTM>1998-09-22 21:20</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Rommel</title>
@@ -5804,24 +5804,24 @@
     <year>2000</year>
     <type>喜劇</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2000-10-31 20:00</cinemaDTTM>
+    <insertDTTM>2000-10-31 20:00</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Ratatouille</title>
     <year>2007</year>
     <type>動畫</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2007-08-11 09:10</cinemaDTTM>
+    <insertDTTM>2007-08-11 09:10</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Puss In Boots</title>
     <year>2012</year>
     <type>動畫</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2012-02-04 09:30</cinemaDTTM>
+    <insertDTTM>2012-02-04 09:30</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>PI</title>
@@ -5836,8 +5836,8 @@
     <year>2007</year>
     <type>動畫</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2007-12-15 21:55</cinemaDTTM>
+    <insertDTTM>2007-12-15 21:55</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Olympus Has Fallen</title>
@@ -5860,8 +5860,8 @@
     <year>1999</year>
     <type>愛情</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>1999-06-19 16:05</cinemaDTTM>
+    <insertDTTM>1999-06-19 16:05</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>North Face</title>
@@ -5876,72 +5876,72 @@
     <year>2007</year>
     <type>喜劇</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2007-04-22 16:30</cinemaDTTM>
+    <insertDTTM>2007-04-22 16:30</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Mirror Mirror</title>
     <year>2012</year>
     <type>魔幻</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2012-04-05 21:40</cinemaDTTM>
+    <insertDTTM>2012-04-05 21:40</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Minority Report</title>
     <year>2002</year>
     <type>科幻</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2002-07-06 15:45</cinemaDTTM>
+    <insertDTTM>2002-07-06 15:45</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Merry Christmas</title>
     <year>2005</year>
     <type>戰爭</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2005-12-24 23:50</cinemaDTTM>
+    <insertDTTM>2005-12-24 23:50</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Men of Honor</title>
     <year>2000</year>
     <type>劇情</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2000-11-18 21:40</cinemaDTTM>
+    <insertDTTM>2000-11-18 21:40</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Matrix Revolutions</title>
     <year>2003</year>
     <type>科幻</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2003-11-08 20:00</cinemaDTTM>
+    <insertDTTM>2003-11-08 20:00</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Matrix Reloaded</title>
     <year>2003</year>
     <type>科幻</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2003-05-24 21:40</cinemaDTTM>
+    <insertDTTM>2003-05-24 21:40</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Mamma Mia</title>
     <year>2008</year>
     <type>愛情</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2008-09-15 15:45</cinemaDTTM>
+    <insertDTTM>2008-09-15 15:45</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Madagascar 2</title>
     <year>2008</year>
     <type>動畫</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2008-12-20 10:45</cinemaDTTM>
+    <insertDTTM>2008-12-20 10:45</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Madagascar</title>
@@ -5956,40 +5956,40 @@
     <year>2012</year>
     <type>科幻</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2012-10-03 15:40</cinemaDTTM>
+    <insertDTTM>2012-10-03 15:40</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Ladder 49</title>
     <year>2004</year>
     <type>劇情</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2004-10-29 19:15</cinemaDTTM>
+    <insertDTTM>2004-10-29 19:15</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Knowing</title>
     <year>2009</year>
     <type>災難</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2009-04-25 10:25</cinemaDTTM>
+    <insertDTTM>2009-04-25 10:25</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Juno</title>
     <year>2008</year>
     <type>愛情</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2008-03-09 19:55</cinemaDTTM>
+    <insertDTTM>2008-03-09 19:55</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>MCU - Iron Man 3</title>
     <year>2013</year>
     <type>動作</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2013-05-06 16:20</cinemaDTTM>
+    <insertDTTM>2013-05-06 16:20</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>MCU - Iron Man</title>
@@ -6012,8 +6012,8 @@
     <year>2010</year>
     <type>懸疑</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2010-07-30 09:40</cinemaDTTM>
+    <insertDTTM>2010-07-30 09:40</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Ice Age 3</title>
@@ -6028,192 +6028,192 @@
     <year>2012</year>
     <type>動畫</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2012-07-07 09:00</cinemaDTTM>
+    <insertDTTM>2012-07-07 09:00</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>How To Train Your Dragon</title>
     <year>2010</year>
     <type>動畫</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2010-04-01 09:30</cinemaDTTM>
+    <insertDTTM>2010-04-01 09:30</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Horton Hears</title>
     <year>2008</year>
     <type>動畫</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2008-03-24 12:10</cinemaDTTM>
+    <insertDTTM>2008-03-24 12:10</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Harry Potter</title>
     <year>2001</year>
     <type>魔幻</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2001-12-31 12:45</cinemaDTTM>
+    <insertDTTM>2001-12-31 12:45</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Happily Never After</title>
     <year>2007</year>
     <type>動畫</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2007-04-05 17:40</cinemaDTTM>
+    <insertDTTM>2007-04-05 17:40</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Hancock</title>
     <year>2008</year>
     <type>動作</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2008-07-19 11:40</cinemaDTTM>
+    <insertDTTM>2008-07-19 11:40</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Hannibal</title>
     <year>2001</year>
     <type>恐怖</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2001-03-10 19:15</cinemaDTTM>
+    <insertDTTM>2001-03-10 19:15</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Gulliver's Travel</title>
     <year>2010</year>
     <type>冒險</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2010-12-25 09:50</cinemaDTTM>
+    <insertDTTM>2010-12-25 09:50</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Ghost Ship</title>
     <year>2002</year>
     <type>恐怖</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2002-11-02 21:30</cinemaDTTM>
+    <insertDTTM>2002-11-02 21:30</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Frequency</title>
     <year>2000</year>
     <type>科幻</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2000-10-21 19:20</cinemaDTTM>
+    <insertDTTM>2000-10-21 19:20</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Flags of Our Fathers</title>
     <year>2007</year>
     <type>戰爭</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2007-01-13 21:40</cinemaDTTM>
+    <insertDTTM>2007-01-13 21:40</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Face Off</title>
     <year>1997</year>
     <type>警匪</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>1997-08-26 19:30</cinemaDTTM>
+    <insertDTTM>1997-08-26 19:30</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Existenz</title>
     <year>1999</year>
     <type>恐怖</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>1999-11-04 17:30</cinemaDTTM>
+    <insertDTTM>1999-11-04 17:30</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Enchanted</title>
     <year>2008</year>
     <type>魔幻</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2008-02-23 20:05</cinemaDTTM>
+    <insertDTTM>2008-02-23 20:05</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Eat Pray Love</title>
     <year>2010</year>
     <type>愛情</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2010-10-19 11:30</cinemaDTTM>
+    <insertDTTM>2010-10-19 11:30</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Dracula 2001</title>
     <year>2001</year>
     <type>恐怖</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2001-03-31 17:55</cinemaDTTM>
+    <insertDTTM>2001-03-31 17:55</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Despicable Me</title>
     <year>2010</year>
     <type>動畫</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2010-08-07 10:10</cinemaDTTM>
+    <insertDTTM>2010-08-07 10:10</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Despicable Me 2</title>
     <year>2013</year>
     <type>動畫</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2013-07-10 20:30</cinemaDTTM>
+    <insertDTTM>2013-07-10 20:30</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Deep Impact</title>
     <year>1998</year>
     <type>災難</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>1998-06-04 16:00</cinemaDTTM>
+    <insertDTTM>1998-06-04 16:00</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Death Note</title>
     <year>2006</year>
     <type>懸疑</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2006-08-12 17:00</cinemaDTTM>
+    <insertDTTM>2006-08-12 17:00</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Death Note: The Last Name</title>
     <year>2006</year>
     <type>懸疑</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2006-11-03 11:30</cinemaDTTM>
+    <insertDTTM>2006-11-03 11:30</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Daredevil</title>
     <year>2003</year>
     <type>動作</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2003-03-01 16:00</cinemaDTTM>
+    <insertDTTM>2003-03-01 16:00</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Das Leben der Anderen（The Lives of Others）</title>
     <year>2007</year>
     <type>紀錄</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2007-02-11 19:15</cinemaDTTM>
+    <insertDTTM>2007-02-11 19:15</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Constantine</title>
     <year>2005</year>
     <type>科幻</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2005-02-15 17:00</cinemaDTTM>
+    <insertDTTM>2005-02-15 17:00</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Cloud Atlas</title>
@@ -6228,48 +6228,48 @@
     <year>2006</year>
     <type>喜劇</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2006-09-19 21:40</cinemaDTTM>
+    <insertDTTM>2006-09-19 21:40</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Cherry Falls</title>
     <year>2000</year>
     <type>恐怖</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2000-10-14 21:15</cinemaDTTM>
+    <insertDTTM>2000-10-14 21:15</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Charlie Wilson's War</title>
     <year>2008</year>
     <type>紀錄</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2008-03-22 16:05</cinemaDTTM>
+    <insertDTTM>2008-03-22 16:05</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Cast Away</title>
     <year>2000</year>
     <type>冒險</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2000-02-20 19:30</cinemaDTTM>
+    <insertDTTM>2000-02-20 19:30</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Catch Me If You Can</title>
     <year>2003</year>
     <type>警匪</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2003-02-08 16:35</cinemaDTTM>
+    <insertDTTM>2003-02-08 16:35</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Cars</title>
     <year>2006</year>
     <type>動畫</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2006-07-26 19:30</cinemaDTTM>
+    <insertDTTM>2006-07-26 19:30</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>MCU - Captain America 1: The First Avenger</title>
@@ -6284,16 +6284,16 @@
     <year>2000</year>
     <type>喜劇</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2000-11-12 17:55</cinemaDTTM>
+    <insertDTTM>2000-11-12 17:55</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Brokeback Mountain</title>
     <year>2006</year>
     <type>情色</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2006-03-05 16:50</cinemaDTTM>
+    <insertDTTM>2006-03-05 16:50</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Black Swan</title>
@@ -6308,56 +6308,56 @@
     <year>2006</year>
     <type>警匪</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2006-01-28 19:10</cinemaDTTM>
+    <insertDTTM>2006-01-28 19:10</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Black Book</title>
     <year>2007</year>
     <type>戰爭</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2007-06-05 19:00</cinemaDTTM>
+    <insertDTTM>2007-06-05 19:00</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Black Hawn Down</title>
     <year>2002</year>
     <type>戰爭</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2002-01-26 17:30</cinemaDTTM>
+    <insertDTTM>2002-01-26 17:30</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Bedazzled</title>
     <year>2000</year>
     <type>喜劇</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2000-12-06 16:10</cinemaDTTM>
+    <insertDTTM>2000-12-06 16:10</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Battle Royale</title>
     <year>2001</year>
     <type>恐怖</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2001-01-20 17:20</cinemaDTTM>
+    <insertDTTM>2001-01-20 17:20</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Avatar</title>
     <year>2009</year>
     <type>科幻</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2009-12-26 10:00</cinemaDTTM>
+    <insertDTTM>2009-12-26 10:00</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Apocalypto</title>
     <year>2007</year>
     <type>科幻</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2007-03-29 16:35</cinemaDTTM>
+    <insertDTTM>2007-03-29 16:35</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Anna and the King</title>
@@ -6372,8 +6372,8 @@
     <year>1999</year>
     <type>喜劇</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>1999-06-28 13:50</cinemaDTTM>
+    <insertDTTM>1999-06-28 13:50</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>American Reunion</title>
@@ -6396,8 +6396,8 @@
     <year>2013</year>
     <type>科幻</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2013-06-14 16:20</cinemaDTTM>
+    <insertDTTM>2013-06-14 16:20</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>Admission</title>
@@ -6412,40 +6412,40 @@
     <year>2009</year>
     <type>劇情</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2009-11-28 09:50</cinemaDTTM>
+    <insertDTTM>2009-11-28 09:50</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>A.I. Artificial Intelligence</title>
     <year>2001</year>
     <type>科幻</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2001-08-25 16:10</cinemaDTTM>
+    <insertDTTM>2001-08-25 16:10</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>300</title>
     <year>2007</year>
     <type>戰爭</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2007-03-17 20:05</cinemaDTTM>
+    <insertDTTM>2007-03-17 20:05</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>28 Days Later</title>
     <year>2003</year>
     <type>災難</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2003-11-15 19:50</cinemaDTTM>
+    <insertDTTM>2003-11-15 19:50</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>2012</title>
     <year>2009</year>
     <type>災難</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2009-11-17 10:30</cinemaDTTM>
+    <insertDTTM>2009-11-17 10:30</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>1942</title>
@@ -6460,8 +6460,8 @@
     <year>2001</year>
     <type>警匪</type>
     <hasBackup>0</hasBackup>
-    <insertDTTM>2013-01-01 01:00</insertDTTM>
-    <cinemaDTTM>2000-04-07 19:30</cinemaDTTM>
+    <insertDTTM>2000-04-07 19:30</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>100 Degrees Below Zero</title>
@@ -7588,8 +7588,8 @@
     <year>2007</year>
     <type>情色</type>
     <hasBackup>1</hasBackup>
-    <insertDTTM>2009-10-25 01:00</insertDTTM>
-    <cinemaDTTM>2007-09-30 16:05</cinemaDTTM>
+    <insertDTTM>2007-09-30 16:05</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>人魚朵朵</title>
@@ -7796,8 +7796,8 @@
     <year>2000</year>
     <type>動作</type>
     <hasBackup>1</hasBackup>
-    <insertDTTM>2009-10-25 01:00</insertDTTM>
-    <cinemaDTTM>2000-12-26 16:05</cinemaDTTM>
+    <insertDTTM>2000-12-26 16:05</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>あらしのよるに（狼羊物語）</title>
@@ -7908,16 +7908,16 @@
     <year>2001</year>
     <type>冒險</type>
     <hasBackup>1</hasBackup>
-    <insertDTTM>2009-10-25 01:00</insertDTTM>
-    <cinemaDTTM>2001-06-16 17:00</cinemaDTTM>
+    <insertDTTM>2001-06-16 17:00</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>The Mummy</title>
     <year>1999</year>
     <type>冒險</type>
     <hasBackup>1</hasBackup>
-    <insertDTTM>2009-10-25 01:00</insertDTTM>
-    <cinemaDTTM>1999-07-24 16:10</cinemaDTTM>
+    <insertDTTM>1999-07-24 16:10</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>The Man from Earth</title>
@@ -7948,8 +7948,8 @@
     <year>2004</year>
     <type>災難</type>
     <hasBackup>1</hasBackup>
-    <insertDTTM>2009-10-25 01:00</insertDTTM>
-    <cinemaDTTM>2004-05-29 19:15</cinemaDTTM>
+    <insertDTTM>2004-05-29 19:15</insertDTTM>
+    <cinemaDTTM>Cinema</cinemaDTTM>
   </entry>
   <entry>
     <title>The Day The Earth Stood Still</title>
