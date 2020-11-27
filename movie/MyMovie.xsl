@@ -40,7 +40,7 @@
               <th><a href="javascript: resort('type');">Type</a><xsl:call-template name="hdr"><xsl:with-param name="header" select="'type'" /></xsl:call-template></th>
               <th><a href="javascript: resort('hasBackup');">Has Backup?</a><xsl:call-template name="hdr"><xsl:with-param name="header" select="'hasBackup'" /></xsl:call-template></th>
               <th><a href="javascript: resort('insertDTTM');">Insert Date/Time</a><xsl:call-template name="hdr"><xsl:with-param name="header" select="'insertDTTM'" /></xsl:call-template></th>
-              <th><a href="javascript: resort('cinemaDTTM');">Source</a><xsl:call-template name="hdr"><xsl:with-param name="header" select="'cinemaDTTM'" /></xsl:call-template></th>
+              <th><a href="javascript: resort('viewSource');">Source</a><xsl:call-template name="hdr"><xsl:with-param name="header" select="'viewSource'" /></xsl:call-template></th>
             </tr>
           </thead>
           <tbody>
@@ -61,11 +61,11 @@
               </td>
               <td><xsl:value-of select="insertDTTM"/></td>
               <td>
-                <xsl:if test="cinemaDTTM = ''">
+                <xsl:if test="viewSource = ''">
                   <xsl:text>--</xsl:text>
                 </xsl:if>
-                <xsl:if test="cinemaDTTM != ''">
-                  <xsl:value-of select="cinemaDTTM"/>
+                <xsl:if test="viewSource != ''">
+                  <xsl:value-of select="viewSource"/>
                 </xsl:if>
               </td>
             </tr>
