@@ -197,9 +197,9 @@
           </tr>
           <tr>
             <td><div class="form-control-plaintext">香 港</div><input type="hidden" name="market" value="hk" /></td>
-            <td><input type="number" min="0" class="form-control" name="quantity" maxlength="6" /></td>
-            <td><input type="number" min="0" inputmode="decimal" step=".01" class="form-control" name="price_buy" maxlength="6" /></td>
-            <td><input type="number" min="0" inputmode="decimal" step=".01" class="form-control" name="price_sell" maxlength="6" /></td>
+            <td><input type="number" min="0" inputmode="numeric" class="form-control" name="quantity" maxlength="6" /></td>
+            <td><input type="number" min="0" inputmode="decimal" class="form-control" name="price_buy" maxlength="6" /></td>
+            <td><input type="number" min="0" inputmode="decimal" class="form-control" step=".01" name="price_sell" maxlength="6" /></td>
           </tr>
           <tr class="table-primary">
             <td><div class="form-control-plaintext">最 低 佣 金</div></td>
@@ -207,8 +207,8 @@
             <td colspan="2"></td>
           </tr>
           <tr>
-            <td><input type="number" min="0" class="form-control" name="min_commission" maxlength="8" /></td>
-            <td><input type="number" step=".01" min="0" class="form-control" name="commission_rate" maxlength="8" /></td>
+            <td><input type="number" min="0" inputmode="numeric" class="form-control" name="min_commission" maxlength="8" /></td>
+            <td><input type="number" min="0" inputmode="decimal" class="form-control" step=".01" name="commission_rate" maxlength="8" /></td>
             <td colspan="2" class="text-right">
               <input type="button" class="btn btn-secondary" name="Reset" value="重 設"
                 ONCLICK="javascript: loadDefaultvalue();" />
@@ -220,42 +220,42 @@
           </tr>
           <tr>
             <td colspan="2"><div class="form-control-plaintext">款 項 總 額</div></td>
-            <td><input type="number" step=".01" class="form-control" name="gross_amount_buy" maxlength="8" disabled></td>
-            <td><input type="number" step=".01" class="form-control" name="gross_amount_sell" maxlength="8" disabled></td>
+            <td><input type="text" class="form-control" name="gross_amount_buy" maxlength="8" value="0" disabled /></td>
+            <td><input type="text" class="form-control" name="gross_amount_sell" maxlength="8" value="0" disabled /></td>
           </tr>
           <tr>
             <td colspan="2"><div class="form-control-plaintext">佣 金</div></td>
-            <td><input type="number" step=".01" class="form-control" name="commission_amount_buy" maxlength="8" disabled></td>
-            <td><input type="number" step=".01" class="form-control" name="commission_amount_sell" maxlength="8" disabled></td>
+            <td><input type="text" class="form-control" name="commission_amount_buy" maxlength="8" value="0" disabled /></td>
+            <td><input type="text" class="form-control" name="commission_amount_sell" maxlength="8" value="0" disabled /></td>
           </tr>
           <tr>
             <td colspan="2"><div class="form-control-plaintext">交 易 徵 費</div></td>
-            <td><input type="number" step=".01" class="form-control" name="levy_buy" maxlength="8" disabled></td>
-            <td><input type="number" step=".01" class="form-control" name="levy_sell" maxlength="8" disabled></td>
+            <td><input type="text" class="form-control" name="levy_buy" maxlength="8" value="0" disabled /></td>
+            <td><input type="text" class="form-control" name="levy_sell" maxlength="8" value="0" disabled /></td>
           </tr>
           <tr>
             <td colspan="2"><div class="form-control-plaintext">印 花 稅</div></td>
-            <td><input type="number" step=".01" class="form-control" name="stamp_duty_buy" maxlength="8" disabled></td>
-            <td><input type="number" step=".01" class="form-control" name="stamp_duty_sell" maxlength="8" disabled></td>
+            <td><input type="text" class="form-control" name="stamp_duty_buy" maxlength="8" value="0" disabled /></td>
+            <td><input type="text" class="form-control" name="stamp_duty_sell" maxlength="8" value="0" disabled /></td>
           </tr>
           <tr>
             <td colspan="2"><div class="form-control-plaintext">交 易 費</div></td>
-            <td><input type="number" step=".01" step=".01" class="form-control" name="Trading_fee_buy" maxlength="8" disabled></td>
-            <td><input type="number" step=".01" step=".01" class="form-control" name="Trading_fee_sell" maxlength="8" disabled></td>
+            <td><input type="text" class="form-control" name="Trading_fee_buy" maxlength="8" value="0" disabled /></td>
+            <td><input type="text" class="form-control" name="Trading_fee_sell" maxlength="8" value="0" disabled /></td>
           </tr>
           <tr>
             <td colspan="2"><div class="form-control-plaintext">中 央 結 算 費</div></td>
-            <td><input type="number" step=".01" class="form-control" name="ccass_buy" maxlength="8" disabled></td>
-            <td><input type="number" step=".01" class="form-control" name="ccass_sell" maxlength="8" disabled></td>
+            <td><input type="text" class="form-control" name="ccass_buy" maxlength="8" value="0" disabled /></td>
+            <td><input type="text" class="form-control" name="ccass_sell" maxlength="8" value="0" disabled /></td>
           </tr>
           <tr class="table-primary">
             <td colspan="2"><div class="form-control-plaintext">總 額 *</div></td>
-            <td><input type="number" step=".01" class="form-control" name="net_amount_buy" maxlength="8" disabled></td>
-            <td><input type="number" step=".01" class="form-control" name="net_amount_sell" maxlength="8" disabled></td>
+            <td><input type="text" class="form-control" name="net_amount_buy" maxlength="8" value="0" style="background: #FFFFFF" disabled /></td>
+            <td><input type="text" class="form-control" name="net_amount_sell" maxlength="8" value="0" style="background: #FFFFFF" disabled /></td>
           </tr>
           <tr class="table-warning">
             <td colspan="3"><div class="form-control-plaintext">買 入 賣 出 差 額 *</div></td>
-            <td><input type="number" step=".01" class="form-control" name="net_amount_diff" maxlength="8" disabled></td>
+            <td><input type="text" class="form-control" name="net_amount_diff" maxlength="8" value="0" style="background: #FFFFFF" disabled /></td>
           </tr>
           <tr>
             <td colspan="4" class="text-right"><div class="form-control-plaintext">* 參考資料只適用於限價盤</div></td>
