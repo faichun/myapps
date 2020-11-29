@@ -200,7 +200,7 @@
     <form name="aForm" onsubmit="javascript: return goSubmit();">
       <input type="hidden" name="matrixFactor" value="" />
       <input type="hidden" name="matrixSize" value="" />
-      <table class="table">
+      <table class="table-sm">
         <tbody class="tbody-dark">
           <tr class="table-primary">
             <td><div class="form-control-plaintext">市 場</div></td>
@@ -210,9 +210,9 @@
           </tr>
           <tr>
             <td><div class="form-control-plaintext">香 港</div><input type="hidden" name="market" value="hk" /></td>
-            <td><input type="number" min="0" inputmode="numeric" class="form-control" name="quantity" maxlength="6" /></td>
-            <td><input type="number" min="0" inputmode="decimal" class="form-control" name="price_buy" maxlength="6" step=".01" /></td>
-            <td><input type="number" min="0" inputmode="decimal" class="form-control" name="price_sell" maxlength="6" step=".01" /></td>
+            <td><input type="number" min="0" inputmode="numeric" class="form-control" name="quantity" value="10000" onfocus="this.value=''" maxlength="6" /></td>
+            <td><input type="number" min="0" inputmode="decimal" class="form-control" name="price_buy" maxlength="6" onfocus="this.value=''" step=".01" /></td>
+            <td><input type="number" min="0" inputmode="decimal" class="form-control" name="price_sell" maxlength="6" onfocus="this.value=''" step=".01" /></td>
           </tr>
           <tr class="table-primary">
             <td><div class="form-control-plaintext">最 低 佣 金</div></td>
