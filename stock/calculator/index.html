@@ -198,8 +198,8 @@
           <tr>
             <td><div class="form-control-plaintext">香 港</div><input type="hidden" name="market" value="hk" /></td>
             <td><input type="number" min="0" inputmode="numeric" class="form-control" name="quantity" maxlength="6" /></td>
-            <td><input type="number" min="0" inputmode="decimal" class="form-control" name="price_buy" maxlength="6" /></td>
-            <td><input type="number" min="0" inputmode="decimal" class="form-control" step=".01" name="price_sell" maxlength="6" /></td>
+            <td><input type="number" min="0" inputmode="decimal" class="form-control" name="price_buy" maxlength="6" step=".01" /></td>
+            <td><input type="number" min="0" inputmode="decimal" class="form-control" name="price_sell" maxlength="6" step=".01" /></td>
           </tr>
           <tr class="table-primary">
             <td><div class="form-control-plaintext">最 低 佣 金</div></td>
@@ -208,7 +208,7 @@
           </tr>
           <tr>
             <td><input type="number" min="0" inputmode="numeric" class="form-control" name="min_commission" maxlength="8" /></td>
-            <td><input type="number" min="0" inputmode="decimal" class="form-control" step=".01" name="commission_rate" maxlength="8" /></td>
+            <td><input type="number" min="0" inputmode="decimal" class="form-control" name="commission_rate" maxlength="8" step=".01" /></td>
             <td colspan="2" class="text-right">
               <input type="button" class="btn btn-secondary" name="Reset" value="重 設"
                 ONCLICK="javascript: loadDefaultvalue();" />
