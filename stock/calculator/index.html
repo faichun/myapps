@@ -29,6 +29,8 @@
     document.aForm.commission_rate.value = "0.25";
     document.aForm.matrixFactor.value = "0.05";
     document.aForm.matrixSize.value = "3";
+    document.aForm.net_amount_diff.style.backgroundColor = '#FFFFFF';
+    document.aForm.net_amount_diff.style.color = '#000000';
   }
 
   //**************************************************************
@@ -83,6 +85,16 @@
     setBuyingCostDetails();
     setSellingCostDetails();
     document.aForm.net_amount_diff.value = Math.round((document.aForm.net_amount_sell.value - document.aForm.net_amount_buy.value) * 1000) / 1000;
+    if (document.aForm.net_amount_diff.value == 0) {
+      document.aForm.net_amount_diff.style.backgroundColor = '#FFFFFF';
+      document.aForm.net_amount_diff.style.color = '#000000';
+    } else if (document.aForm.net_amount_diff.value > 0) {
+      document.aForm.net_amount_diff.style.backgroundColor = '#009900';
+      document.aForm.net_amount_diff.style.color = '#FFFFFF';
+    } else {
+      document.aForm.net_amount_diff.style.backgroundColor = '#CC0000';
+      document.aForm.net_amount_diff.style.color = '#FFFFFF';
+    }
     document.aForm.quantity.focus();
     return false;
   }
@@ -179,6 +191,7 @@
   }
   input, select {
     font-size: 100%;
+    text-align: right;
   }
 </style>
 
@@ -255,7 +268,7 @@
           </tr>
           <tr class="table-warning">
             <td colspan="3"><div class="form-control-plaintext">買 入 賣 出 差 額 *</div></td>
-            <td><input type="text" class="form-control" name="net_amount_diff" maxlength="8" value="0" style="background: #FFFFFF" disabled /></td>
+            <td><input type="text" class="form-control" name="net_amount_diff" maxlength="8" value="0" style="background: #FFFFFF; color: black;" disabled /></td>
           </tr>
           <tr>
             <td colspan="4" class="text-right"><div class="form-control-plaintext">* 參考資料只適用於限價盤</div></td>
