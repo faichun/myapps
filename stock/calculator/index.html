@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 
 <HEAD>
   <title>香港股市 - 成本計算機 (VER 4)</title>
   <meta charset="utf-8" />
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <meta http-equiv="pragma" content="no-cache" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Latest compiled and minified CSS -->
@@ -18,37 +18,37 @@
 </HEAD>
 
 <script language="javascript">
-var ie4 = (document.all) ? true : false;
-var ns4 = (document.layers) ? true : false;
-var ns6 = (document.getElementById && !document.all) ? true : false;
+  var ie4 = (document.all) ? true : false;
+  var ns4 = (document.layers) ? true : false;
+  var ns6 = (document.getElementById && !document.all) ? true : false;
 
-//**************************************************************
-function loadDefaultValue() {
-  document.aForm.reset();
-  document.aForm.min_commission.value = "100";
-  document.aForm.commission_rate.value = "0.25";
-  document.aForm.matrixFactor.value = "0.05";
-  document.aForm.matrixSize.value = "3";
-}
+  //**************************************************************
+  function loadDefaultvalue() {
+    document.aForm.reset();
+    document.aForm.min_commission.value = "100";
+    document.aForm.commission_rate.value = "0.25";
+    document.aForm.matrixFactor.value = "0.05";
+    document.aForm.matrixSize.value = "3";
+  }
 
-//**************************************************************
-function calculateBuyingCost(price,quantity) {
+  //**************************************************************
+  function calculateBuyingCost(price, quantity) {
     var Gross = 0;
-    Gross = Math.round(price * quantity * 1000)/1000;
-    N = Math.round((Gross + calculateFee(price,quantity)) * 1000) / 1000;
+    Gross = Math.round(price * quantity * 1000) / 1000;
+    N = Math.round((Gross + calculateFee(price, quantity)) * 1000) / 1000;
     return N;
-}
+  }
 
-//**************************************************************
-function calculateSellingCost(price,quantity) {
+  //**************************************************************
+  function calculateSellingCost(price, quantity) {
     var Gross = 0;
-    Gross = Math.round(price * quantity * 1000)/1000;
-    N = Math.round((Gross - calculateFee(price,quantity)) * 1000) / 1000;
+    Gross = Math.round(price * quantity * 1000) / 1000;
+    N = Math.round((Gross - calculateFee(price, quantity)) * 1000) / 1000;
     return N;
-}
+  }
 
-//**************************************************************
-function calculateFee(price,quantity) {
+  //**************************************************************
+  function calculateFee(price, quantity) {
 
     var CommRate = 0, MinComm = 0;
     var Gross = 0, Commission = 0, Levy = 0, Stamp = 0, Trading = 0, CA = 0, N = 0;
@@ -56,10 +56,10 @@ function calculateFee(price,quantity) {
     CommRate = document.aForm.commission_rate.value;
     MinComm = document.aForm.min_commission.value;
 
-    Gross = Math.round(price * quantity*1000)/1000;
-    Commission = Math.round((Gross * CommRate / 100)*1000) / 1000;
+    Gross = Math.round(price * quantity * 1000) / 1000;
+    Commission = Math.round((Gross * CommRate / 100) * 1000) / 1000;
     if (Commission < MinComm && Commission > 0) {
-       Commission = eval(MinComm);
+      Commission = eval(MinComm);
     }
 
     Levy = Math.round(Gross * 0.00004 * 100) / 100;
@@ -70,25 +70,25 @@ function calculateFee(price,quantity) {
     CA = Math.round(Gross * 0.00002 * 100) / 100;
 
     if (CA >= 100) {
-       CA = 100;
+      CA = 100;
     } else if (CA <= 2 && CA > 0) {
-       CA = 0;
+      CA = 0;
     }
 
     return Math.round((Commission + Levy + Stamp + Trading + CA) * 100) / 100;
-}
+  }
 
-//**************************************************************
-function goSubmit() {
-  setBuyingCostDetails();
-  setSellingCostDetails();
-  document.aForm.net_amount_diff.value = Math.round((document.aForm.net_amount_sell.value - document.aForm.net_amount_buy.value) * 1000) / 1000;
-  document.aForm.quantity.focus();
-  return false;
-}
+  //**************************************************************
+  function goSubmit() {
+    setBuyingCostDetails();
+    setSellingCostDetails();
+    document.aForm.net_amount_diff.value = Math.round((document.aForm.net_amount_sell.value - document.aForm.net_amount_buy.value) * 1000) / 1000;
+    document.aForm.quantity.focus();
+    return false;
+  }
 
-//**************************************************************
-function setBuyingCostDetails() {
+  //**************************************************************
+  function setBuyingCostDetails() {
 
     var CommRate = 0, MinComm = 0;
     var Gross = 0, Commission = 0, Levy = 0, Stamp = 0, Trading = 0, CA = 0, N = 0;
@@ -96,10 +96,10 @@ function setBuyingCostDetails() {
     CommRate = document.aForm.commission_rate.value;
     MinComm = document.aForm.min_commission.value;
 
-    Gross = Math.round(document.aForm.price_buy.value * document.aForm.quantity.value*1000)/1000;
-    Commission = Math.round((Gross * CommRate / 100)*1000) / 1000;
+    Gross = Math.round(document.aForm.price_buy.value * document.aForm.quantity.value * 1000) / 1000;
+    Commission = Math.round((Gross * CommRate / 100) * 1000) / 1000;
     if (Commission < MinComm && Commission > 0) {
-       Commission = eval(MinComm);
+      Commission = eval(MinComm);
     }
 
     Levy = Math.round(Gross * 0.00004 * 100) / 100;
@@ -110,9 +110,9 @@ function setBuyingCostDetails() {
     CA = Math.round(Gross * 0.00002 * 100) / 100;
 
     if (CA >= 100) {
-       CA = 100;
+      CA = 100;
     } else if (CA <= 2 && CA > 0) {
-       CA = 0;
+      CA = 0;
     }
 
     N = Math.round((Gross + Commission + Levy + Stamp + Trading + CA) * 1000) / 1000;
@@ -124,10 +124,10 @@ function setBuyingCostDetails() {
     document.aForm.Trading_fee_buy.value = Trading;
     document.aForm.ccass_buy.value = CA;
     document.aForm.net_amount_buy.value = N;
-}
+  }
 
-//**************************************************************
-function setSellingCostDetails() {
+  //**************************************************************
+  function setSellingCostDetails() {
 
     var CommRate = 0, MinComm = 0;
     var Gross = 0, Commission = 0, Levy = 0, Stamp = 0, Trading = 0, CA = 0, N = 0;
@@ -135,10 +135,10 @@ function setSellingCostDetails() {
     CommRate = document.aForm.commission_rate.value;
     MinComm = document.aForm.min_commission.value;
 
-    Gross = Math.round(document.aForm.price_sell.value * document.aForm.quantity.value*1000)/1000;
-    Commission = Math.round((Gross * CommRate / 100)*1000) / 1000;
+    Gross = Math.round(document.aForm.price_sell.value * document.aForm.quantity.value * 1000) / 1000;
+    Commission = Math.round((Gross * CommRate / 100) * 1000) / 1000;
     if (Commission < MinComm && Commission > 0) {
-       Commission = eval(MinComm);
+      Commission = eval(MinComm);
     }
 
     Levy = Math.round(Gross * 0.00004 * 100) / 100;
@@ -149,9 +149,9 @@ function setSellingCostDetails() {
     CA = Math.round(Gross * 0.00002 * 100) / 100;
 
     if (CA >= 100) {
-       CA = 100;
+      CA = 100;
     } else if (CA <= 2 && CA > 0) {
-       CA = 2;
+      CA = 2;
     }
 
     N = Math.round((Gross - Commission - Levy - Stamp - Trading - CA) * 100) / 100;
@@ -163,104 +163,105 @@ function setSellingCostDetails() {
     document.aForm.Trading_fee_sell.value = Trading;
     document.aForm.ccass_sell.value = CA;
     document.aForm.net_amount_sell.value = N;
-}
+  }
 
-var MsgText = new Array();
-MsgText['ERR000001'] = "(ERR000001)";
-MsgText['ERR000002'] = "(ERR000002)";
-MsgText['ERR000003'] = "(ERR000003)";
-MsgText['ERR000004'] = "(ERR000004)";
-MsgText['ERR000005'] = "(ERR000005)";
+  var MsgText = new Array();
+  MsgText['ERR000001'] = "(ERR000001)";
+  MsgText['ERR000002'] = "(ERR000002)";
+  MsgText['ERR000003'] = "(ERR000003)";
+  MsgText['ERR000004'] = "(ERR000004)";
+  MsgText['ERR000005'] = "(ERR000005)";
 
 </script>
 <style>
-html {
-  font-size: 14px;
-}
+  html {
+    font-size: 13px;
+  }
 </style>
-<body onload="javascript: loadDefaultValue();">
-<div class="container-fluid">
-<form name="aForm" onsubmit="javascript: return goSubmit();">
-  <input type="hidden" name="matrixFactor" value="" />
-  <input type="hidden" name="matrixSize" value="" />
-  <table class="table">
-    <thead class="thead-dark">
-      <tr><th>市 場</th><th>購 買 數 量</th><th>每 股 買 入 作 價</th><th>每 股 賣 出 作 價</th></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><INPUT TYPE="hidden" NAME="market" VALUE="hk" />香 港</td>
-        <td><INPUT TYPE="text" size="10" NAME="quantity" MAXLENGTH="6" /></td>
-        <td><INPUT TYPE="text" size="10" NAME="price_buy" MAXLENGTH="6" /></td>
-        <td><INPUT TYPE="text" size="10" NAME="price_sell" MAXLENGTH="6" /></td>
-      </tr>
-    </tbody>
-    <thead class="thead-dark">
-      <tr><th>最 低 佣 金</th><th>佣 金 利 率</th><th colspan="2"></th></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><INPUT TYPE="text" size="10" NAME="min_commission" MAXLENGTH="8" /></td>
-        <td><INPUT TYPE="text" size="10" NAME="commission_rate" MAXLENGTH="8" /></td>
-        <td colspan="2">
-          <INPUT TYPE="submit" NAME="Calculate" VALUE="計 算" WIDTH="70" STYLE="font-size:9;color:#3333DD;WIDTH:70">
-          <INPUT TYPE="button" NAME="Reset" VALUE="重 設" WIDTH="70" STYLE="font-size:9;color:#3333DD;WIDTH:70" ONCLICK="javascript: loadDefaultValue();">
-        </td>
-      </tr>
-    </tbody>
-    <thead class="thead-dark">
-      <tr><th colspan="4">估 計 所 需 款 項 計 算 機</th></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td colspan="2">款 項 總 額</td>
-        <td><INPUT NAME="gross_amount_buy" SIZE="9" MAXLENGTH="8"></td>
-        <td><INPUT NAME="gross_amount_sell" SIZE="9" MAXLENGTH="8"></td>
-      </tr>
-      <tr>
-        <td colspan="2">佣 金</td>
-        <td><INPUT NAME="commission_amount_buy" SIZE="9" MAXLENGTH="8"></td>
-        <td><INPUT NAME="commission_amount_sell" SIZE="9" MAXLENGTH="8"></td>
-      </tr>
-      <tr>
-        <td colspan="2">交 易 徵 費</td>
-        <td><INPUT NAME="levy_buy" SIZE="9" MAXLENGTH="8"></td>
-        <td><INPUT NAME="levy_sell" SIZE="9" MAXLENGTH="8"></td>
-      </tr>
-      <tr>
-        <td colspan="2">印 花 稅</td>
-        <td><INPUT NAME="stamp_duty_buy" SIZE="9" MAXLENGTH="8"></td>
-        <td><INPUT NAME="stamp_duty_sell" SIZE="9" MAXLENGTH="8"></td>
-      </tr>
-      <tr>
-        <td colspan="2">交 易 費</td>
-        <td><INPUT NAME="Trading_fee_buy" SIZE="9" MAXLENGTH="8"></td>
-        <td><INPUT NAME="Trading_fee_sell" SIZE="9" MAXLENGTH="8"></td>
-      </tr>
-      <tr>
-        <td colspan="2">中 央 結 算 費</td>
-        <td><INPUT NAME="ccass_buy" SIZE="9" MAXLENGTH="8"></td>
-        <td><INPUT NAME="ccass_sell" SIZE="9" MAXLENGTH="8"></td>
-      </tr>
-    </tbody>
-    <thead class="thead-dark">
-      <tr>
-        <th colspan="2">總 額 *</th>
-        <th><INPUT NAME="net_amount_buy" SIZE="9" MAXLENGTH="8"></th>
-        <th><INPUT NAME="net_amount_sell" SIZE="9" MAXLENGTH="8"></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td colspan="3">買 入 賣 出 差 額 *</td>
-        <td><INPUT NAME="net_amount_diff" SIZE="9" MAXLENGTH="8"></td>
-      </tr>
-      <tr>
-        <td colspan="4">* 參考資料只適用於限價盤</td>
-      </tr>
-    </tbody>
-  </table>
-</form>
-</div>
+
+<body onload="javascript: loadDefaultvalue();">
+  <div class="container-fluid">
+    <form name="aForm" onsubmit="javascript: return goSubmit();">
+      <input type="hidden" name="matrixFactor" value="" />
+      <input type="hidden" name="matrixSize" value="" />
+      <table class="table">
+        <tbody class="tbody-dark">
+          <tr class="table-primary">
+            <td><div class="form-control-plaintext">市 場</div></td>
+            <td><div class="form-control-plaintext">購 買 數 量</div></td>
+            <td><div class="form-control-plaintext">每 股 買 入 價</div></td>
+            <td><div class="form-control-plaintext">每 股 賣 出 價</div></td>
+          </tr>
+          <tr>
+            <td><div class="form-control-plaintext">香 港</div><input type="hidden" name="market" value="hk" /></td>
+            <td><input type="number" min="0" class="form-control" name="quantity" maxlength="6" /></td>
+            <td><input type="number" min="0" class="form-control" name="price_buy" maxlength="6" /></td>
+            <td><input type="number" min="0" class="form-control" name="price_sell" maxlength="6" /></td>
+          </tr>
+          <tr class="table-primary">
+            <td><div class="form-control-plaintext">最 低 佣 金</div></td>
+            <td><div class="form-control-plaintext">佣 金 比 率</div></td>
+            <td colspan="2"></td>
+          </tr>
+          <tr>
+            <td><input type="number" min="0" class="form-control" name="min_commission" maxlength="8" /></td>
+            <td><input type="number" step=".01" min="0" class="form-control" name="commission_rate" maxlength="8" /></td>
+            <td colspan="2" class="text-right">
+              <input type="button" class="btn btn-secondary" name="Reset" value="重 設"
+                ONCLICK="javascript: loadDefaultvalue();" />
+              <input type="submit" class="btn btn-primary" name="Calculate" value="計 算" />
+            </td>
+          </tr>
+          <tr class="table-primary">
+            <td colspan="4"><div class="form-control-plaintext">估 計 所 需 款 項 計 算 機</div></td>
+          </tr>
+          <tr>
+            <td colspan="2"><div class="form-control-plaintext">款 項 總 額</div></td>
+            <td><input type="number" class="form-control" name="gross_amount_buy" maxlength="8" disabled></td>
+            <td><input type="number" class="form-control" name="gross_amount_sell" maxlength="8" disabled></td>
+          </tr>
+          <tr>
+            <td colspan="2"><div class="form-control-plaintext">佣 金</div></td>
+            <td><input type="number" class="form-control" name="commission_amount_buy" maxlength="8" disabled></td>
+            <td><input type="number" class="form-control" name="commission_amount_sell" maxlength="8" disabled></td>
+          </tr>
+          <tr>
+            <td colspan="2"><div class="form-control-plaintext">交 易 徵 費</div></td>
+            <td><input type="number" class="form-control" name="levy_buy" maxlength="8" disabled></td>
+            <td><input type="number" class="form-control" name="levy_sell" maxlength="8" disabled></td>
+          </tr>
+          <tr>
+            <td colspan="2"><div class="form-control-plaintext">印 花 稅</div></td>
+            <td><input type="number" class="form-control" name="stamp_duty_buy" maxlength="8" disabled></td>
+            <td><input type="number" class="form-control" name="stamp_duty_sell" maxlength="8" disabled></td>
+          </tr>
+          <tr>
+            <td colspan="2"><div class="form-control-plaintext">交 易 費</div></td>
+            <td><input type="number" class="form-control" name="Trading_fee_buy" maxlength="8" disabled></td>
+            <td><input type="number" class="form-control" name="Trading_fee_sell" maxlength="8" disabled></td>
+          </tr>
+          <tr>
+            <td colspan="2"><div class="form-control-plaintext">中 央 結 算 費</div></td>
+            <td><input type="number" class="form-control" name="ccass_buy" maxlength="8" disabled></td>
+            <td><input type="number" class="form-control" name="ccass_sell" maxlength="8" disabled></td>
+          </tr>
+          <tr class="table-primary">
+            <td colspan="2"><div class="form-control-plaintext">總 額 *</div></td>
+            <td><input type="number" class="form-control" name="net_amount_buy" maxlength="8" disabled></td>
+            <td><input type="number" class="form-control" name="net_amount_sell" maxlength="8" disabled></td>
+          </tr>
+          <tr class="table-warning">
+            <td colspan="3"><div class="form-control-plaintext">買 入 賣 出 差 額 *</div></td>
+            <td><input type="number" class="form-control" name="net_amount_diff" maxlength="8" disabled></td>
+          </tr>
+          <tr>
+            <td colspan="4" class="text-right"><div class="form-control-plaintext">* 參考資料只適用於限價盤</div></td>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </div>
 </body>
+
 </html>
