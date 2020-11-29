@@ -18,9 +18,6 @@
 </HEAD>
 
 <script language="javascript">
-  var ie4 = (document.all) ? true : false;
-  var ns4 = (document.layers) ? true : false;
-  var ns6 = (document.getElementById && !document.all) ? true : false;
 
   //**************************************************************
   function loadDefaultvalue() {
@@ -31,6 +28,7 @@
     document.aForm.matrixSize.value = "3";
     document.aForm.net_amount_diff.style.backgroundColor = '#FFFFFF';
     document.aForm.net_amount_diff.style.color = '#000000';
+    document.aForm.net_amount_diff.style.webkitTextFillColor = '#000000';
   }
 
   //**************************************************************
@@ -88,12 +86,15 @@
     if (document.aForm.net_amount_diff.value == 0) {
       document.aForm.net_amount_diff.style.backgroundColor = '#FFFFFF';
       document.aForm.net_amount_diff.style.color = '#000000';
+      document.aForm.net_amount_diff.style.webkitTextFillColor = '#000000';
     } else if (document.aForm.net_amount_diff.value > 0) {
       document.aForm.net_amount_diff.style.backgroundColor = '#009900';
       document.aForm.net_amount_diff.style.color = '#FFFFFF';
+      document.aForm.net_amount_diff.style.webkitTextFillColor = '#FFFFFF';
     } else {
       document.aForm.net_amount_diff.style.backgroundColor = '#CC0000';
       document.aForm.net_amount_diff.style.color = '#FFFFFF';
+      document.aForm.net_amount_diff.style.webkitTextFillColor = '#FFFFFF';
     }
     document.aForm.quantity.focus();
     return false;
