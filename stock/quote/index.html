@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="pragma" content="no-cache">
-<title>Hong Kong Stock Quote (version 3)</title>
-<link rel="stylesheet" type="text/css" href="HK_StockQuote3.css">
-<script language="javascript" src="HK_StockQuote3_data.js"></script>
-<script language="javascript" src="HK_StockQuote3_function.js"></script>
+  <title>Hong Kong Stock Quote (version 4)</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <script language="javascript" src="HK_StockQuote_data.js"></script>
+  <script language="javascript" src="HK_StockQuote_function.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
+
 <body id="stockquotewindow" onload="onLoaded()">
-<div id="controlpanel">
   <form>
     <select id="chartlist" name="chartlist" size="1" onchange="onChanged()">
       <option value="-1" selected>．．．請 選 擇 查 詢 類 別．．．</option>
@@ -17,15 +28,9 @@
     <select id="stocklist" name="stocklist" size="1" onchange="onChanged()" disabled>
       <option value="-1" selected>．．．請 選 擇 股 票 組 合．．．</option>
     </select>
-    <select id="rowcount" name="rowcount" size="1" onchange="onChanged()">
-      <option value="1">1 行</option>
-      <option value="2">2 行</option>
-      <option value="3">3 行</option>
-      <option value="4" selected>4 行</option>
-      <option value="5">5 行</option>
-    </select>
+    <div id="resultpanel">
+    </div>
   </form>
-</div>
-<div id="resultpanel"></div>
 </body>
+
 </html>

@@ -17,7 +17,6 @@ function onLoaded() {
 function onChanged() {
   var x = document.getElementById("chartlist");
   var y = document.getElementById("stocklist");
-  var z = document.getElementById("rowcount").value;
   if (x.selectedIndex == 0) {
     y.disabled = true;
   } else {
@@ -27,8 +26,7 @@ function onChanged() {
       if (typeof categories[y.selectedIndex-1].stocks  !== 'undefined') {
         generateCharts(id,
           urls[x.selectedIndex-1].url,
-          categories[y.selectedIndex-1].stocks,
-          z);
+          categories[y.selectedIndex-1].stocks);
       }
     }
   }
@@ -48,22 +46,10 @@ function createList(id, data) {
   }
 }
 
-function generateCharts(id, url, stocks, colsize) {
-  var result = '<table id="resultTable" cellspacing="0" cellpadding="0" border="0">';
-  for (i=0; i<stocks.length;) {
-    result += '<tr>';
-    for (j=0; j<colsize; j++) {
-      result += '<td>';
-      if (i>=stocks.length) {
-        result += '<br>';
-      } else {
-        result += '<img src="' + url + stocks[i] + '"/>';
-        i++;
-      }
-      result += '</td>';
-    }
-    result += '</tr>';
+function generateCharts(id, url, stocks) {
+  var result = '';
+  for (i=0; i<stocks.length; i++) {
+    result += '<img src="' + url + stocks[i] + '"/>';
   }
-  result += '</table>';
   id.innerHTML = result;
 }
