@@ -2,23 +2,23 @@ var urls =
 [
   {
     "name":"AAStocks 即 市 圖",
-    "url":"http://charts.aastocks.com/servlet/Charts?scheme=1&com=121&chartwidth=460&chartheight=460&period=0&type=1&Indicator=1&indpara1=10&indpara2=20&indpara3=50&indpara4=0&subChart1=2&ref1para1=14&ref1para2=0&ref1para3=0&subChart2=1&ref2para1=0&ref2para2=0&ref2para3=0&stockid="
+    "url":"http://charts.aastocks.com/servlet/Charts?scheme=1&com=121&chartwidth=420&chartheight=460&period=0&type=1&Indicator=1&indpara1=10&indpara2=20&indpara3=50&indpara4=0&subChart1=2&ref1para1=14&ref1para2=0&ref1para3=0&subChart2=1&ref2para1=0&ref2para2=0&ref2para3=0&stockid="
   },
   {
     "name":"AAStocks 綜 合 三 個 月 日 線 圖",
-    "url":"http://charts.aastocks.com/servlet/Charts?scheme=1&com=121&chartwidth=460&chartheight=360&period=47&type=1&Indicator=1&indpara1=10&indpara2=20&indpara3=50&indpara4=0&subChart1=2&ref1para1=14&ref1para2=0&ref1para3=0&subChart2=1&ref2para1=0&ref2para2=0&ref2para3=0&stockid="
+    "url":"http://charts.aastocks.com/servlet/Charts?scheme=1&com=121&chartwidth=420&chartheight=360&period=47&type=1&Indicator=1&indpara1=10&indpara2=20&indpara3=50&indpara4=0&subChart1=2&ref1para1=14&ref1para2=0&ref1para3=0&subChart2=1&ref2para1=0&ref2para2=0&ref2para3=0&stockid="
   },
   {
     "name":"AAStocks 綜 合 三 年 週 線 圖",
-    "url":"http://charts.aastocks.com/servlet/Charts?scheme=1&com=121&chartwidth=460&chartheight=360&period=51&type=1&Indicator=1&indpara1=10&indpara2=20&indpara3=50&indpara4=0&subChart1=2&ref1para1=14&ref1para2=0&ref1para3=0&subChart2=1&ref2para1=0&ref2para2=0&ref2para3=0&stockid="
+    "url":"http://charts.aastocks.com/servlet/Charts?scheme=1&com=121&chartwidth=420&chartheight=360&period=51&type=1&Indicator=1&indpara1=10&indpara2=20&indpara3=50&indpara4=0&subChart1=2&ref1para1=14&ref1para2=0&ref1para3=0&subChart2=1&ref2para1=0&ref2para2=0&ref2para3=0&stockid="
   },
   {
     "name":"AAStocks 綜 合 八 年 月 線 圖",
-    "url":"http://charts.aastocks.com/servlet/Charts?scheme=1&com=121&chartwidth=460&chartheight=360&period=54&type=1&Indicator=1&indpara1=10&indpara2=20&indpara3=50&indpara4=0&subChart1=2&ref1para1=14&ref1para2=0&ref1para3=0&subChart2=1&ref2para1=0&ref2para2=0&ref2para3=0&stockid="
+    "url":"http://charts.aastocks.com/servlet/Charts?scheme=1&com=121&chartwidth=420&chartheight=360&period=54&type=1&Indicator=1&indpara1=10&indpara2=20&indpara3=50&indpara4=0&subChart1=2&ref1para1=14&ref1para2=0&ref1para3=0&subChart2=1&ref2para1=0&ref2para2=0&ref2para3=0&stockid="
   },
   {
     "name":"AAStocks 綜 合 十 五 年 週 線 圖",
-    "url":"http://charts.aastocks.com/servlet/Charts?scheme=1&com=121&chartwidth=460&chartheight=360&period=2059&type=1&Indicator=1&indpara1=10&indpara2=20&indpara3=50&indpara4=0&subChart1=2&ref1para1=14&ref1para2=0&ref1para3=0&subChart2=1&ref2para1=0&ref2para2=0&ref2para3=0&stockid="
+    "url":"http://charts.aastocks.com/servlet/Charts?scheme=1&com=121&chartwidth=420&chartheight=360&period=2059&type=1&Indicator=1&indpara1=10&indpara2=20&indpara3=50&indpara4=0&subChart1=2&ref1para1=14&ref1para2=0&ref1para3=0&subChart2=1&ref2para1=0&ref2para2=0&ref2para3=0&stockid="
   }
 ]
 
