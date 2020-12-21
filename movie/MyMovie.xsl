@@ -34,6 +34,7 @@
                 <input type="button" class="btn btn-secondary" onclick="javascript: filter('情色')" value="情色"/>
                 <input type="button" class="btn btn-secondary" onclick="javascript: filter('指南')" value="指南"/>
                 <input type="button" class="btn btn-secondary" onclick="javascript: filter('電視')" value="電視"/>
+                <input type="button" class="btn btn-primary" onclick="location.href='https://faichun.github.io/myapps/';" value="主頁" />
               </th>
             </tr>
             <tr>
