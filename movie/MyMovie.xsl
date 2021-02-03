@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fn="http://www.w3.org/2005/xpath-functions">
+<xsl:stylesheet version="3.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fn="http://www.w3.org/2005/xpath-functions">
   <xsl:param name="sortKey">title</xsl:param>
   <xsl:param name="sortOrder">ascending</xsl:param>
   <xsl:param name="sortType">text</xsl:param>
   <xsl:param name="filterKey">*</xsl:param>
+  <xsl:param name="filterTitle">*</xsl:param>
 
   <xsl:template match="/">
     <div class="jumbotron bg-primary text-light">
@@ -38,6 +39,11 @@
               </th>
             </tr>
             <tr>
+              <th colspan="6">
+                <input id="titleFilterInput" type="text" class="form-control mr-sm-2" onkeyup="javascript: getTitle();" placeholder="Search for titles.."/>
+              </th>
+            </tr>
+            <tr>
               <th><a href="javascript: resort('title');">Title</a><xsl:call-template name="hdr"><xsl:with-param name="header" select="'title'" /></xsl:call-template></th>
               <th><a href="javascript: resort('year');">Year</a><xsl:call-template name="hdr"><xsl:with-param name="header" select="'year'" /></xsl:call-template></th>
               <th><a href="javascript: resort('type');">Type</a><xsl:call-template name="hdr"><xsl:with-param name="header" select="'type'" /></xsl:call-template></th>
@@ -49,7 +55,10 @@
           <tbody>
           <xsl:for-each select="entries/entry">
             <xsl:sort select="*[name(.)=$sortKey]|@*[name(.)=$sortKey]" order="{$sortOrder}" data-type="{$sortType}" />
-            <xsl:if test="$filterKey = '*' or type = $filterKey">
+            <xsl:if test="($filterKey = '*' or type = $filterKey)">
+            <xsl:variable name="lowercase">abcdefghijklmnopqrstuvwxyz</xsl:variable>
+            <xsl:variable name="uppercase">ABCDEFGHIJKLMNOPQRSTUVWXYZ</xsl:variable>
+            <xsl:if test="($filterTitle = '*' or (contains(translate(title, $uppercase, $lowercase), translate($filterTitle, $uppercase, $lowercase))))">
             <tr>
               <td><xsl:value-of select="title"/></td>
               <td><xsl:value-of select="year"/></td>
@@ -72,6 +81,7 @@
                 </xsl:if>
               </td>
             </tr>
+            </xsl:if>
             </xsl:if>
           </xsl:for-each>
           </tbody>

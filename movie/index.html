@@ -20,6 +20,7 @@ var sortKey = "insertDTTM";
 var sortType = "text";
 var sortOrder = "descending";
 var filterKey = "*";
+var filterTitle = "";
 
 function loadXMLDoc(filename) {
     if (window.ActiveXObject) {
@@ -52,6 +53,7 @@ function displayResult() {
         xsltProcessor.setParameter(null, "sortOrder", sortOrder);
         xsltProcessor.setParameter(null, "sortType", sortType);
         xsltProcessor.setParameter(null, "filterKey", filterKey);
+        xsltProcessor.setParameter(null, "filterTitle", filterTitle);
         resultDocument = xsltProcessor
                 .transformToFragment(xmlDoc, document);
         document.getElementById("resultBody").innerHTML = new XMLSerializer().serializeToString(resultDocument);
@@ -67,6 +69,18 @@ function resort(which) {
     }
     sortType = (sortKey == "price" || sortKey == "year") ? "number" : "text";
     displayResult();
+}
+
+function getTitle() {
+    filterTitle = document.getElementById("titleFilterInput").value;
+    if (filterTitle == '') {
+        filterTitle = '*';
+    }
+    displayResult();
+    if (filterTitle != '*') {
+        document.getElementById("titleFilterInput").value = filterTitle;
+    }
+    document.getElementById("titleFilterInput").focus();
 }
 
 function filter(which) {
