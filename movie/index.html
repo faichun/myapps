@@ -68,7 +68,9 @@ function resort(which) {
         sortOrder = "ascending";
     }
     sortType = (sortKey == "price" || sortKey == "year") ? "number" : "text";
+    filterTitle = document.getElementById("titleFilterInput").value;
     displayResult();
+    document.getElementById("titleFilterInput").value = filterTitle;
 }
 
 function getTitle() {
@@ -84,8 +86,10 @@ function getTitle() {
 }
 
 function filter(which) {
+    filterTitle = document.getElementById("titleFilterInput").value;
     filterKey = which;
     displayResult();
+    document.getElementById("titleFilterInput").value = filterTitle;
 }
 </script>
 <style>
