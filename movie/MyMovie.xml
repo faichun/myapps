@@ -15,6 +15,14 @@
 
 <entries>
   <entry>
+    <title>The Curry Songs</title>
+    <year>2020</year>
+    <type>電視</type>
+    <hasBackup>0</hasBackup>
+    <insertDTTM>2021-02-06 00:00</insertDTTM>
+    <viewSource>hmvod</viewSource>
+  </entry>
+  <entry>
     <title>Star Wars 9: The Rise of Skywalker</title>
     <year>2019</year>
     <type>科幻</type>
@@ -584,7 +592,7 @@
     <viewSource>Netflix</viewSource>
   </entry>
   <entry>
-    <title>Snowpiercer: TV Series</title>
+    <title>Snowpiercer: TV Series （Season 1, 2）</title>
     <year>2020</year>
     <type>電視</type>
     <hasBackup>0</hasBackup>
