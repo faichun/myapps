@@ -14,7 +14,22 @@
 -->
 
 <entries>
-
+  <entry>
+    <title>Wonder Woman 1984</title>
+    <year>2020</year>
+    <type>冒險</type>
+    <hasBackup>0</hasBackup>
+    <insertDTTM>2021-04-15 00:00</insertDTTM>
+    <viewSource>hmvod</viewSource>
+  </entry>
+  <entry>
+    <title>Wonder Woman</title>
+    <year>2017</year>
+    <type>冒險</type>
+    <hasBackup>0</hasBackup>
+    <insertDTTM>2021-04-15 00:00</insertDTTM>
+    <viewSource>hmvod</viewSource>
+  </entry>
   <entry>
     <title>熱帶雨</title>
     <year>2020</year>
