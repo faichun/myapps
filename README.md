@@ -2,6 +2,8 @@
 
 Applications are shared for personal use only.
 
+https://faichun.github.io/myapps/
+
 ## Collection App
 
 - [Movie Collection](movie)
@@ -11,4 +13,7 @@ Applications are shared for personal use only.
 - [Buy/Sell Calculator](stock/calculator)
 - [Stock Price Quote](stock/quote)
 
+## Bible App
+
+- [Bible](bible)
 
