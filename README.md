@@ -17,3 +17,6 @@ https://faichun.github.io/myapps/
 
 - [Bible](bible)
 
+## Tool App
+
+- [QR Code](qrcode)
