@@ -16,7 +16,8 @@
       <form id="qrForm" onsubmit="return false;">
         <div class="inputContainer">
           <label for="dataInput">Data</label>
-          <input type="text" size="50" onkeyup="updateQrData();" onpaste="updateQrData();" name="dataInput" id="dataInput" placeholder="https://example.com" required />
+          <input type="text" size="50" onkeyup="updateQrData();" onpaste="updateQrData();" 
+            name="dataInput" id="dataInput" placeholder="https://example.com" required />
         </div>
         <div class="inputContainer">
           <label for="colorInput">Color</label>
@@ -33,6 +34,10 @@
       </form>
       <button id="formButton" onclick="download();">Download</button>
     </div>
+  </section>
+  <br/>
+  <br/>
+  <section id="output">
     <div id="canvas"></div>
   </section>
   <script type="text/javascript" src="qrcode-gen-params.js"></script>
