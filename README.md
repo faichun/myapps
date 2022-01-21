@@ -20,3 +20,7 @@ https://faichun.github.io/myapps/
 ## Tool App
 
 - [QR Code](qrcode)
+
+## Game App
+
+- [Word Guess](word-guess)
