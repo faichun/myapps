@@ -14,7 +14,38 @@
 -->
 
 <entries>
-
+  <entry>
+    <title>Inventing Anna</title>
+    <year>2022</year>
+    <type>電視</type>
+    <hasBackup>0</hasBackup>
+    <insertDTTM>2022-03-23 00:00</insertDTTM>
+    <viewSource>hmvod</viewSource>
+  </entry>
+  <entry>
+    <title>Manifest</title>
+    <year>2022</year>
+    <type>電視</type>
+    <hasBackup>0</hasBackup>
+    <insertDTTM>2022-03-23 00:00</insertDTTM>
+    <viewSource>hmvod</viewSource>
+  </entry>
+  <entry>
+    <title>The Adam Project</title>
+    <year>2022</year>
+    <type>科幻</type>
+    <hasBackup>0</hasBackup>
+    <insertDTTM>2022-03-23 00:00</insertDTTM>
+    <viewSource>hmvod</viewSource>
+  </entry>
+  <entry>
+    <title>The Mitchells vs. the Machines</title>
+    <year>2021</year>
+    <type>動畫</type>
+    <hasBackup>0</hasBackup>
+    <insertDTTM>2022-02-16 20:00</insertDTTM>
+    <viewSource>hmvod</viewSource>
+  </entry>
   <entry>
     <title>Encanto</title>
     <year>2021</year>
