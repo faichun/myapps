@@ -6,7 +6,7 @@ https://faichun.github.io/myapps/
 
 ## YouTube Channel
 
-- [Little Sprint Footprint](https://bit.ly/little-spring-footprint)
+- [Little Spring Footprint](https://bit.ly/little-spring-footprint)
 
 ## Collection App
 
