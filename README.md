@@ -4,6 +4,10 @@ Applications are shared for personal use only.
 
 https://faichun.github.io/myapps/
 
+## YouTube Channel
+
+- [Little Sprint Footprint](https://bit.ly/little-spring-footprint)
+
 ## Collection App
 
 - [Movie Collection](movie)
