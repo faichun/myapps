@@ -15,12 +15,20 @@
 
 <entries>
   <entry>
+    <title>King Richard</title>
+    <year>2021</year>
+    <type>傳記</type>
+    <hasBackup>0</hasBackup>
+    <insertDTTM>2022-04-02 00:00</insertDTTM>
+    <viewSource>hmvod</viewSource>
+  </entry>
+  <entry>
     <title>Inventing Anna</title>
     <year>2022</year>
     <type>電視</type>
     <hasBackup>0</hasBackup>
     <insertDTTM>2022-03-23 00:00</insertDTTM>
-    <viewSource>hmvod</viewSource>
+    <viewSource>Netflix</viewSource>
   </entry>
   <entry>
     <title>Manifest</title>
@@ -28,7 +36,7 @@
     <type>電視</type>
     <hasBackup>0</hasBackup>
     <insertDTTM>2022-03-23 00:00</insertDTTM>
-    <viewSource>hmvod</viewSource>
+    <viewSource>Netflix</viewSource>
   </entry>
   <entry>
     <title>The Adam Project</title>
@@ -36,7 +44,7 @@
     <type>科幻</type>
     <hasBackup>0</hasBackup>
     <insertDTTM>2022-03-23 00:00</insertDTTM>
-    <viewSource>hmvod</viewSource>
+    <viewSource>Netflix</viewSource>
   </entry>
   <entry>
     <title>The Mitchells vs. the Machines</title>
