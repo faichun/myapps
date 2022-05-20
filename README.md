@@ -4,6 +4,10 @@ Applications are shared for personal use only.
 
 https://faichun.github.io/myapps/
 
+## Web Design Demonstration
+
+- [Company Profile](https://faichun.github.io/profile/)
+
 ## YouTube Channel
 
 - [Little Spring Footprint](https://bit.ly/little-spring-footprint)
