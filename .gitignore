@@ -45,6 +45,7 @@ local.properties
 *.zip
 *.tar.gz
 *.rar
+*.jar
  
 ### virtual machine crash logs ###
 hs_err_pid*
@@ -76,9 +77,35 @@ pom.xml.next
 release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
+.mvn/
 .mvn/timing.properties
 .mvn/wrapper/maven-wrapper.jar
- 
+
+## Gradle ##
+.gradle
+gradlew*
+gradle
+
+## DENO ##
+.env
+
+## LUA ##
+.buildpath
+
+## PYTHON ##
+.ipynb_checkpoints
+.tox
+swagger_server.egg-info
+
+## css ##
+*.css.map
+
+## js ##
+*.js.map
+
+## node.js ##
+node_modules
+
 ### Anypoints Studio ###
 .studio/
  
@@ -125,3 +152,18 @@ ehthumbs_vista.db
  
 ### Dump file ###
 *.stackdump
+
+### Visual Studio ###
+.vs
+
+### scala ###
+.metals
+.vscode
+.bsp
+
+### Others ###
+.editorconfig
+.browserslistrc
+.bak
+*.bkp
+.dtmp
