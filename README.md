@@ -13,6 +13,9 @@ https://faichun.github.io/myapps/
 - [Little Spring Footprint - https://youtube.com/@littlespringfootprint](https://youtube.com/@littlespringfootprint)
 - [Little Spring Footprint - https://bit.ly/little-spring-footprint](https://bit.ly/little-spring-footprint)
 
+![Little Spring Footprint](my-youtube-channel-qrcode.png)
+
+
 ## Google Maps 
 
 - [Local Guide](https://goo.gl/maps/Lh27bNTXVPGN92GS8)
