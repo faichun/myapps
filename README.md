@@ -7,6 +7,7 @@ https://faichun.github.io/myapps/
 ## Web Design Demonstration
 
 - [Company Profile](https://faichun.github.io/profile/)
+- [Lion Rock Studio @ WordPress]https://lionrockstudio.wordpress.com/
 
 ## YouTube Channel
 
