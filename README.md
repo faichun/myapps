@@ -46,6 +46,7 @@ https://faichun.github.io/myapps/
 - [Buy/Sell Calculator](stock/calculator)
 - [Stock Price Quote](stock/quote)
 - [QR Code](qrcode)
+- [Convertor - Captialise All Words](convertor/capitalise-all-words.html)
 
 ## Game App
 
