@@ -4,6 +4,11 @@ Applications are shared for personal use only.
 
 https://faichun.github.io/myapps/
 
+## My Background
+
+- [CV - my visualised profile](https://jackfclee.github.io/my-profile/)
+- [LinkedIn](https://www.linkedin.com/in/jackfclee/)
+
 ## Web Design Demonstration
 
 - [Company Profile](https://faichun.github.io/profile/)
