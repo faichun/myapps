@@ -27,6 +27,7 @@ https://faichun.github.io/myapps/
 - [春少的旅行地圖](https://www.google.com/maps/d/viewer?mid=zOryxGopV_nw.kYctYWQYj6Qc)
 - [我的遊樂場地圖](https://www.google.com/maps/d/viewer?mid=1JZI9tVyOWsk-4Lpvnes_ww6uQDU)
 - [我的看樹賞花地圖](https://www.google.com/maps/d/viewer?mid=1P3vxl0WsTyfBR2GaPaeW0I6r0ZNmprU)
+- [我的墨爾本旅遊地圖](https://www.google.com/maps/d/viewer?mid=12N_YW7uIGw63jMy2YqnHoRtMvgKTDDI)
 - [我的新加坡旅遊地圖](https://www.google.com/maps/d/viewer?mid=1ISlFPTak-Ym48AyGdAJr-Wr8Gvo)
 - [我的沖繩旅遊地圖](https://www.google.com/maps/d/viewer?mid=1xqaUaFoYfC-4GFcuN0fTj4M1x1I)
 - [我的東京旅游地圖](https://www.google.com/maps/d/viewer?mid=1b1PTHeCgiU1CO2J7FoXrIgCQmsHgW9kQ)
