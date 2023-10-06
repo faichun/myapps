@@ -112,6 +112,7 @@ build/Release
 typings/
 .eslintcache
 *.tsbuildinfo
+.meteor
 
 ### Anypoints Studio ###
 .studio/
