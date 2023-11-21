@@ -69,10 +69,5 @@ https://faichun.github.io/myapps/
 - [jackfclee](https://github.com/jackfclee)
 - [faichun](https://github.com/faichun)
 
-## Group Name Idea
 
-- ROOM1236 studio
-- Sit and Seek Studio
-- Settle and Survive Studio
-- Lion Rock Studio
 
