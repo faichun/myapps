@@ -8,11 +8,15 @@ https://faichun.github.io/myapps/
 
 - [CV - my visualised profile](https://jackfclee.github.io/my-profile/)
 - [LinkedIn](https://www.linkedin.com/in/jackfclee/)
+- [Buy me a coffee - jackfclee](https://www.buymeacoffee.com/jackfclee)
+- [Buy me a coffee - faichun](https://www.buymeacoffee.com/faichun)
 
 ## Web Design Demonstration
 
 - [Company Profile](https://faichun.github.io/profile/)
 - [Lion Rock Studio @ WordPress](https://lionrockstudio.wordpress.com/)
+- [Shortcut to Little Spring Footprint channel](https://bit.ly/little-spring-footprint)
+- [Opensea](https://opensea.io/faichun)
 
 ## YouTube Channel
 
@@ -60,3 +64,7 @@ https://faichun.github.io/myapps/
 
 - [Word Guess](word-guess)
 
+## GitHub
+
+- [jackfclee](https://github.com/jackfclee)
+- [faichun](https://github.com/faichun)
