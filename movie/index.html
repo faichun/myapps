@@ -22,6 +22,41 @@ var sortOrder = "descending";
 var filterKey = "*";
 var filterTitle = "";
 
+function loadCSV(url) {
+    return fetch(url)
+        .then(response => response.text())
+        .then(csvData => {
+            // Parse CSV data
+            const rows = csvData.split('\n');
+            const headers = rows[0].split(',');
+            const csvArray = [];
+            for (let i = 1; i < rows.length; i++) {
+                const row = rows[i].split(',');
+                const obj = {};
+                for (let j = 0; j < headers.length; j++) {
+                    obj[headers[j]] = row[j];
+                }
+                csvArray.push(obj);
+            }
+            return csvArray;
+        });
+}
+
+function convertToXML(data) {
+    // Convert CSV data to XML format
+    let xml = '<?xml version="1.0" encoding="UTF-8"?>';
+    xml += '<entries>';
+    for (let i = 0; i < data.length; i++) {
+        xml += '<entry>';
+        Object.keys(data[i]).forEach(key => {
+            xml += `<${key}>${data[i][key]}</${key}>`;
+        });
+        xml += '</entry>';
+    }
+    xml += '</entries>';
+    return xml;
+}
+
 function loadXMLDoc(filename) {
     if (window.ActiveXObject) {
         xhttp = new ActiveXObject("Msxml2.XMLHTTP");
@@ -37,27 +72,36 @@ function loadXMLDoc(filename) {
     return xhttp.responseXML;
 }
 
+
 function displayResult() {
-    var xmlDoc = loadXMLDoc("MyMovie.xml");
-    var xslDoc = loadXMLDoc("MyMovie.xsl");
-    if (window.ActiveXObject || xhttp.responseType == "msxml-document") {
-        // code for IE
-        ex = xmlDoc.transformNode(xslDoc);
-        document.getElementById("resultBody").innerHTML = ex;
-    } else if (document.implementation
-            && document.implementation.createDocument) {
-        // code for Chrome, Firefox, Opera, etc.
-        xsltProcessor = new XSLTProcessor();
-        xsltProcessor.importStylesheet(xslDoc);
-        xsltProcessor.setParameter(null, "sortKey", sortKey);
-        xsltProcessor.setParameter(null, "sortOrder", sortOrder);
-        xsltProcessor.setParameter(null, "sortType", sortType);
-        xsltProcessor.setParameter(null, "filterKey", filterKey);
-        xsltProcessor.setParameter(null, "filterTitle", filterTitle);
-        resultDocument = xsltProcessor
-                .transformToFragment(xmlDoc, document);
-        document.getElementById("resultBody").innerHTML = new XMLSerializer().serializeToString(resultDocument);
-    }
+    const url = 'MyMovie.csv';
+    loadCSV(url)
+        .then(csvData => {
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(convertToXML(csvData), 'application/xml');
+            var xslDoc = loadXMLDoc("MyMovie.xsl");
+            if (window.ActiveXObject || xhttp.responseType == "msxml-document") {
+                // code for IE
+                ex = xmlDoc.transformNode(xslDoc);
+                document.getElementById("resultBody").innerHTML = ex;
+            } else if (document.implementation
+                    && document.implementation.createDocument) {
+                // code for Chrome, Firefox, Opera, etc.
+                xsltProcessor = new XSLTProcessor();
+                xsltProcessor.importStylesheet(xslDoc);
+                xsltProcessor.setParameter(null, "sortKey", sortKey);
+                xsltProcessor.setParameter(null, "sortOrder", sortOrder);
+                xsltProcessor.setParameter(null, "sortType", sortType);
+                xsltProcessor.setParameter(null, "filterKey", filterKey);
+                xsltProcessor.setParameter(null, "filterTitle", filterTitle);
+                resultDocument = xsltProcessor
+                        .transformToFragment(xmlDoc, document);
+                document.getElementById("resultBody").innerHTML = new XMLSerializer().serializeToString(resultDocument);
+            }
+        })
+        .catch(error => {
+            console.error('Error loading CSV:', error);
+        });
 }
 
 function resort(which) {
@@ -109,6 +153,9 @@ table.table-striped td {
   padding: 6px 12px;
   font-size: 16px;
   cursor: pointer;
+}
+.bg-primary {
+  background-color: green !important;
 }
 </style>
 </head>

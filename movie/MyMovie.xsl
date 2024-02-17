@@ -8,7 +8,7 @@
 
   <xsl:template match="/">
     <div class="jumbotron bg-primary text-light">
-      <h1><b>My Movie Collection (version 2)</b></h1>
+      <h1><b>My Movie Collection (version 3)</b></h1>
     </div>
     <div class="row">
       <div class="col-sm-12 bg-light text-dark">
