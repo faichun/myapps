@@ -40,7 +40,7 @@
             </tr>
             <tr>
               <th colspan="6">
-                <input id="titleFilterInput" type="text" class="form-control mr-sm-2" onkeyup="javascript: getTitle();" placeholder="Search for titles.."/>
+                <input id="titleFilterInput" type="text" class="form-control mr-sm-2" onkeyup="javascript: getTitle();" placeholder="Search for titles.." autocomplete="off" autocorrect="off" autocapitalize="off"/>
               </th>
             </tr>
             <tr>
