@@ -74,7 +74,9 @@ function getQuestion(control) {
   if (filterQuestion != '*') {
     document.getElementById("questionFilterInput").value = filterQuestion;
   }
-  document.getElementById(control).focus();
+  if (control != null) {
+    document.getElementById(control).focus();
+  }
 }
 
 function goQuestionBank(which) {
