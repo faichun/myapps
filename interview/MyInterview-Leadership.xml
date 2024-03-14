@@ -12,39 +12,35 @@
 <entries>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <entry>
-    <type>Networking</type>
+    <type>Team Management</type>
     <question>
-12345
-45678
+Can you describe a time when you had to lead a team to complete a complex project?
     </question>
     <answer>
-567
-
-
-432
     </answer>
     <remarks>
-34579
-qwerty
     </remarks>
   </entry>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <entry>
-    <type>Networking</type>
+    <type>Conflict Management</type>
     <question>
-abcde
-
-de
+How do you handle conflicts with team members or stakeholders?
     </question>
     <answer>
-567
-
-
-432
     </answer>
     <remarks>
-34579
-qwerty
+    </remarks>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Task Management</type>
+    <question>
+How do you prioritize tasks and manage your time effectively?
+    </question>
+    <answer>
+    </answer>
+    <remarks>
     </remarks>
   </entry>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->

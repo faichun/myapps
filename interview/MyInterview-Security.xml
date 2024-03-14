@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+  Content Structure: 
+
+  <entry>
+    <type></type>
+    <question></question>
+    <answer></answer>
+    <remark></remark>
+  </entry>
+-->
+<entries>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Security</type>
+    <question>
+What is CORS?
+    </question>
+    <answer>
+CORS (Cross-Origin Resource Sharing) is a security feature implemented by web browsers that blocks web pages from making requests to a different domain than the one that served the web page. This is done to prevent malicious websites from making unauthorized requests to other websites on behalf of the user.
+
+For example, if a web page served from example.com makes a request to api.example.com, the browser will block the request unless the server at api.example.com specifically allows it. This is done by including certain headers in the server's HTTP response, such as Access-Control-Allow-Origin, which specifies which domains are allowed to make requests to the server.
+
+CORS is useful for protecting against cross-site request forgery (CSRF) attacks, which involve an attacker tricking a user into making a request to a website that the user did not intend to make. By blocking these unauthorized requests, CORS helps to ensure the security and integrity of the user's interactions with websites.
+    </answer>
+    <remarks>
+    </remarks>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>OS</type>
+    <question>
+Could you describe top 10 OWASP vulnerabilities?
+    </question>
+    <answer>
+1. Broken Access Control
+2. Cryptographic Failures
+3. Injection
+4. Insecure Design
+5. Security Misconfiguration
+6. Vulnerable and Outdated Components
+7. Identification and Authentication Failures
+8. Software and Data Integrity Failures
+9. Security Logging and Monitoring Failures
+10. Server Side Request Forgery
+    </answer>
+    <remarks>https://owasp.org/www-project-top-ten/
+    </remarks>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+</entries>

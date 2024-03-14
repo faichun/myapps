@@ -1,12 +1,28 @@
+const xmlDocs = {
+  Architecture: loadXMLDoc("MyInterview-Architecture.xml"),
+  Behavior: loadXMLDoc("MyInterview-Behavior.xml"),
+  Cloud: loadXMLDoc("MyInterview-Cloud.xml"),
+  CodingPractice: loadXMLDoc("MyInterview-CodingPractice.xml"),
+  DataStore: loadXMLDoc("MyInterview-DataStore.xml"),
+  DataStructure: loadXMLDoc("MyInterview-DataStructure.xml"),
+  DevelopmentPractice: loadXMLDoc("MyInterview-DevelopmentPractice.xml"),
+  General: loadXMLDoc("MyInterview-General.xml"),
+  Integration: loadXMLDoc("MyInterview-Integration.xml"),
+  Leadership: loadXMLDoc("MyInterview-Leadership.xml"),
+  Microservice: loadXMLDoc("MyInterview-Microservice.xml"),
+  Networking: loadXMLDoc("MyInterview-Networking.xml"),
+  OperatingSystem: loadXMLDoc("MyInterview-OperatingSystem.xml"),
+  Security: loadXMLDoc("MyInterview-Security.xml"),
+  Testing: loadXMLDoc("MyInterview-Testing.xml"),
+  Web: loadXMLDoc("MyInterview-Web.xml"),
+};
+const xslDoc = loadXMLDoc("MyInterview.xsl");
+let currentXmlDoc = xmlDocs['Architecture'];
 let filterKey = "*";
 let filterQuestion = "";
-let xmlDoc_os = loadXMLDoc("MyInterview-OS.xml");
-let xmlDoc_networking = loadXMLDoc("MyInterview-Networking.xml");
-let xslDoc = loadXMLDoc("MyInterview.xsl");
-let currentXmlDoc = xmlDoc_os;
 
 function goDefault() {
-  displayResult(xmlDoc_os);
+  displayResult(currentXmlDoc);
 }
 
 function loadXMLDoc(filename) {
@@ -52,18 +68,12 @@ function getQuestion() {
 }
 
 function goQuestionBank(which) {
-  filterQuestion = document.getElementById("questionFilterInput").value;
-  switch(which) {
-    case 'OS':
-      displayResult(xmlDoc_os);
-      currentXmlDoc = xmlDoc_os;
-      break;
-    case 'NETWORKING':
-      displayResult(xmlDoc_networking);
-      currentXmlDoc = xmlDoc_networking;
-      break;
-    default:
-      break;
+  let filterQuestion = document.getElementById("questionFilterInput").value;
+  let currentXmlDoc = xmlDocs[which]; // Access the property dynamically
+  if (currentXmlDoc) {
+    displayResult(currentXmlDoc);
+  } else {
+    console.error("Document not found: " + which);
   }
   document.getElementById("questionFilterInput").value = filterQuestion;
 }

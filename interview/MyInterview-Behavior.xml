@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+  Content Structure: 
+
+  <entry>
+    <type></type>
+    <question></question>
+    <answer></answer>
+    <remark></remark>
+  </entry>
+-->
+<entries>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Problem Solving</type>
+    <question>
+How do you approach solving complex technical problems?
+    </question>
+    <answer>
+    </answer>
+    <remarks>
+    </remarks>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Project Management</type>
+    <question>
+Can you describe a particularly challenging project you have worked on and how you approached it?
+    </question>
+    <answer>
+    </answer>
+    <remarks>
+    </remarks>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Problem Solving</type>
+    <question>
+Can you describe a situation where you had to make a difficult decision, and how you arrived at your conclusion?
+    </question>
+    <answer>
+    </answer>
+    <remarks>
+    </remarks>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Innovation</type>
+    <question>
+Can you describe a situation where you had to think outside the box to find a creative solution to a problem?
+    </question>
+    <answer>
+    </answer>
+    <remarks>
+    </remarks>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+</entries>

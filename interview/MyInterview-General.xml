@@ -3,7 +3,7 @@
   Content Structure: 
 
   <entry>
-    <type>OS</type>
+    <type></type>
     <question></question>
     <answer></answer>
     <remark></remark>
@@ -12,39 +12,24 @@
 <entries>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <entry>
-    <type>OS</type>
+    <type>Technical</type>
     <question>
-12345
-45678
+Can you describe your experience with [specific technology or programming language]?
     </question>
     <answer>
-567
-
-
-432
     </answer>
     <remarks>
-34579
-qwerty
     </remarks>
   </entry>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <entry>
     <type>OS</type>
     <question>
-abcde
-
-de
+Can you walk us through your experience with architecture design and implementation?
     </question>
     <answer>
-567
-
-
-432
     </answer>
     <remarks>
-34579
-qwerty
     </remarks>
   </entry>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
