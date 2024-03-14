@@ -106,5 +106,53 @@ Stack memory is typically faster to allocate and deallocate than heap memory, bu
     </answer>
   </entry>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Command</type>
+    <question>
+Can you debug in linux?
+    </question>
+    <answer>
+GDB, the GNU Project debugger
+
+Java:
+(1) Start the program and find the PID.
+(2) Attach a debugger to the JVM somehow (this is what I don't know how to do, and lack the language to search for, apparently)
+(3) Use the debugger to set breakpoints, read/write arbitrary memory of the JVM, see the JVM's registers and stack.
+(4) Use a simple, open-source command-line tool to do this, like Radare2 or GDB.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Command</type>
+    <question>
+How do you monitor system utilsation in linux?
+    </question>
+    <answer>
+⏵ top Command to View Linux CPU Load
+⏵ mpstat Command to Display CPU Activity
+⏵ sar Command to Show CPU Utilization
+⏵ iostat Command for Average Usage
+⏵ Nmon Monitoring Tool
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Command</type>
+    <question>
+Do you know grep?
+    </question>
+    <answer>
+The grep command searches for the pattern specified by the Pattern parameter and writes each matching line to standard output. The patterns are limited regular expressions in the style of the ed or egrep command. The grep command uses a compact non-deterministic algorithm.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type></type>
+    <question>
+    </question>
+    <answer>
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
 </entries>

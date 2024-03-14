@@ -23,6 +23,91 @@
   </entry>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <entry>
+    <type>REST</type>
+    <question>
+What are the HTTP RESTful response code?
+    </question>
+    <answer>
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>REST</type>
+    <question>
+What are the differences between REST and GraphQL?
+    </question>
+    <answer>
+One of the most common limitations of REST out-of-the-box is that of overfetching and underfetching. Get the particular attributes only from the resources based on the query language.
+⏵ Structure: REST APIs have a fixed structure, with a fixed set of endpoints for each resource. GraphQL APIs, on the other hand, have a flexible structure that allows the client to request exactly the data it needs, and nothing more.
+⏵ Overfetching and underfetching: With REST APIs, it is common for the client to either receive more data than it needs (overfetching), or to have to make multiple requests to get all of the data it needs (underfetching). With GraphQL, the client can request exactly the data it needs in a single request, reducing the amount of data transferred and the number of round trips needed.
+⏵ Versioning: When making changes to a REST API, new endpoints or changes to existing endpoints must be introduced in a new version. This can cause issues for clients that depend on the old version of the API. With GraphQL, the API can be evolved over time without breaking existing clients, as long as the underlying data structures remain unchanged.
+⏵ Security: REST APIs often use a combination of HTTP verbs (such as GET, POST, PUT, DELETE) and access control mechanisms (such as API keys or JWT tokens) to control access to resources. GraphQL APIs typically use a single endpoint and use JSON objects to specify the data being queried or modified, and can use the same types of access control mechanisms as REST APIs.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>REST</type>
+    <question>
+What response code should be returned during duplicate requests in POST and PUT?
+    </question>
+    <answer>
+If server just point the duplicate, look at 4xx:
+400 Bad Request - when the server will not process a request because it's obvious client fault.
+401 Unauthorized - missing or bad authentication
+403 Forbidden - when the user is authenticated but isn’t authorized to perform the requested operation on the given resource
+408 Request Timeout
+409 Conflict - if the server will not process a request, but the reason for that is not the client's fault.
+422 Unprocessable Entity - The client should not repeat this request without modification.
+
+For implicit handling of duplicates, look at 2XX:
+200 OK , 201 Created
+
+If the server is expected to return something, look at 3XX:
+302 Found , 303 See Other
+
+Server side error
+500 Internal Server Error , 504 Gateway Timeout
+
+If the client makes a duplicate request (i.e., a request that would create a resource that already exists or update a resource that has not changed), the server should generally return a response with a status code of 409 Conflict. This status code indicates that the request could not be completed due to a conflict with the current state of the resource.
+
+It is also possible for the server to return a 200 OK or 204 No Content response for a duplicate request, depending on the specific implementation and requirements of the API. In these cases, the server may choose to simply ignore the duplicate request and return a success response, rather than returning a 409 Conflict response.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>REST</type>
+    <question>
+how to prevent duplicate request in api microservices
+    </question>
+    <answer>
+⏵ unique ID validation
+⏵ request queue
+⏵ concurrency control
+⏵ transaction locking mechanism
+
+⏵ Use an idempotent design: An idempotent design means that the same request can be made multiple times without changing the result. This can be achieved by using HTTP verbs that are inherently idempotent (such as GET and DELETE) for read-only operations, and using HTTP verbs that are intended for resource modification (such as POST and PUT) in a way that does not allow them to be repeated.
+⏵ Implement a deduplication system: A deduplication system can be used to detect and eliminate duplicate requests before they reach the backend services. This can be done using a variety of approaches, such as adding a unique identifier to each request and storing it in a cache or database, or using a message queue or event streaming platform that supports deduplication.
+⏵ Use a retry policy: A retry policy can be used to automatically retry failed requests in the event of temporary failures or network errors. This can help to reduce the risk of duplicate requests being made, as the client will not need to resend the request if it is retried by the server.
+⏵ Use a locking mechanism: A locking mechanism can be used to ensure that only a single instance of a request is being processed at any given time. This can be done using a variety of approaches, such as using database transactions or distributed locks, or using a message queue or event streaming platform that supports message deduplication.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>GATEWAY</type>
+    <question>
+What is the difference between API gateway and API mesh?
+    </question>
+    <answer>
+https://dzone.com/articles/api-gateway-vs-service-mesh
+https://blog.apilayer.com/service-mesh-vs-api-gateway/
+
+API gateways manage requests that originate externally, such as a request by an application user to view a certain page. 
+In contrast, service meshes handle the internal requests that microservices make to other microservices within an application. 
+In technical terms, API gateways supervise client-to-server communication, while service mesh deals with service-to-service communication.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
     <type></type>
     <question>
     </question>

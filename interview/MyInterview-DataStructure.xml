@@ -120,6 +120,8 @@ ArrayList vs LinkedList
     </question>
     <answer>
 If elements are going to be fetched often, it makes little sense to use LinkedList since fetching is slower compared to ArrayList. On the other hand, if constant-time insertions are needed or if the total size is unknown beforehand then LinkedList is preferred.
+
+ArrayList internally uses a dynamic array to store its elements. LinkedList uses Doubly Linked List to store its elements. ArrayList is slow as array manipulation is slower. LinkedList is faster being node based as not much bit shifting required.
     </answer>
   </entry>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
@@ -287,4 +289,150 @@ stack vs queue
     </answer>
   </entry>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Concept</type>
+    <question>
+How does HashSet works in Java?
+    </question>
+    <answer>
+HashSet is internally implemented using HashMap in Java and this is what your interviewer wants to hear. He could then quiz you with some common sense based question e.g. how can you use HashMap because its needs two object key and value? what is the value in case of HashSet? Well, in case of HashSet a dummy object is used as value and key objects are the actual element on Set point of view. Since HashMap doesn’t allow duplicate key it also follows contract of set data structure to not allow duplicates.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Concept</type>
+    <question>
+How does HashMap work in Java?
+    </question>
+    <answer>
+HashMap uses multiple buckets and each bucket points to a Singly Linked List where the entries (nodes) are stored. Once the bucket is identified by the hash function using hashcode, then hashCode is used to check if there is already a key with the same hashCode or not in the bucket(singly linked list)
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Concept</type>
+    <question>
+Why HashMap keys need to be immutable
+    </question>
+    <answer>
+Immutabiility is required, in order to prevent changes on fields used to calculate hashCode() because if key object return different hashCode during insertion and retrieval than it won't be possible to get object from HashMap.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Concept</type>
+    <question>
+what is race conditions on HashMap
+    </question>
+    <answer>
+A race condition is a type of concurrency issue that can occur when multiple threads try to access and modify a shared resource simultaneously. In the case of a HashMap, a race condition can occur if multiple threads try to read from or write to the HashMap concurrently, and the outcome of the operations depends on the order in which the threads execute.
+
+For example, suppose two threads are trying to update the value associated with a key in a HashMap. If the threads both read the value of the key at the same time, and then each thread updates the value based on the value it read, the final value of the key may not be what was intended. This is because the threads are racing to update the value, and the outcome depends on which thread's update is applied last.
+
+To avoid race conditions on a HashMap, you can use synchronization to ensure that only one thread can access and modify the HashMap at a time. In Java, you can use the synchronized keyword to synchronize access to the HashMap, or you can use the Collections.synchronizedMap() method to wrap the HashMap in a synchronized wrapper.
+
+It is also worth noting that the ConcurrentHashMap class, which is a concurrent implementation of Map, is designed to be used by multiple threads concurrently without the need for explicit synchronization. The ConcurrentHashMap uses a technique called lock striping to partition the map and allow different threads to access and modify different parts of the map concurrently. This can help to improve the performance of the Map in a multi-threaded environment.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Concept</type>
+    <question>
+if hashmap is doubled the size, will it be slower? how slow will it be?
+    </question>
+    <answer>
+Increasing the size of a HashMap in Java will generally make it slightly slower, but the impact on performance will depend on a variety of factors, such as the number of elements in the HashMap, the workload, and the hardware and software environment.
+
+When the HashMap is resized, it will create a new array with a larger capacity and rehash all of the elements from the old array into the new array. This process involves using the hashing function to determine the new array index for each element based on its key, which can take some time.
+
+However, the HashMap is designed to be very efficient and the impact of resizing on performance is typically small. In general, the HashMap will only resize itself when the number of elements exceeds the load factor, which is a measure of how full the HashMap is. The default load factor is 0.75, which means the HashMap will resize itself when the number of elements exceeds 75% of the capacity of the array. This helps to minimize the number of times the HashMap needs to be resized and the impact on performance.
+
+It is also worth noting that the HashMap will generally perform better when the size of the array is well-suited to the number of elements in the HashMap. If the array is too small, the HashMap will need to resize itself more frequently, which can impact performance. On the other hand, if the array is much larger than needed, it will waste memory and may also have a slightly negative impact on performance due to the overhead of managing the larger array.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Concept</type>
+    <question>
+What is the difference between poll() and remove() method of Queue interface?
+    </question>
+    <answer>
+Though both poll() and remove() method from Queue is used to remove the object and returns the head of the queue, there is a subtle difference between them. If Queue is empty() then a call to remove() method will throw Exception, while a call to poll() method returns null. 
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Concept</type>
+    <question>
+Which is better HashTable or ConcurrentHashMap?
+    </question>
+    <answer>
+ConcurrentHashMap is a great Hashtable replacement. We should consider ConcurrentHashMap to use in applications with multiple threads.
+
+HashMap is now presented as the default and the preferred way of using Map with read optimized hashing, and ConcurrentHashMap has been provided for synchronized access which provides better performance than HashTable. Because of this, Java thought it right to deprecate the use of HashTable.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Concept</type>
+    <question>
+Why may you need to override equals and hashcode?
+    </question>
+    <answer>
+The reason why you should override hashcode whenever you override equals is that you need a way to create the same object you want to find. This is particularly useful when you are dealing with collections (i.e. the Key in HashMap, HashTable, HashSet)
+
+Override only equals
+
+⏵ If only equals is overriden, then when you call myMap.put(first,someValue) first will hash to some bucket and when you call myMap.put(second,someOtherValue) it will hash to some other bucket (as they have a different hashCode). So, although they are equal, as they don't hash to the same bucket, the map can't realize it and both of them stay in the map.
+
+Override only hashCode
+
+⏵ If you only override hashCode then when you call myMap.put(first,someValue) it takes first, calculates its hashCode and stores it in a given bucket. Then when you call myMap.put(second,someOtherValue) it should replace first with second as per the Map Documentation because they are equal (according to the business requirement).
+⏵ But the problem is that equals was not redefined, so when the map hashes second and iterates through the bucket looking if there is an object k such that second.equals(k) is true it won't find any as second.equals(first) will be false.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Concept</type>
+    <question>
+If you have a Person object with first name (string), last name (string) and a list of account, how would you implement immutability?
+    </question>
+    <answer>
+(a) The class must be declared as final so that child classes can’t be created.
+(b) Data members in the class must be declared private so that direct access is not allowed.
+(c) Data members in the class must be declared as final so that we can’t change the value of it after object creation.
+(d) A parameterized constructor should initialize all the fields performing a deep copy so that data members can’t be modified with an object reference.
+(e) Deep Copy of objects should be performed in the getter methods to return a copy rather than returning the actual object reference)
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Concept</type>
+    <question>
+Suppose in this Person class the equals methods was implemented incorrectly and the hashcode was implemented correctly, how many objects would be in a hashset if two Jimmy's and one Eric was added to the set.
+    </question>
+    <answer>
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Concept</type>
+    <question>
+Similarly, if instead a hashmap was used and and the key was Person and the value was any arbitrary value. How many entries would be in the hashmap?
+    </question>
+    <answer>
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Concept</type>
+    <question>
+What is the O(n) of add, delete and access for arraylist and linked list?
+    </question>
+    <answer>
+ArrayList has O(1) time complexity to access elements via the get and set methods. LinkedList has O(n/2) time complexity to access the elements. LinkedLinked class implements Deque interface also, so you can get the functionality of double ended queue in LinkedList.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  
 </entries>
