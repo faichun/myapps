@@ -1,4 +1,4 @@
-const xmlDocs = {
+let xmlDocs = {
   Architecture: loadXMLDoc("MyInterview-Architecture.xml"),
   Behavior: loadXMLDoc("MyInterview-Behavior.xml"),
   Cloud: loadXMLDoc("MyInterview-Cloud.xml"),
@@ -17,7 +17,7 @@ const xmlDocs = {
   Testing: loadXMLDoc("MyInterview-Testing.xml"),
   Web: loadXMLDoc("MyInterview-Web.xml"),
 };
-const xslDoc = loadXMLDoc("MyInterview.xsl");
+let xslDoc = loadXMLDoc("MyInterview.xsl");
 let currentXmlDoc = xmlDocs['Architecture'];
 let filterKey = "*";
 let filterQuestion = "";
@@ -69,8 +69,8 @@ function getQuestion() {
 }
 
 function goQuestionBank(which) {
-  let filterQuestion = document.getElementById("questionFilterInput").value;
-  let currentXmlDoc = xmlDocs[which]; // Access the property dynamically
+  filterQuestion = document.getElementById("questionFilterInput").value;
+  currentXmlDoc = xmlDocs[which]; // Access the property dynamically
   if (currentXmlDoc) {
     displayResult(currentXmlDoc);
   } else {
@@ -81,5 +81,5 @@ function goQuestionBank(which) {
 
 function resetInput() {
   document.getElementById('questionFilterInput').value = '';
-  goDefault();
+  getQuestion();
 }
