@@ -6,6 +6,7 @@ const xmlDocs = {
   DataStore: loadXMLDoc("MyInterview-DataStore.xml"),
   DataStructure: loadXMLDoc("MyInterview-DataStructure.xml"),
   DevelopmentPractice: loadXMLDoc("MyInterview-DevelopmentPractice.xml"),
+  DevOps: loadXMLDoc("MyInterview-DevOps.xml"),
   General: loadXMLDoc("MyInterview-General.xml"),
   Integration: loadXMLDoc("MyInterview-Integration.xml"),
   Leadership: loadXMLDoc("MyInterview-Leadership.xml"),
