@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Movie Collection</title>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script language="javascript">
+var filterKey = "*";
+var filterQuestion = "";
+var xmlDoc_os = loadXMLDoc("MyInterview-OS.xml");
+var xmlDoc_networking = loadXMLDoc("MyInterview-Networking.xml");
+var xslDoc = loadXMLDoc("MyInterview.xsl");
+var currentXmlDoc = xmlDoc_os;
+
+function goDefault() {
+  displayResult(xmlDoc_os);
+}
+
+function loadXMLDoc(filename) {
+    if (window.ActiveXObject) {
+        xhttp = new ActiveXObject("Msxml2.XMLHTTP");
+    } else {
+        xhttp = new XMLHttpRequest();
+    }
+    xhttp.open("GET", filename, false);
+    try {
+        xhttp.responseType = "msxml-document"
+    } catch (err) {
+    } // Helping IE11
+    xhttp.send("");
+    return xhttp.responseXML;
+}
+
+function displayResult(xmlDoc) {
+    if (window.ActiveXObject || xhttp.responseType === "msxml-document") {
+        // code for IE
+        ex = xmlDoc.transformNode(xslDoc);
+        document.getElementById("resultBody").innerHTML = ex;
+    } else if (document.implementation
+            && document.implementation.createDocument) {
+        // code for Chrome, Firefox, Opera, etc.
+        xsltProcessor = new XSLTProcessor();
+        xsltProcessor.importStylesheet(xslDoc);
+        xsltProcessor.setParameter(null, "filterQuestion", filterQuestion);
+        resultDocument = xsltProcessor
+                .transformToFragment(xmlDoc, document);
+        document.getElementById("resultBody").innerHTML = new XMLSerializer().serializeToString(resultDocument);
+    }
+}
+
+function getQuestion() {
+    filterQuestion = document.getElementById("questionFilterInput").value;
+    if (filterQuestion == '') {
+        filterQuestion = '*';
+    }
+    displayResult(currentXmlDoc);
+    if (filterQuestion != '*') {
+        document.getElementById("questionFilterInput").value = filterQuestion;
+    }
+    document.getElementById("questionFilterInput").focus();
+}
+
+function goQuestionBank(which) {
+    filterQuestion = document.getElementById("questionFilterInput").value;
+    switch(which) {
+      case 'OS':
+        displayResult(xmlDoc_os);
+        currentXmlDoc = xmlDoc_os;
+        break;
+      case 'NETWORKING':
+        displayResult(xmlDoc_networking);
+        currentXmlDoc = xmlDoc_networking;
+        break;
+      default:
+        displayResult(xmlDoc_os);
+        currentXmlDoc = xmlDoc_os;
+        break;
+    }
+    document.getElementById("questionFilterInput").value = filterQuestion;
+}
+</script>
+<style>
+html {
+  font-size: 10px;
+}
+#resultTable {
+  margin: 0px 0 0px 0;
+}
+table.table-striped th {
+  padding: 2px 5px 2px 5px;
+  text-align: left;
+  white-space: pre-wrap; 
+  font-size: 12px;
+  color: grey;
+}
+table.table-striped td {
+  padding: 2px 5px 2px 5px;
+  text-align: left;
+  white-space: pre-wrap; 
+  font-size: 16px;
+}
+.btn {
+  border: 2px solid #2A3B4C;
+  background-color: white;
+  color: black;
+  padding: 6px 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body onload="goDefault()">
+  <div id="resultBody" class="container-fluid"></div>
+</body>
+</html>

@@ -48,6 +48,7 @@ https://faichun.github.io/myapps/
 ## Collection App
 
 - [Movie Collection](movie)
+- [Interview Cheatsheet](interview)
 
 ## Bible App
 
