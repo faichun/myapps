@@ -20,6 +20,7 @@ let xmlDocs = {
 let xslDoc = loadXMLDoc("MyInterview.xsl");
 let currentXmlDoc = xmlDocs['Architecture'];
 let filterKey = "*";
+let filterType = "";
 let filterQuestion = "";
 
 function goDefault() {
@@ -50,25 +51,34 @@ function displayResult(xmlDoc) {
     let xsltProcessor = new XSLTProcessor();
     xsltProcessor.importStylesheet(xslDoc);
     xsltProcessor.setParameter(null, "filterQuestion", filterQuestion);
+    xsltProcessor.setParameter(null, "filterType", filterType);
     let resultDocument = xsltProcessor
             .transformToFragment(xmlDoc, document);
     document.getElementById("resultBody").innerHTML = new XMLSerializer().serializeToString(resultDocument);
   }
 }
 
-function getQuestion() {
+function getQuestion(control) {
+  filterType = document.getElementById("typeFilterInput").value;
+  if (filterType == '') {
+    filterType = '*';
+  }
   filterQuestion = document.getElementById("questionFilterInput").value;
   if (filterQuestion == '') {
     filterQuestion = '*';
   }
   displayResult(currentXmlDoc);
+  if (filterType != '*') {
+    document.getElementById("typeFilterInput").value = filterType;
+  }
   if (filterQuestion != '*') {
     document.getElementById("questionFilterInput").value = filterQuestion;
   }
-  document.getElementById("questionFilterInput").focus();
+  document.getElementById(control).focus();
 }
 
 function goQuestionBank(which) {
+  filterType = document.getElementById("typeFilterInput").value;
   filterQuestion = document.getElementById("questionFilterInput").value;
   currentXmlDoc = xmlDocs[which]; // Access the property dynamically
   if (currentXmlDoc) {
@@ -76,10 +86,12 @@ function goQuestionBank(which) {
   } else {
     console.error("Document not found: " + which);
   }
+  document.getElementById("typeFilterInput").value = filterType;
   document.getElementById("questionFilterInput").value = filterQuestion;
 }
 
 function resetInput() {
+  document.getElementById('typeFilterInput').value = '';
   document.getElementById('questionFilterInput').value = '';
   getQuestion();
 }
