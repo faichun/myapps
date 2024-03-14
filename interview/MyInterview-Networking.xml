@@ -4,48 +4,28 @@
 
   <entry>
     <type></type>
-    <question></question>
-    <answer></answer>
-    <remark></remark>
+    <question>
+    </question>
+    <answer>
+    </answer>
   </entry>
 -->
 <entries>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <entry>
-    <type>Networking</type>
+    <type></type>
     <question>
-12345
-45678
     </question>
     <answer>
-567
-
-
-432
     </answer>
-    <remarks>
-34579
-qwerty
-    </remarks>
   </entry>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <entry>
-    <type>Networking</type>
+    <type></type>
     <question>
-abcde
-
-de
     </question>
     <answer>
-567
-
-
-432
     </answer>
-    <remarks>
-34579
-qwerty
-    </remarks>
   </entry>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 </entries>

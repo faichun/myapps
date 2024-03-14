@@ -4,33 +4,125 @@
 
   <entry>
     <type></type>
-    <question></question>
-    <answer></answer>
-    <remark></remark>
+    <question>
+    </question>
+    <answer>
+    </answer>
   </entry>
 -->
 <entries>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <entry>
-    <type>Technical</type>
+    <type>Keyword</type>
     <question>
-Can you describe your experience with [specific technology or programming language]?
+Noun
     </question>
     <answer>
+⏵ Effort, Factor
+⏵ Time, Cost, Scope
+⏵ Peer, Colleague, Teammate
     </answer>
-    <remarks>
-    </remarks>
   </entry>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <entry>
-    <type>OS</type>
+    <type>Keyword</type>
     <question>
-Can you walk us through your experience with architecture design and implementation?
+Verb
     </question>
     <answer>
+⏵ Prepare, Construct, Develop
+⏵ Collaborate, Coordinate, Manage, Coach, Lead, Drive
+⏵ Suggest, Recommend
+⏵ Publish, Subscribe
+⏵ Schedule / Hold a meeting
+⏵ Escalate to _____
     </answer>
-    <remarks>
-    </remarks>
   </entry>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Keyword</type>
+    <question>
+Adjective
+    </question>
+    <answer>
+⏵ Loose Coupled, Tightly Coupled, Internal, External
+⏵ Advantage, Disadvantage, Benefit, Drawback
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Example</type>
+    <question>
+Key Sentences to Introduce Yourself at a Job Interview in English
+    </question>
+    <answer>
+⏵ Good morning/afternoon. My name is ______ and I want to thank you for this opportunity.
+⏵ Hello! My name is _______ and it’s a pleasure for me to be here.
+⏵ Good morning/afternoon. I’m _______ and I want to thank you for taking me into consideration for this position.
+⏵ Hello! My name is _______ and I’m glad you called me because I really want to work for this company.
+⏵ Hi! My name is ________ and I’m here because I think I have the profile you’re looking for.
+⏵ Hello! My name is _______ and first of all I want to congratulate you for making this company capable of offering a top quality service!
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Example</type>
+    <question>
+Asking Someone to Repeat a Question
+    </question>
+    <answer>
+⏵ I’m sorry. Would you please repeat the question?
+⏵ Excuse me, I didn’t hear you. Can you please say that again?
+⏵ Would you please say that again?
+⏵ Could you please repeat the question and speak a little bit harder?
+⏵ Sorry, I didn’t understand you. Could you please say that again?
+⏵ I’m sorry, I didn’t hear the last part. Can you repeat it, please?
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Example</type>
+    <question>
+Emphasizing Your Strengths
+    </question>
+    <answer>
+⏵ I think I’m the right choice for this job because I know how to…
+⏵ My (mention a set of skills relevant for the job) will allow me to do this easily.
+⏵ I’m very good at ________ and that’s why I think I’ll be able to handle this position. (Fill the blank space with the one you consider is your best strength.)
+⏵ I’d love to work here because I _______.
+⏵ I think my ________, my _________ and my __________ make me perfect for this job.
+⏵ I can say my top 3 skills are: ________, _________ and _________.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Example</type>
+    <question>
+Thanking the Interviewer at the End of the Interview in English
+    </question>
+    <answer>
+⏵ Thank you very much for your time. I’ll be waiting for your call!
+⏵ I want you to know that I’m very thankful for this.
+⏵ Before I leave I want to thank you for the opportunity. I hope we see each other again soon!
+⏵ I wanted to thank you before I leave. I hope I have the profile you’re looking for.
+⏵ It was a pleasure meeting you and then again I want to thank you for having me here!
+⏵ I want to thank you one last time and I’ll be expecting your call!
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Example</type>
+    <question>
+Some other sentences for a job interview in English 
+    </question>
+    <answer>
+⏵ I’ve been looking for this position for a long time.
+⏵ I love the idea of working here because I enjoy _______.
+⏵ This is what I always wanted to do and I know I can do it very well.
+⏵ I’m glad I was recommended by _______ for this position!
+⏵ I’m glad I saw this job post because I’m very excited about the idea of working for this company.
+⏵ You can expect nothing but proficiency and excellent results if you hire me.
+    </answer>
+  </entry>
+  <!-- ++⏵ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 </entries>

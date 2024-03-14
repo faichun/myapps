@@ -9,6 +9,7 @@ table.table-striped th {
   color: grey;
 }
 table.table-striped td {
+  margin: 2px 2px 2px 2px;
   padding: 2px 5px 2px 5px;
   text-align: left;
   white-space: pre-wrap; 
@@ -101,4 +102,26 @@ table.table-striped td {
   background-color: #28a745; /* Green background */
   border-color: #28a745; /* Green border */
   opacity: 0.65; /* Button appears faded when disabled */
+}
+.status-box {
+  display: inline-block;
+  padding: 0.25em 0.6em;
+  font-size: 0.875em;
+  font-weight: bold;
+  line-height: 1;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 5px;
+}
+
+/* Specific styles for "Active" status */
+.status-box.active {
+  background-color: #0062cc; /* Green */
+}
+
+/* Specific styles for "Inactive" status */
+.status-box.inactive {
+  background-color: #F44336; /* Red */
 }

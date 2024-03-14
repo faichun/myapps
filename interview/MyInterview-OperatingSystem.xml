@@ -4,48 +4,107 @@
 
   <entry>
     <type></type>
-    <question></question>
-    <answer></answer>
-    <remark></remark>
+    <question>
+    </question>
+    <answer>
+    </answer>
   </entry>
 -->
 <entries>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <entry>
-    <type>OS</type>
+    <type>Command</type>
     <question>
-12345
-45678
+sed command
     </question>
     <answer>
-567
-
-
-432
+sed is used for data transformation. find and replace a string feature.
     </answer>
-    <remarks>
-34579
-qwerty
-    </remarks>
   </entry>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <entry>
-    <type>OS</type>
+    <type>Command</type>
     <question>
-abcde
-
-de
+awk command
     </question>
     <answer>
-567
-
-
-432
+awk is a a scripting language used for manipulating data and generating reports
     </answer>
-    <remarks>
-34579
-qwerty
-    </remarks>
   </entry>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Command</type>
+    <question>
+cat command
+    </question>
+    <answer>
+cat is a command to Read a file, create a file, and concatenate files
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Command</type>
+    <question>
+grep command
+    </question>
+    <answer>
+grep (global regular expression print) 
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Command</type>
+    <question>
+＞  = "one greater than" character
+＞＞  = "two greater than" character
+    </question>
+    <answer>
+⏵ overwriting existing files
+⏵ append onto existing files
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Script</type>
+    <question>
+How to read a certain column in a file by using shell script?
+    </question>
+    <answer>
+while read index name age nickname; do
+    echo "$index : $name, $age, $nickname"
+done ＜ "input.txt"
+
+cat input.txt | while read index name age nickname; do
+    echo "$index : $name, $age, $nickname"
+done
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Memory</type>
+    <question>
+What is heap memory?
+    </question>
+    <answer>
+Heap memory is memory that is used for dynamic allocation of objects. It is called the "heap" because it is a large pool of unstructured memory that can be used to satisfy allocation requests. Heap memory is slower to allocate and deallocate than stack memory, but it can store objects of any size and is not limited by the size of the stack.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Memory</type>
+    <question>
+What is stack memory?
+    </question>
+    <answer>
+A stack is a special area of computer’s memory which stores temporary variables created by a function. In stack, variables are declared, stored and initialized during runtime.
+
+It is a temporary storage memory. When the computing task is complete, the memory of the variable will be automatically erased. The stack section mostly contains methods, local variable, and reference variables.
+
+Stack memory is memory that is reserved for storing function call frames and local variables. When a function is called, a new frame is created on the top of the stack to store the function's local variables and other information. When the function returns, its frame is removed from the stack.
+
+Stack memory is typically faster to allocate and deallocate than heap memory, but it has a fixed size and is not suitable for storing large or long-lived objects.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
 </entries>

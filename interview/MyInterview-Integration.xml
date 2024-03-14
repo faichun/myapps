@@ -4,48 +4,26 @@
 
   <entry>
     <type></type>
-    <question></question>
-    <answer></answer>
-    <remark></remark>
+    <question>
+    </question>
+    <answer>
+    </answer>
   </entry>
 -->
 <entries>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <entry>
-    <type>Networking</type>
+    <type>Pattern</type>
     <question>
-12345
-45678
+What is the difference between asynchronous and synchronous call?
     </question>
     <answer>
-567
+In a synchronous call, the calling function blocks and waits for the call to complete before continuing execution. This means that the calling function is "paused" while the call is being processed, and cannot perform any other tasks during this time.
 
+In contrast, an asynchronous call does not block the calling function. Instead, the call is made and the calling function continues execution without waiting for the call to complete. This means that the calling function can perform other tasks while the call is being processed. Once the call completes, the calling function is typically notified of the completion in some way, such as through a callback or a return value.
 
-432
+In general, synchronous calls are simpler to implement and understand, but can lead to poor performance if the call takes a long time to complete. Asynchronous calls, on the other hand, can improve performance, but are generally more complex to implement and may require additional work to handle the notification of completion.
     </answer>
-    <remarks>
-34579
-qwerty
-    </remarks>
-  </entry>
-  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-  <entry>
-    <type>Networking</type>
-    <question>
-abcde
-
-de
-    </question>
-    <answer>
-567
-
-
-432
-    </answer>
-    <remarks>
-34579
-qwerty
-    </remarks>
-  </entry>
+  </entry>  
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 </entries>

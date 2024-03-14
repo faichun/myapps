@@ -4,15 +4,16 @@
 
   <entry>
     <type></type>
-    <question></question>
-    <answer></answer>
-    <remark></remark>
+    <question>
+    </question>
+    <answer>
+    </answer>
   </entry>
 -->
 <entries>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <entry>
-    <type>Security</type>
+    <type>Vulnerabilities</type>
     <question>
 What is CORS?
     </question>
@@ -23,16 +24,15 @@ For example, if a web page served from example.com makes a request to api.exampl
 
 CORS is useful for protecting against cross-site request forgery (CSRF) attacks, which involve an attacker tricking a user into making a request to a website that the user did not intend to make. By blocking these unauthorized requests, CORS helps to ensure the security and integrity of the user's interactions with websites.
     </answer>
-    <remarks>
-    </remarks>
   </entry>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <entry>
-    <type>OS</type>
+    <type>Vulnerabilities</type>
     <question>
 Could you describe top 10 OWASP vulnerabilities?
     </question>
     <answer>
+https://owasp.org/www-project-top-ten/
 1. Broken Access Control
 2. Cryptographic Failures
 3. Injection
@@ -44,8 +44,6 @@ Could you describe top 10 OWASP vulnerabilities?
 9. Security Logging and Monitoring Failures
 10. Server Side Request Forgery
     </answer>
-    <remarks>https://owasp.org/www-project-top-ten/
-    </remarks>
   </entry>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 </entries>

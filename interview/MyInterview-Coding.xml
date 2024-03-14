@@ -1,0 +1,326 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+  Content Structure: 
+
+  <entry>
+    <type></type>
+    <question>
+    </question>
+    <answer>
+    </answer>
+  </entry>
+-->
+<entries>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Reactive</type>
+    <question>
+What is Reactive programming?
+    </question>
+    <answer>
+programming with asynchronous data streams.
+
+⏵ An event such as software-generated alerts, keystrokes or signals from an internet of things (IoT) system.
+⏵ A call, which is a function that invokes a routine as part of a workflow.
+⏵ A message, which is an information unit that the system sends back to the user or system operator with information about the status of an operation, an error, failure or other condition.
+
+Observable and Observer (RX Java)
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Reactive</type>
+    <question>
+What is WebFlux?
+    </question>
+    <answer>
+Reactor is the reactive library of choice for Spring WebFlux.
+non-blocking, supports Reactive Streams
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Reactive</type>
+    <question>
+Mono vs Flux
+    </question>
+    <answer>
+⏵ Mono is more relatable to the Optional class in Java since it contains 0 or 1 value.
+⏵ Flux is more relatable to List since it can have N number of values.
+⏵ Mono and Flux are both implementations of the Publisher interface. 
+⏵ In simple terms, we can say that when we're doing something like a computation or making a request to a database or an external service, and expecting a maximum of one result, then we should use Mono.
+⏵ When we're expecting multiple results from our computation, database, or external service call, then we should use Flux.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Spring</type>
+    <question>
+Constructor Autowired vs Field Autowired vs Method Autowired and when to use.
+    </question>
+    <answer>
+⏵ Mandatory = Constructor
+⏵ Optional = Method
+⏵ Field = Not Recommended
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Spring</type>
+    <question>
+What is tightly coupled vs loosed coupled?
+    </question>
+    <answer>
+We don’t want to hardcode the use of real implementation in a service class. It is difficult for us to change to another implementation due to the hard dependency.
+Instead, define an Interface (e.g. Transportation), then we create the implementation class (e.g. Bus, Taxi, Train). So, we can have many kinds of the implementations based on the interface.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Spring</type>
+    <question>
+What is dependency injection?
+    </question>
+    <answer>
+dependency injection is a design pattern in which an object or function receives other objects or functions that it depends on.
+aims to separate the concerns of constructing objects and using them.
+leading to loosely coupled programs.
+@Autowired @Component
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Spring</type>
+    <question>
+What is inversion of control?
+    </question>
+    <answer>
+is about providing any kind of callback (which controls reaction), instead of acting ourself directly (in other words, inversion and/or redirecting control to external handler/controller)
+
+IOC Contrainer (Bean Factories)
+⏵ Register and Find Beans (@Component)
+⏵ Wire Dependencies (@Autowired)
+⏵ Manage Lifecycle of Beans (
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Data Access</type>
+    <question>
+What is Hibernate?
+    </question>
+    <answer>
+Hibernate is an open-source Object-relational mapper solution in Java. It is lightweight and overcomes all the shortcomings that we face while working with JDBC.
+a framework in Java which comes with an abstraction layer and handles the implementations internally.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Data Access</type>
+    <question>
+Java JPA vs Hibernate
+    </question>
+    <answer>
+JPA stands for Java Persistence API
+JPA is described in javax.persistence package.
+It is not an implementation. It is only a Java specification.
+It is a standard API that permits to perform database operations.
+
+Hibernate is described in org.hibernate package.
+Hibernate is an implementation of JPA.
+It is used in mapping Java data types with SQL data types and database tables.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Data Access</type>
+    <question>
+What is @Transactional?
+    </question>
+    <answer>
+either at the class or method level
+provides the application the ability to declaratively control transaction boundaries
+It allows us to set propagation, isolation, timeout, read-only, and rollback conditions for our transaction.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Data Access</type>
+    <question>
+What is Spring JPA?
+    </question>
+    <answer>
+public interface CustomerRepository extends CrudRepository＜Customer, Long＞
+@Entity @Id @GeneratedValue
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Data Access</type>
+    <question>
+How do you use Spring JPA to connect the database?
+    </question>
+    <answer>
+Spring Data JPA ＜＞ JPA ＜＞ Hibernate ＜＞ JDBC
+
+⏵ Spring Data JPA is ann abstractin layer on top of JPA to reduce the amount of boilerplate code required to implement data access object.
+⏵ JPA is just a specification that facilities object relational mapping to manage relational data in Java app.
+⏵ Hibernate is a JPA implementation.
+⏵ Hibernate generates SQL query and executes using JDBC.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Stream API</type>
+    <question>
+What is Stream API?
+    </question>
+    <answer>
+A sequence of elements supporting sequential and parallel aggregate operations.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Stream API</type>
+    <question>
+flatMap()
+    </question>
+    <answer>
+Returns a stream consisting of the results of replacing each element of this stream with the contents of a mapped stream produced by applying the provided mapping function to each element.
+if you have a list of the list, then you can convert it to a big list by using 
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Stream API</type>
+    <question>
+filter()
+    </question>
+    <answer>
+filter method, as its name suggests, it filters elements based upon a condition you gave.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Stream API</type>
+    <question>
+map()
+    </question>
+    <answer>
+Returns a stream consisting of the results of applying the given function to the elements of this stream.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Stream API</type>
+    <question>
+collect()
+    </question>
+    <answer>
+Performs a mutable reduction operation on the elements of this stream using a Collector.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Stream API</type>
+    <question>
+map() vs collect()
+    </question>
+    <answer>
+The Stream.map() method is used to transform one object into another by applying a function. The collect() method of Stream class can be used to accumulate elements of any Stream into a Collection.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Stream API</type>
+    <question>
+Which is better:  stream or loop?
+    </question>
+    <answer>
+Stream API is only used for processing group of data.
+
+⏵ If you have a small list, loops perform better.
+⏵ If you have a huge list, a parallel stream will perform better.
+    </answer>
+  </entry>
+  <entry>
+    <type>Stream API</type>
+    <question>
+What is flatMap vs map? How?
+    </question>
+    <answer>
+map() function produces one output for one input value, whereas flatMap() function produces can concert multi-dimensional array to single dimension array:
+
+＜R＞ Stream＜R＞ map(Function＜? super T, ? extends R＞ mapper)
+＜R＞ Stream＜R＞ flatMap(Function＜? super T, ? extends Stream＜? extends R＞＞ mapper)
+
+One-to-one mapping occurs in map().	
+One-to-many mapping occurs in flatMap().
+
+map() is used only for transformation.
+flatMap() is used both for transformation and mapping.	
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Threading</type>
+    <question>
+Runnable vs Thread
+    </question>
+    <answer>
+Java does not support multiple inheritance. Hence if your class had already extended some another class, it can not extend Thread class anymore.
+By implementing Runnable we can reuse the task to execute it on different threads. Also it could be run by other means like Executor.
+Implementing Runnable provide Composition and extending Thread is Inheritance . Try to favor composition over inheritance.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Threading</type>
+    <question>
+Runnable vs Callable
+    </question>
+    <answer>
+Both Runnable and Callable represent task which is intended to be executed in a separate thread. Runnable is there from JDK 1.0 while Callable was added on JDK 1.5. Main difference between these two is that Callable’s call() method can return value and throw Exception, which was not possible with Runnable’s run() method. Callable return Future object, which can hold the result of computation.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Concept</type>
+    <question>
+What is Functional Programming
+    </question>
+    <answer>
+A functional interface is an interface with only one abstract method (it may have multiple non-abstract default methods). Functional interfaces can be instantiated with lambda expressions and method references.
+
+⏵ A Consumer is a functional interface that accepts a single input and returns no output. 
+⏵ A Supplier is a simple interface which indicates that this implementation is a supplier of results.
+⏵ A Predicate interface represents a boolean-valued-function of an argument.
+⏵ A Function interface is more of a generic one that takes one argument and produces a result.
+
+⏵ Consumer: function (input) =＞ void 
+⏵ Supplier: function () =＞ return output
+⏵ Predicate: function (input) =＞ return boolean
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Concept</type>
+    <question>
+What is Java Serialization?
+    </question>
+    <answer>
+Serialization is the conversion of the state of an object into a byte stream; deserialization does the opposite. Stated differently, serialization is the conversion of a Java object into a static stream (sequence) of bytes, which we can then save to a database or transfer over a network.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Concept</type>
+    <question>
+What is normal interface?
+    </question>
+    <answer>
+A regular interface can be created with any number of methods whereas a functional interface can only have one. 
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+</entries>

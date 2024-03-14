@@ -4,48 +4,30 @@
 
   <entry>
     <type></type>
-    <question></question>
-    <answer></answer>
-    <remark></remark>
+    <question>
+    </question>
+    <answer>
+    </answer>
   </entry>
 -->
 <entries>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <entry>
-    <type>OS</type>
+    <type>Client</type>
     <question>
-12345
-45678
     </question>
     <answer>
-567
-
-
-432
+⏵ RestTemplate uses the Java Servlet API, which is based on the thread-per-request model.
+⏵ WebClient uses an asynchronous, non-blocking solution provided by the Spring Reactive framework.
     </answer>
-    <remarks>
-34579
-qwerty
-    </remarks>
   </entry>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <entry>
-    <type>OS</type>
+    <type></type>
     <question>
-abcde
-
-de
     </question>
     <answer>
-567
-
-
-432
     </answer>
-    <remarks>
-34579
-qwerty
-    </remarks>
   </entry>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 </entries>

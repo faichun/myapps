@@ -11,7 +11,6 @@
               <th>Type</th>
               <th>Question</th>
               <th>Answer</th>
-              <th>Remarks</th>
             </tr>
           </thead>
           <tbody>
@@ -20,10 +19,9 @@
             <xsl:variable name="uppercase">ABCDEFGHIJKLMNOPQRSTUVWXYZ</xsl:variable>
             <xsl:if test="($filterQuestion = '*' or (contains(translate(question, $uppercase, $lowercase), translate($filterQuestion, $uppercase, $lowercase))))">
             <tr>
-              <td><xsl:value-of select="type"/></td>
+              <td class="status-box active"><xsl:value-of select="type"/></td>
               <td><xsl:value-of select="question"/></td>
               <td><xsl:value-of select="answer"/></td>
-              <td><xsl:value-of select="remarks"/></td>
             </tr>
             </xsl:if>
           </xsl:for-each>
