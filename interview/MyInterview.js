@@ -81,5 +81,5 @@ function goQuestionBank(which) {
 
 function resetInput() {
   document.getElementById('questionFilterInput').value = '';
-  getQuestion();
+  goDefault();
 }
