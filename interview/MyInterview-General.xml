@@ -13,6 +13,58 @@
 <entries>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <entry>
+    <type>Introduction</type>
+    <question>
+Example Introduction for TSE #1 - Troubleshooting and Coding
+    </question>
+    <answer>
+Hello, I am ____.
+
+I've been working in IT development for over 20 years, mainly with banking and finance sector. 
+
+Currrently, I work at Tata Consultancy Services as a Solution Architect role. They have assigned me to two projects.
+
+The 1st project is the Loan Origination migration in Westpac. 
+I helped the team to study a new vendor product, complete the proof of concept and create the framework for their integration development.
+The project gave me a chance to learn a new architecture requirement and design the ways on using the vendor product in the Loan Origination.
+The primary language used in the project was Java, and the vendor product is Lightbend Kalix.
+
+After one year in Westpac project, the contract finished. 
+TCS assigned me to a RamsayHealth project for their intergration and API management development on Cloud platforms.
+During this time, I've learnt to develop application on Cloud.
+The primary language used in the project was JavaScript, and the cloud platforms are GCP and AWS.
+I learnt to use Anthos, APIGEE, Kubernetes to build up a multicloud platforms for RamsayHealth.
+
+Before TCS employment, I was in HSBC as a technical lead in API and Integration domain for over 10 years. 
+The last rile was to lead the team in China and India for the Core Engineering Platform for mircoservices development.
+I was so grateful to work in such a global company so that 
+I could meet different people in different business domain around the world 
+as well as involve in many challenging entreprise projects, covering from backend, to middleware, frontend, and DevOps implementation.
+
+I'm excited to take this interview opportunity, 
+because I'm looking forward to using what I know about technology and problem-solving to help Google create new and better services for people around the world.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Introduction</type>
+    <question>
+Example Introduction for TSE #2 - Technical and Customer aptitude
+    </question>
+    <answer>
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Introduction</type>
+    <question>
+Example Introduction for TSE #3 - System Design and General Cognitive assessment
+    </question>
+    <answer>
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
     <type>Keyword</type>
     <question>
 Noun
