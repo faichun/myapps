@@ -15,6 +15,26 @@
   <entry>
     <type>Introduction</type>
     <question>
+Tips
+    </question>
+    <answer>
+TSE #1 - Troubleshooting and Coding:
+⏵ Focus on your strong analytical and troubleshooting skills, your proficiency in coding, and your experience in developing and debugging complex systems. 
+⏵ Mention any significant projects where you've successfully identified and resolved issues.
+
+TSE #2 - Technical and Customer Aptitude:
+⏵ Emphasize your technical knowledge, especially relating to Google Cloud Platform (GCP) and other relevant technologies. 
+⏵ Highlight your customer service philosophy, experience in providing technical support, and any instances where you've gone above and beyond to help customers or improve a product based on feedback.
+
+TSE #3 - System Design and General Cognitive Assessment:
+⏵ Share your experience with system architecture and design, focusing on projects where you've designed scalable and efficient systems. 
+⏵ Mention how you approach problem-solving, your ability to think critically and creatively, and your eagerness to tackle complex challenges that drive innovation.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Introduction</type>
+    <question>
 Example Introduction for TSE #1 - Troubleshooting and Coding
     </question>
     <answer>
