@@ -13,8 +13,26 @@
 <entries>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <entry>
+    <type>Concept</type>
+    <question>
+Describe your experience working with APIs and integrating them into existing systems.
+    </question>
+    <answer>
+⏵ Understanding API Specifications. (top-down vs bottom-up)
+⏵ Authentication and Authorization
+⏵ Environment Setup
+⏵ Integration Logic Design 
+⏵ Error Handling and Logging
+⏵ Performance Considerations
+⏵ Testing and Validation
+⏵ Documentation and Training
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
     <type>Client</type>
     <question>
+RestTemplate vs WebClient
     </question>
     <answer>
 ⏵ RestTemplate uses the Java Servlet API, which is based on the thread-per-request model.
@@ -93,7 +111,7 @@ how to prevent duplicate request in api microservices
   </entry>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <entry>
-    <type>GATEWAY</type>
+    <type>Gateway</type>
     <question>
 What is the difference between API gateway and API mesh?
     </question>
@@ -108,10 +126,30 @@ In technical terms, API gateways supervise client-to-server communication, while
   </entry>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <entry>
-    <type></type>
+    <type>Comparison</type>
     <question>
+Microservices Architecture vs Monolithic Applications
     </question>
     <answer>
+Microservices Architecture Advantages Over Monolithic Applications:
+⏵ Scalability: Services can be scaled independently, allowing more efficient use of resources.
+⏵ Flexibility in Technology: Each microservice can use a technology stack best suited for its requirements.
+⏵ Faster Deployment: Smaller, independent services can be deployed faster than a large monolithic application.
+⏵ Resilience: Failure in one service doesn’t necessarily bring down the whole system.
+⏵ Easier Maintenance: Smaller codebases are easier to understand and maintain.
+⏵ Development Agility: Teams can work independently on different services, improving development speed.
+⏵ Better Scalability: Allows precise scaling of features that need more resources, without affecting the whole application.
+⏵ Continuous Deployment: Enables continuous deployment and integration practices, allowing regular updates without downtime.
+
+Monolithic Architecture Advantages Over Microservices Applications:
+⏵ Simplified Development Process: Easier to develop and test since all components are within a single codebase.
+⏵ Simplified Deployment: Deployment involves just one application, simplifying the process.
+⏵ Ease of Debugging and Monitoring: Easier to debug and monitor a single application than multiple services spread out.
+⏵ Consistent Development Environment: A single technology stack is used, making it easier for new developers to get up to speed.
+⏵ Transactional Integrity: Easier to implement transactions that span multiple modules or components.
+⏵ Lower Initial Cost: Initial setup and development costs can be lower without the overhead of managing multiple services and databases.
+⏵ Simplicity in Scaling: Scaling involves scaling a single application, which can be straightforward with the right infrastructure.
+⏵ Less Overhead: No need to manage inter-service communication, which can add complexity and latency.
     </answer>
   </entry>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->

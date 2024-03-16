@@ -11,6 +11,23 @@
   </entry>
 -->
 <entries>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Sorting</type>
+    <question>
+Explain the worst case of merge sort
+    </question>
+    <answer>
+The worst-case time complexity of Merge Sort is 
+O(n log n)
+where n is the number of elements in the array to be sorted. 
+
+⏵ Divide: The array is recursively divided into two halves until each sub-array contains a single element.
+⏵ Conquer: Each pair of single-element sub-arrays is merged into a sorted array of two elements, continuing the merge process until the entire array is reassembled as sorted.
+⏵ Combine: The merge operation, which is the core of the algorithm, requires comparing and rearranging elements, contributing to the O(n log n) complexity.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <entry>
     <type>Java</type>
     <question>
@@ -719,6 +736,26 @@ How do you inject spring dependencies?
 Constructor based Dependency Injection
 Setter based Dependency Injection
 Field or Property-based Dependency Injection
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Python</type>
+    <question>
+How lists (data structure) work in python.
+    </question>
+    <answer>
+In Python, lists are dynamic arrays that can store elements of different types. 
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Concept</type>
+    <question>
+What is the fastest Big O equation?
+    </question>
+    <answer>
+The fastest Big O notation in terms of algorithm complexity is O(1), also known as constant time complexity. It means the execution time or space used by the algorithm does not change with the size of the input data set.
     </answer>
   </entry>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->

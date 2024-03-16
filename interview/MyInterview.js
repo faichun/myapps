@@ -1,6 +1,6 @@
 let xmlDocs = {
   Architecture: loadXMLDoc("MyInterview-Architecture.xml"),
-  Behavior: loadXMLDoc("MyInterview-Behavior.xml"),
+  Behaviour: loadXMLDoc("MyInterview-Behaviour.xml"),
   Cloud: loadXMLDoc("MyInterview-Cloud.xml"),
   Coding: loadXMLDoc("MyInterview-Coding.xml"),
   DataStore: loadXMLDoc("MyInterview-DataStore.xml"),

@@ -13,18 +13,106 @@
 <entries>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <entry>
-    <type></type>
+    <type>Performance</type>
     <question>
+Troubleshoot why the internet is slow
     </question>
     <answer>
+Ask Questions:
+
+⏵ Is it slow on all devices?
+⏵ Did it start happening recently?
+
+Possible Reasons:
+
+⏵ Too many people using the internet.
+⏵ Old router or modem.
+⏵ Something big is downloading or streaming.
+
+Troubleshooting Steps:
+
+⏵ Check connection: Use Ethernet cable to see if Wi-Fi is the problem.
+⏵ Speed test: Use a website to check internet speed.
+⏵ Check devices: Look for damage on router or modem.
+⏵ See what's using internet: Look for apps or devices using a lot of internet.
+⏵ Change Wi-Fi channel: If too many Wi-Fi networks are nearby.
+⏵ Talk to ISP: Ask if they have issues or are doing maintenance.
+
+Linux Commands:
+
+⏵ Ping Test: Check connection to a website. ( ping google.com )
+⏵ Speed Test: Use a command-line tool like speedtest-cli ( speedtest-cli )
+⏵ Check Network Usage: Identify what's using your bandwidth. ( iftop )
+⏵ Wi-Fi Signal: Check Wi-Fi signal strength. ( iwconfig )
+⏵ Compare with other devices or setting
     </answer>
   </entry>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <entry>
-    <type></type>
+    <type>Protocol</type>
     <question>
+What port does ftp, sftp, ssh, telnet use?
     </question>
     <answer>
+⏵ FTP (File Transfer Protocol): Uses port 21 for command and control (sending commands and receiving responses). 
+⏵ FTP (File Transfer Protocol): Uses port 20 for data transfer (transferring files).
+⏵ SSH (Secure Shell): Uses port 22 for secure data communication, remote command-line login, remote command execution, and other secure network services.
+⏵ Telnet: Uses port 23 for unencrypted (and therefore insecure) network communication; used for remote login services.
+⏵ SFTP (SSH File Transfer Protocol): Also uses port 22, as it is an extension of SSH and provides secure file transfer capabilities.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Protocol</type>
+    <question>
+Explain SSL, TLS, HTTP, HTTPS
+    </question>
+    <answer>
+⏵ SSL and TLS are cryptographic protocols that secure data in transit. TLS is the newer, more secure version.
+⏵ HTTP is the protocol for transferring web content, but it does not encrypt data, making it vulnerable to interception.
+⏵ HTTPS combines HTTP with TLS/SSL encryption, ensuring that data transferred between the web browser and server is secure and private.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Concept</type>
+    <question>
+TCP Three-Way Handshake
+What are the three TCP connection packets names? 
+What are the packets sent in a TCP connection?
+    </question>
+    <answer>
+Connection Establishment (Three-Way Handshake):
+⏵ SYN (Synchronize): Sent by the client to the server to initiate a TCP connection, carrying a sequence number for synchronization.
+⏵ SYN-ACK (Synchronize-Acknowledgment): Sent by the server in response to the SYN packet, acknowledging the client's SYN (with an ACK) and sending its own SYN.
+⏵ ACK (Acknowledgment): Sent by the client in response to the server's SYN-ACK, acknowledging the server's SYN.
+
+Data Transfer (Maintaining the Connection):
+⏵ Data Packets: After the connection is established, data packets are sent between the client and server. Each data packet sent requires an acknowledgment packet in response to confirm receipt.
+⏵ Acknowledgment Packets: These are sent to confirm the receipt of data packets.
+
+Connection Termination:
+⏵ FIN (Finish): Either party (client or server) can initiate the termination process by sending a FIN packet, indicating it has no more data to send.
+⏵ ACK: The receiving party responds with an ACK to acknowledge the FIN packet.
+⏵ FIN: The receiving party then sends its own FIN packet, indicating it's also ready to close the connection.
+⏵ ACK: The initiating party responds with an ACK to acknowledge the final FIN, completing the four-way termination process.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Concept</type>
+    <question>
+What are Layer 4 and Layer 7 in OSI model?
+    </question>
+    <answer>
+Layer 4 - Transport Layer:
+⏵ Responsible for end-to-end communication and error recovery.
+⏵ Where TCP (Transmission Control Protocol) operates, providing reliable data transfer.
+
+Layer 7 - Application Layer:
+⏵ The layer closest to the end user.
+⏵ It allows access to network services that support applications.
+⏵ Examples include HTTP for web browsing, SMTP for email.
     </answer>
   </entry>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->

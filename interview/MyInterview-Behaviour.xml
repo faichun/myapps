@@ -13,6 +13,31 @@
 <entries>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <entry>
+    <type>Presentation</type>
+    <question>
+What is your Favourite Colour?
+    </question>
+    <answer>
+Clarify: What is the Meaning of Favourite? What factor and definition control Favourite?
+Explain: Based on the definition (e.g. purpose, feeling, value), answer it, and try to correlate to the Job and Past Experience.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Motivation</type>
+    <question>
+Why do you want to work for _____? 
+    </question>
+    <answer>
+⏵ Cutting-Edge Cloud Technology
+⏵ Global Influence and Exposure
+⏵ Collaboration, Innovation and Impact
+⏵ Learning and Growth
+⏵ Have fun
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
     <type>Pressure</type>
     <question>
 Can you work under pressure?

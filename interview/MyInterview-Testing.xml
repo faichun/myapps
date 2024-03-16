@@ -13,6 +13,24 @@
 <entries>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <entry>
+    <type>Concept</type>
+    <question>
+How to debug a machine not being accessible.
+    </question>
+    <answer>
+⏵ User Reported Error Log and Symptom 
+⏵ Physical Checks and Remote Management Tools
+⏵ Logs Analysis along the end-to-end flow with any correlation ID
+⏵ Monitoring Tools
+⏵ Network Traffic Monitoring
+⏵ Proxy Tools
+⏵ Simulation in Development
+⏵ Change History
+⏵ Ask for relevant team to help
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
     <type>Tool</type>
     <question>
 What is the difference between mockito and powermock?
@@ -29,7 +47,7 @@ How do you create the unit test for the logic with external connection?
     </question>
     <answer>
 Mocks and Stubs / External Test Instance
-⏵ Mocks: Mocks are the clone or dummy objects that simulate the behavior of the real objects.
+⏵ Mocks: Mocks are the clone or dummy objects that simulate the behaviour of the real objects.
 ⏵ Stubs: Stubs are the objects that hold predefined data. It acts as a temporary object for a called module and gives the same output as the original software.
     </answer>
   </entry>
@@ -40,7 +58,7 @@ Mocks and Stubs / External Test Instance
 What is TDD and what is BDD?
     </question>
     <answer>
-⏵ BDD is designed to test an application's behavior from the end user's standpoint
+⏵ BDD is designed to test an application's behaviour from the end user's standpoint
 ⏵ TDD is focused on testing smaller pieces of functionality in isolation.
     </answer>
   </entry>
@@ -98,7 +116,7 @@ How to find the root cause of the performance issue of a certain request / proce
 ⏵ Run GC and take a heap dump in production.
 ⏵ Identify the pattern of the issue (trigger time, frequency, pattern) 
 ⏵ Simulate the issue in the development environment.
-⏵ Compare the heap dumps to identify which object have abnormal behavior.
+⏵ Compare the heap dumps to identify which object have abnormal behaviour.
     </answer>
   </entry>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->

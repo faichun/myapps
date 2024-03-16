@@ -13,6 +13,24 @@
 <entries>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <entry>
+    <type>Performance</type>
+    <question>
+How do you fine tune the response in DB?
+    </question>
+    <answer>
+⏵ Analyze Slow Queries by log or tools.
+⏵ Index Optimization
+⏵ Query Optimization
+⏵ Database Normalization
+⏵ Caching
+⏵ Partitioning
+⏵ Use Latest DBMS Features
+⏵ Hardware and Configuration
+⏵ Regular Maintenance and Housekeeping
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
     <type>Concept</type>
     <question>
 What is NOSQL DB?
@@ -74,15 +92,6 @@ When should we use NOSQL DB?
     <answer>
 The major purpose of using a NoSQL database is for distributed data stores with huge data storage needs. NoSQL is used for Big data and real-time web apps. 
 The system response time becomes slow when you use RDBMS for massive volumes of data.
-    </answer>
-  </entry>
-  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-  <entry>
-    <type>Performance</type>
-    <question>
-How do you spot the fine tune the response in DB
-    </question>
-    <answer>
     </answer>
   </entry>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->

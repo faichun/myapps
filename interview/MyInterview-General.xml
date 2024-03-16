@@ -13,6 +13,53 @@
 <entries>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <entry>
+    <type>Question</type>
+    <question>
+More Technical Questions
+    </question>
+    <answer>
+⏵ Given two linked list, return a list that contains all elements that are in the intersection of both.
+⏵ What tools do you use for version control and collaboration on code projects?
+⏵ Explain the concept of containerization and its benefits in software development.
+⏵ How would you go about diagnosing and resolving performance issues in a web application?
+⏵ What are some best practices for ensuring data security in a software solution?
+⏵ Can you explain the difference between RESTful and SOAP web services?
+⏵ How do you ensure that your solutions are scalable and maintainable?
+⏵ Can you explain the concept of continuous integration and continuous deployment (CI/CD)?
+⏵ Describe a time when you had to troubleshoot and resolve a network-related issue.
+⏵ How do you approach testing and quality assurance for the solutions you develop?
+⏵ Can you explain the concept of serverless computing and its benefits?
+⏵ Have you ever had to deal with a security breach or vulnerability in a system you were responsible for? If so, how did you handle it?
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Question</type>
+    <question>
+More Behaviour Questions
+    </question>
+    <answer>
+⏵ Can you share an experience when you could not achieve your goals on a project?
+⏵ Have you ever led a team through a complicated situation? 
+⏵ What would your first three months in the position look like if we hire you?
+⏵ What project have you successfully executed and are proudest about finishing?
+⏵ Tell us about a time when you failed to achieve a goal or desired result.
+⏵ Tell me about a time you created something from nothing.
+⏵ Describe a time when you had to tell a customer "no".
+⏵ Have you ever had to troubleshoot an issue in a production environment? If so, how did you handle it?
+⏵ What is the most complex technical problem you have solved for a client? How did you approach it?
+⏵ Can you provide an example of when you had to learn a new technology quickly to solve a customer’s problem?
+⏵ Describe your experience with cloud platforms like AWS, Azure, or Google Cloud Platform.
+⏵ How do you stay up-to-date with the latest trends and advancements in technology?
+⏵ Describe a situation where you had to work closely with non-technical stakeholders to deliver a technical solution.
+⏵ What is your process for creating clear and concise documentation for both technical and non-technical users?
+⏵ How do you prioritize tasks when working on multiple projects simultaneously?
+⏵ Describe a time when you had to adapt a solution due to changing requirements or constraints.
+⏵ How do you handle situations where a client may not be satisfied with the technical solution you have provided?
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
     <type>Introduction</type>
     <question>
 Tips

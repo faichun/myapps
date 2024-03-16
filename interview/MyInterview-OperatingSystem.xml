@@ -13,6 +13,106 @@
 <entries>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <entry>
+    <type>Process</type>
+    <question>
+When I try to run a file on Linux, it won't execute. Why?
+    </question>
+    <answer>
+Check Permissions:
+⏵ Use ls -l filename to see if the file has execute permission (x).
+⏵ If not, add execute permission with chmod +x filename.
+
+Correct Path:
+⏵ Ensure you're in the right directory or provide the full path to the file.
+
+Use ./:
+⏵ If in the same directory, run the file with ./filename.
+
+Check File Type:
+⏵ Use file filename to see if it's an executable binary or a script.
+
+For Scripts, Check Shebang:
+⏵ The first line should be #!/bin/sh or another interpreter like #!/bin/bash.
+
+Dependencies:
+⏵ Ensure all required libraries or interpreters are installed.
+
+File System Not Mounted as Executable:
+⏵ If on a separate partition, ensure it's not mounted with noexec.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Process</type>
+    <question>
+Explain how the process is started in Linux (syscalls and etc)
+    </question>
+    <answer>
+User Requests Process Start:
+⏵ A user or system service requests to start a new process, usually by running a command in the terminal or a program triggering it.
+
+fork() System Call:
+⏵ The fork() syscall is used to create a new process. It makes a duplicate of the current process (parent) called the child process.
+
+exec() System Call:
+⏵ The child process uses exec() syscall to replace its memory space with a new program. The exec() family of functions loads the program into the child process's memory, replacing the forked process image.
+
+Process Setup by Kernel:
+⏵ The kernel sets up the process environment. This includes allocating memory, setting up security permissions, and initializing process identifiers (PIDs).
+
+Initialization:
+⏵ The new program may perform some initialization tasks, like reading configuration files or establishing database connections.
+
+Execution:
+⏵ The program starts executing its main function. It performs its tasks, like processing data, handling user input, or waiting for system events.
+
+System Resource Access:
+⏵ During execution, the process may request more resources or perform I/O operations using syscalls like read(), write(), open(), and close().
+
+Process Termination:
+⏵ The process terminates by calling exit() syscall, returning control back to the operating system, which then cleans up resources and closes the process.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Process</type>
+    <question>
+In what cases sigkill fails
+    </question>
+    <answer>
+SIGKILL is designed to immediately terminate processes without cleanup, and it cannot be caught or ignored by the process. 
+
+⏵ Zombie Processes
+⏵ Uninterruptible Sleep State 
+⏵ Kernel Space Operations
+⏵ Defunct Processes
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Process</type>
+    <question>
+What signal does the kill command send by default?
+    </question>
+    <answer>
+The kill command, by default, sends the SIGTERM (signal number 15) to the specified process. This signal requests the process to terminate gracefully, allowing it to clean up resources before exiting.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Command</type>
+    <question>
+In Linux, view a column in the csv in the command line
+    </question>
+    <answer>
+cut -d, -f2 file.csv
+
+⏵ -d, specifies the delimiter (comma for CSV files), and -f2 specifies the second field (column). 
+⏵ Adjust the number after -f to view a different column.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
     <type>Command</type>
     <question>
 sed command
@@ -147,12 +247,17 @@ The grep command searches for the pattern specified by the Pattern parameter and
   </entry>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <entry>
-    <type></type>
+    <type>Command</type>
     <question>
+How to grant admin privileges on an executable file so any user can execute the file?
     </question>
     <answer>
+Change the file owner to root (if it's not already):
+⏵ sudo chown root:root /path/to/your/executable
+
+Set the SUID bit on the executable:
+⏵ sudo chmod u+s /path/to/your/executable
     </answer>
   </entry>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-
 </entries>

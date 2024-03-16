@@ -68,7 +68,7 @@ Why do we need messaging?
 When to use event-driven architecture
     </question>
     <answer>
-when you need to capture real-world behavior and the digital context around it and store it for future use.
+when you need to capture real-world behaviour and the digital context around it and store it for future use.
     </answer>
   </entry>  
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->

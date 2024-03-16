@@ -38,7 +38,7 @@ Design Pattern
     <answer>
 ⏵ Creational patterns: These patterns deal with object creation mechanisms, trying to create objects in a manner suitable to the situation. Examples include the Singleton, Factory Method, and Prototype patterns.
 ⏵ Structural patterns: These patterns deal with object composition, creating relationships between objects to form larger structures. Examples include the Adapter, Bridge, and Composite patterns.
-⏵ Behavioral patterns: These patterns deal with communication between objects, what goes on between objects and how they operate together. Examples include the Observer, Iterator, and Mediator patterns.
+⏵ Behavioural patterns: These patterns deal with communication between objects, what goes on between objects and how they operate together. Examples include the Observer, Iterator, and Mediator patterns.
 ⏵ Concurrency patterns: These patterns deal with multi-threaded programming, they ensure that shared resources are accessed in a thread-safe manner. Examples include the Monitor Object, Read-Write Lock and Double-Checked Locking patterns.
 ⏵ Architectural patterns: These patterns deal with overall system structure, they provide a general, high-level structure for designing an application. Examples include the Model-View-Controller, Microservices and Event-driven architecture patterns.
     </answer>
