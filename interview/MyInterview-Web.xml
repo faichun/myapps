@@ -13,7 +13,7 @@
 <entries>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <entry>
-    <type>HTTP</type>
+    <type>Response Code</type>
     <question>
 HTTP status codes used REST API
     </question>
@@ -56,7 +56,7 @@ HTTP status codes used REST API
   </entry>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <entry>
-    <type>Concept</type>
+    <type>Problem Solving</type>
     <question>
 Web Traffic Handling (why a particular error occur, what are all possible debugging way, what optimization can be made)
     </question>
@@ -88,7 +88,7 @@ Optimization Can Be Made:
   </entry>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <entry>
-    <type>GCP</type>
+    <type>URL</type>
     <question>
 How would you implement a URL shortener without a backend?
     </question>
@@ -96,6 +96,25 @@ How would you implement a URL shortener without a backend?
 URL shortening service built using serverless technologies, which means it runs in a fully managed environment where you don't have to manage servers or infrastructure.
 
 Creating a serverless URL shortener on Google Cloud Platform (GCP) involves several steps, focusing on using Firestore for storage and Cloud Functions for the logic. 
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Problem Solving</type>
+    <question>
+How would you go about diagnosing and resolving performance issues in a web application?
+    </question>
+    <answer>
+⏵ Establish Performance Baselines
+⏵ Identify Symptoms and Areas of Concern (Time, Log, Pattern)
+⏵ Analyze Performance Across Different Layers (Frontend, Network, Backend)
+⏵ Database Performance Tuning (Query Optimization, Indexing, Connection Pooling)
+⏵ Code and Dependency Optimization (Code Profiling, Update Libraries)
+⏵ Optimize Assets and Resources (Minify CSS and JavaScript, Optimize Images, Lazy Loading)
+⏵ Implement Caching Strategies (Browser Caching, Server-side Caching)
+⏵ Consider Architecture and Scaling Options (Microservices, Async Design, Horizontal Scaling)
+⏵ Continuous Monitoring and Testing
+⏵ Iterate and Improve
     </answer>
   </entry>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->

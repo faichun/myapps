@@ -5,7 +5,7 @@ let xmlDocs = {
   Coding: loadXMLDoc("MyInterview-Coding.xml"),
   DataStore: loadXMLDoc("MyInterview-DataStore.xml"),
   DataStructure: loadXMLDoc("MyInterview-DataStructure.xml"),
-  DevelopmentPractice: loadXMLDoc("MyInterview-DevelopmentPractice.xml"),
+  Development: loadXMLDoc("MyInterview-Development.xml"),
   DevOps: loadXMLDoc("MyInterview-DevOps.xml"),
   General: loadXMLDoc("MyInterview-General.xml"),
   Integration: loadXMLDoc("MyInterview-Integration.xml"),

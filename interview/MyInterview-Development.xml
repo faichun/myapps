@@ -13,6 +13,47 @@
 <entries>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <entry>
+    <type>Containerization</type>
+    <question>
+What is Containerization?
+    </question>
+    <answer>
+⏵ Containerization is a lightweight form of virtualization that involves encapsulating an application and its dependencies into a container. 
+⏵ The container includes everything needed to run the application: code, runtime, system tools, system libraries, and settings. 
+⏵ Containers are isolated from each other and the host system, but they share the host OS kernel, making them more efficient and faster than traditional virtual machines (VMs) that require a full OS for each instance.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Containerization</type>
+    <question>
+Benefits of Containerization in Software Development:
+    </question>
+    <answer>
+__Consistency Across Environments__
+⏵ Containers ensure consistency across different environments (development, testing, production), reducing the "it works on my machine" problem.
+__Efficiency and Speed__
+⏵ Containers share the host system's kernel, not requiring a full OS per application, leading to lower resource usage, faster startup times, and higher efficiency compared to VMs.
+__Isolation__
+⏵ Each container operates independently (process isolation, filesystem, etc.), minimizing conflicts between applications and making it easier to manage dependencies.
+__Scalability and Flexibility__
+⏵ Containers can be easily scaled up or down and deployed on various platforms, supporting microservices architecture where components can be independently scaled and updated.
+__Rapid Deployment and Rollback__
+⏵ Containers can be created, duplicated, and destroyed quickly, facilitating rapid deployment and rollback of applications and updates.
+__Development Productivity__
+⏵ Developers can focus on building software without worrying about the underlying infrastructure, streamlining development, and deployment processes.
+__Portability__
+⏵ Since containers include all necessary dependencies, they can run consistently across any platform or cloud, enhancing portability.
+__Resource Efficiency__
+⏵ Containers require less hardware resource, allowing more applications to run on the same hardware compared to running applications directly on the host or using VMs.
+__Simplified Configuration Management__
+⏵ Containers can be used to create reproducible environments, simplifying configuration management and reducing environment drift issues.
+__Enhanced Security__
+⏵ Isolation provided by containers can enhance security by limiting the impact of a breach to a single container.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
     <type>Code Review</type>
     <question>
 What do you consider during code review?

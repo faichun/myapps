@@ -65,9 +65,22 @@ __scp__
   </entry>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <entry>
-    <type>Performance</type>
+    <type>Troubleshooting</type>
     <question>
-Troubleshoot why the internet is slow
+Describe a time when you had to troubleshoot and resolve a network-related issue.
+    </question>
+    <answer>
+⏵ Firewall (network whitelisting, access authority)
+⏵ Slow Response (wrong route table)
+⏵ DNS (resolution issue)
+⏵ Subnet (VPN, or Public network)
+⏵ SSL certificate (invalid certificate, expired certificate)
+    </answer>
+  </entry>
+  <entry>
+    <type>Troubleshooting</type>
+    <question>
+Troubleshoot why the internet is suffering a slow issue.
     </question>
     <answer>
 Ask Questions:

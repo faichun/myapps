@@ -15,6 +15,20 @@
   <entry>
     <type>Concept</type>
     <question>
+Can you explain the difference between RESTful and SOAP web services?
+    </question>
+    <answer>
+__Design Philosophy__: REST is an architectural style that uses standard web protocols and patterns, while SOAP is a protocol with stricter standards and rules.
+__Data Format__: RESTful services can use various data formats (JSON, XML, etc.), but SOAP exclusively uses XML.
+__Performance:__ RESTful services generally offer better performance and scalability, partly due to the lighter weight of JSON and the stateless nature of REST.
+__Flexibility vs. Standardization__: REST provides more flexibility in how data is returned, while SOAP provides strict standards through WSDL, making it more suitable for scenarios where clear contracts between service and client are required.
+__Security__: SOAP has a more comprehensive standard for security, making it suitable for enterprise-level applications that demand rigorous security measures.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Concept</type>
+    <question>
 Describe your experience working with APIs and integrating them into existing systems.
     </question>
     <answer>
@@ -46,6 +60,25 @@ RestTemplate vs WebClient
 What are the HTTP RESTful response code?
     </question>
     <answer>
+⏵ 200 __OK__: Request succeeded; the response depends on the HTTP method used.
+⏵ 201 __Created__: The request succeeded, and a new resource was created.
+⏵ 202 __Accepted__: The request has been accepted for processing, but the processing has not been completed. 
+⏵ 204 __No Content__: The request was processed successfully, but no content is returned.
+⏵ 301 __Moved Permanently: The resource has been moved to a new URL permanently.
+⏵ 302 __Found__: The resource is temporarily under a different URL.
+⏵ 304 __Not Modified__: Indicates the cached version of the requested resource is still valid.
+⏵ 400 __Bad Request__: The server could not understand the request due to invalid syntax.
+⏵ 401 __Unauthorized__: Authentication is required and has failed or not been provided.
+⏵ 403 __Forbidden__: The server understands the request but refuses to authorize it.
+⏵ 404 __Not Found__: The server cannot find the requested resource.
+⏵ 405 __Method Not Allowed__: This response is sent when the HTTP method used in the request is known by the server but has been disabled and cannot be used for the target resource. For example, trying to use a POST request on a read-only resource.
+⏵ 406 __Not Acceptable__: This status code is returned when the server cannot produce a response matching the list of acceptable values defined in the request's headers, specifically in Accept headers. This happens when the server cannot return data in a format that the client can process.
+⏵ 409 __Conflict__: The request conflicts with the current state of the server.
+⏵ 500 __Internal Server Error__: The server encountered an unexpected condition.
+⏵ 501 __Not Implemented__: The server does not support the functionality required to fulfill the request.
+⏵ 502 __Bad Gateway__: This indicates that the server, while acting as a gateway or proxy, received an invalid response from an upstream server it accessed in attempting to fulfill the request.
+⏵ 503 __Service Unavailable__: The server is not ready to handle the request, often due to maintenance or overload.
+⏵ 504 __Gateway Timeout__: Similar to 502, but this status code indicates that the server, acting as a gateway or proxy, did not receive a timely response from the upstream server or some other auxiliary server it needed to access in order to complete the request.
     </answer>
   </entry>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
