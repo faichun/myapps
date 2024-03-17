@@ -13,6 +13,58 @@
 <entries>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <entry>
+    <type>Command</type>
+    <question>
+Typical Network Command
+    </question>
+    <answer>
+__ifconfig__ (Interface Configuration)
+⏵ Used for configuring, controlling, and querying TCP/IP network interface parameters.
+⏵ Example: ifconfig eth0 displays information about the eth0 network interface.
+
+__ping__
+⏵ Sends ICMP ECHO_REQUEST packets to network hosts to check if a host is reachable.
+⏵ Example: ping google.com checks the connectivity to google.com.
+
+__netstat__
+⏵ Shows network connections, routing tables, interface statistics, masquerade connections, and multicast memberships.
+⏵ Example: netstat -rn shows the routing table.
+
+__traceroute__
+⏵ Prints the route packets take to a network host, helping identify where delays or issues occur.
+⏵ Example: traceroute google.com shows the path packets take to reach google.com.
+
+__nslookup__
+⏵ Queries Internet domain name servers for DNS details like IP address mapping or domain name.
+⏵ Example: nslookup google.com finds the IP address associated with google.com.
+
+__dig__
+⏵ Performs DNS lookups and displays answers from name servers. It's considered more powerful than nslookup.
+⏵ Example: dig google.com provides detailed DNS information for google.com.
+
+__tcpdump__
+⏵ A powerful command-line packet analyzer; used for network debugging and traffic monitoring.
+⏵ Example: tcpdump -i eth0 captures and displays packets on the eth0 interface.
+
+__wget__
+⏵ Non-interactive network downloader that retrieves files from the web.
+⏵ Example: wget http://example.com/file.zip downloads file.zip from the specified URL.
+
+__curl__
+⏵ Tool to transfer data from or to a server, supporting various protocols like HTTP, HTTPS, FTP, and more.
+⏵ Example: curl http://example.com fetches the content of the webpage.
+
+__ssh__
+⏵ Secure Shell, a protocol for securely accessing network services over an unsecured network.
+⏵ Example: ssh user@example.com connects to example.com as user.
+
+__scp__
+⏵ Securely copies files between hosts on a network. Uses SSH for data transfer.
+⏵ Example: scp file.txt user@example.com:/path copies file.txt to the specified path on example.com.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
     <type>Performance</type>
     <question>
 Troubleshoot why the internet is slow
@@ -105,15 +157,49 @@ Connection Termination:
 What are Layer 4 and Layer 7 in OSI model?
     </question>
     <answer>
-Layer 4 - Transport Layer:
-⏵ Responsible for end-to-end communication and error recovery.
-⏵ Where TCP (Transmission Control Protocol) operates, providing reliable data transfer.
+__Layer 4: Transport Layer__
+⏵ Function: Responsible for providing transparent transfer of data between end systems, or hosts, and is responsible for end-to-end error recovery and flow control. It ensures complete data transfer.
+⏵ Protocols: TCP (Transmission Control Protocol), which provides reliable, ordered, and error-checked delivery of a stream of bytes.
+⏵ Protocols: UDP (User Datagram Protocol), which provides a simpler, connectionless service to exchange messages without guarantees about delivery and order.
 
-Layer 7 - Application Layer:
-⏵ The layer closest to the end user.
-⏵ It allows access to network services that support applications.
-⏵ Examples include HTTP for web browsing, SMTP for email.
+__Layer 7: Application Layer__
+⏵ Function: Serves as the window for users and application processes to access network services. This layer directly interacts with software applications to provide communication functions as needed and makes it possible for software to send and receive information. It encompasses protocols that define how data is presented and structured, and how it is to be transmitted.
+⏵ Protocols: HTTP (Hypertext Transfer Protocol), FTP (File Transfer Protocol), SMTP (Simple Mail Transfer Protocol), and many others that enable users to perform tasks such as file transfers, web browsing, and email.
+
+Layer 4 focuses on data transport with reliability and proper sequencing.
+Layer 7 is concerned with providing services to the application software through which users interact with the network.
     </answer>
   </entry>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
+    <type>Concept</type>
+    <question>
+    Explain the usage of UDP
+    </question>
+    <answer>
+__Streaming Media (Audio and Video)__
+⏵ For live broadcasts or streaming services where occasional data loss is preferable to delay caused by data retransmission.
+
+__Voice over IP (VoIP)__
+⏵ In voice communications, minor data loss may not significantly impact quality, but latency and jitter can disrupt conversations.
+
+__Online Gaming__
+⏵ Real-time multiplayer games require fast, low-latency communication. Players can tolerate some level of data loss without noticeable effects on gameplay.
+
+__Broadcast and Multicast Services__
+⏵ UDP supports broadcast and multicast, allowing messages to be sent to multiple recipients efficiently, useful in scenarios like service discovery.
+
+__DNS Queries__
+⏵ DNS lookups use UDP for faster resolution times. Since DNS requests are typically small and can tolerate the rare cases of packet loss, UDP is preferred.
+
+__SNMP (Simple Network Management Protocol)__
+⏵ Used for network management information exchange, where speed and simplicity outweigh the need for reliability.
+
+__DHCP (Dynamic Host Configuration Protocol)__
+⏵ Used for quick assignment of IP addresses to devices within a network.
+
+__Trivial File Transfer Protocol (TFTP)__
+⏵ A simplified version of FTP that uses UDP for transferring files where simplicity and speed are desired over the complexity and overhead of TCP.
+    </answer>
+  </entry>
 </entries>

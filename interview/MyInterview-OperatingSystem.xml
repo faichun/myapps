@@ -13,6 +13,54 @@
 <entries>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <entry>
+    <type>Command</type>
+    <question>
+Typical File and Text Operation command
+    </question>
+    <answer>
+__cat__
+⏵ Concatenates and displays the content of files.
+⏵ Example: cat file1.txt displays the content of file1.txt.
+
+__grep__
+⏵ Searches text using patterns.
+⏵ Example: grep 'search_term' file.txt finds 'search_term' in file.txt.
+
+__sed__
+⏵ Stream editor for filtering and transforming text in files.
+⏵ Example: sed 's/old/new/g' file.txt replaces 'old' with 'new' in file.txt.
+
+__awk__
+⏵ Pattern scanning and processing language.
+⏵ Example: awk '{print $2}' file.txt prints the second column of file.txt.
+
+__sort__
+⏵ Sorts lines in text files.
+⏵ Example: sort file.txt sorts the lines in file.txt alphabetically.
+
+__uniq__
+⏵ Reports or omits repeated lines.
+⏵ Example: uniq file.txt filters adjacent duplicate lines in file.txt.
+
+__wc__
+⏵ Prints newline, word, and byte counts for files.
+⏵ Example: wc file.txt displays the count of lines, words, and bytes in file.txt.
+
+__diff__
+⏵ Compares files line by line.
+⏵ Example: diff file1.txt file2.txt shows differences between file1.txt and file2.txt.
+
+__head__
+⏵ Outputs the first part of files.
+⏵ Example: head file.txt displays the first ten lines of file.txt.
+
+__tail__
+⏵ Outputs the last part of files.
+⏵ Example: tail file.txt displays the last ten lines of file.txt.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
     <type>Process</type>
     <question>
 When I try to run a file on Linux, it won't execute. Why?
@@ -109,46 +157,6 @@ cut -d, -f2 file.csv
 
 ⏵ -d, specifies the delimiter (comma for CSV files), and -f2 specifies the second field (column). 
 ⏵ Adjust the number after -f to view a different column.
-    </answer>
-  </entry>
-  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-  <entry>
-    <type>Command</type>
-    <question>
-sed command
-    </question>
-    <answer>
-sed is used for data transformation. find and replace a string feature.
-    </answer>
-  </entry>
-  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-  <entry>
-    <type>Command</type>
-    <question>
-awk command
-    </question>
-    <answer>
-awk is a a scripting language used for manipulating data and generating reports
-    </answer>
-  </entry>
-  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-  <entry>
-    <type>Command</type>
-    <question>
-cat command
-    </question>
-    <answer>
-cat is a command to Read a file, create a file, and concatenate files
-    </answer>
-  </entry>
-  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-  <entry>
-    <type>Command</type>
-    <question>
-grep command
-    </question>
-    <answer>
-grep (global regular expression print) 
     </answer>
   </entry>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
