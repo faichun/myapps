@@ -18,6 +18,12 @@
 Typical File and Text Operation command
     </question>
     <answer>
+__df__
+⏵ df -h to see disk usage by filesystem
+
+__du__
+⏵ du -sh in specific directories to find where disk usage is high
+    
 __cat__
 ⏵ Concatenates and displays the content of files.
 ⏵ Example: cat file1.txt displays the content of file1.txt.
