@@ -65,6 +65,24 @@ __scp__
   </entry>
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <entry>
+    <type>Load Balancer</type>
+    <question>
+Load balancing can be achieved through various methods
+    </question>
+    <answer>
+⏵ Round Robin
+⏵ Least Connections
+⏵ Source IP Hash
+⏵ Weighted Algorithms (Weighted Round Robin, Weighted Least Connections)
+⏵ Least Response Time
+⏵ Least Bandwidth
+⏵ Geographic Location Based
+⏵ Application Layer (Layer 7) - routing decisions based on content of the request, such as URL, headers, or message content.
+⏵ Network Layer (Layer 4) - Balances load based on IP range and port number without inspecting the packet content.
+    </answer>
+  </entry>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <entry>
     <type>Troubleshooting</type>
     <question>
 Describe a time when you had to troubleshoot and resolve a network-related issue.
