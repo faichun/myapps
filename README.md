@@ -48,7 +48,8 @@ https://faichun.github.io/myapps/
 ## Collection App
 
 - [Movie Collection](movie)
-- [Interview Cheatsheet](interview)
+- [Interview Cheatsheet](https://jackfclee.github.io/my-profile/interview)
+- [MC Engine](https://jackfclee.github.io/my-profile/mc-engine/)
 
 ## Bible App
 
