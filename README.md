@@ -50,6 +50,7 @@ https://faichun.github.io/myapps/
 - [Movie Collection](movie)
 - [Interview Cheatsheet](https://jackfclee.github.io/my-profile/interview)
 - [MC Engine](https://jackfclee.github.io/my-profile/mc-engine/)
+- [KB Game](https://jackfclee.github.io/my-profile/kb-game/)
 
 ## Bible App
 
