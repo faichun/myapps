@@ -10,6 +10,10 @@ https://faichun.github.io/myapps/
 - [LinkedIn](https://www.linkedin.com/in/jackfclee/)
 - [Buy me a coffee - jackfclee](https://www.buymeacoffee.com/jackfclee)
 - [Buy me a coffee - faichun](https://www.buymeacoffee.com/faichun)
+- [credly](https://www.credly.com/users/faichun/badges)
+- [accredible](https://www.credential.net/profile/faichunlee/wallet)
+- [youracclaim](https://www.youracclaim.com/users/faichun/badges)
+
 
 ## Web Design Demonstration
 
