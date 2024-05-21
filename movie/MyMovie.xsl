@@ -24,7 +24,7 @@
             <xsl:if test="($filterKey = '*' or type = $filterKey)">
             <xsl:variable name="lowercase">abcdefghijklmnopqrstuvwxyz</xsl:variable>
             <xsl:variable name="uppercase">ABCDEFGHIJKLMNOPQRSTUVWXYZ</xsl:variable>
-            <xsl:if test="($filterTitle = '*' or (contains(translate(title, $uppercase, $lowercase), translate($filterTitle, $uppercase, $lowercase))))">
+            <xsl:if test="($filterTitle = '*' or (contains(translate(title, $uppercase, $lowercase), translate($filterTitle, $uppercase, $lowercase)))) and string-length(title) > 0">
             <tr>
               <td><xsl:value-of select="title"/></td>
               <td><xsl:value-of select="year"/></td>
