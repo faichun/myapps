@@ -51,26 +51,26 @@ https://faichun.github.io/myapps/
 
 ## Collection App
 
-- [Movie Collection](movie)
-- [Interview Cheatsheet](https://jackfclee.github.io/my-profile/interview)
-- [MC Engine](https://jackfclee.github.io/my-profile/mc-engine/)
-- [KB Game](https://jackfclee.github.io/my-profile/kb-game/)
-- [RD - Reference Diagram](https://jackfclee.github.io/my-profile/reference-diagram/)
+- [Movie Collection @ faichun](movie)
+- [Interview Cheatsheet @ jackfclee](https://jackfclee.github.io/my-apps/interview)
+- [KB Game @ jackfclee](https://jackfclee.github.io/my-apps/kb-game/)
+- [MC Engine @ jackfclee](https://jackfclee.github.io/my-apps/mc-engine/)
+- [RD - Reference Diagram @ jackfclee](https://jackfclee.github.io/my-apps/reference-diagram/)
 
 ## Bible App
 
-- [Bible](bible)
+- [Bible @ faichun](bible)
 
 ## Utility App
 
-- [Buy/Sell Calculator](stock/calculator)
-- [Stock Price Quote](stock/quote)
-- [QR Code](qrcode)
-- [Convertor - Captialise All Words](convertor/capitalise-all-words.html)
+- [Buy/Sell Calculator @ faichun](stock/calculator)
+- [Stock Price Quote @ faichun](stock/quote)
+- [QR Code @ faichun](qrcode)
+- [Convertor - Captialise All Words @ faichun](convertor/capitalise-all-words.html)
 
 ## Game App
 
-- [Word Guess](word-guess)
+- [Word Guess @ faichun](word-guess)
 
 ## GitHub
 
