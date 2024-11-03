@@ -1,8 +1,8 @@
-# MyApps
+# MyDashboard
 
 Applications are shared for personal use only.
 
-https://faichun.github.io/myapps/
+https://faichun.github.io/my-dashboard/
 
 ## My Background
 
