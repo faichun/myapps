@@ -60,7 +60,7 @@ https://faichun.github.io/my-dashboard/
 
 ## Bible App
 
-- [Bible @ jackfclee](bible)
+- [Bible @ jackfclee](https://jackfclee.github.io/my-apps/bible)
 
 ## Utility App
 
