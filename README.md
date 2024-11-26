@@ -51,7 +51,7 @@ https://faichun.github.io/my-dashboard/
 
 ## Collection App
 
-- [Movie Collection @ faichun](movie)
+- [Movie Collection @ jackfclee](https://jackfclee.github.io/my-apps/movie)
 - [Interview Cheatsheet @ jackfclee](https://jackfclee.github.io/my-apps/interview)
 - [KB Game @ jackfclee](https://jackfclee.github.io/my-apps/kb-game/)
 - [MC Engine @ jackfclee](https://jackfclee.github.io/my-apps/mc-engine/)
@@ -60,18 +60,18 @@ https://faichun.github.io/my-dashboard/
 
 ## Bible App
 
-- [Bible @ faichun](bible)
+- [Bible @ jackfclee](bible)
 
 ## Utility App
 
-- [Buy/Sell Calculator @ faichun](stock/calculator)
-- [Stock Price Quote @ faichun](stock/quote)
-- [QR Code @ faichun](qrcode)
-- [Convertor - Captialise All Words @ faichun](convertor/capitalise-all-words.html)
+- [Buy/Sell Calculator @ jackfclee](https://jackfclee.github.io/my-apps/stock/calculator)
+- [Stock Price Quote @ jackfclee](https://jackfclee.github.io/my-apps/stock/quote)
+- [QR Code @ jackfclee](https://jackfclee.github.io/my-apps/qrcode)
+- [Convertor - Captialise All Words @ jackfclee](https://jackfclee.github.io/my-apps/convertor/capitalise-all-words.html)
 
 ## Game App
 
-- [Word Guess @ faichun](word-guess)
+- [Word Guess @ jackfclee](https://jackfclee.github.io/my-apps/word-guess)
 
 ## GitHub
 
